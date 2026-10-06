@@ -1,0 +1,101 @@
+[Title] Redesain Website Dinas Pemadam Kebakaran Kota Bandar Lampung dengan Pendekatan User-Centered Design
+[normal] Alif Zakiansyah As Syauqi1, Andrian Fajar Fahmi2, Valentina Lasma Situmorang3, Erna Nurmawati4
+[normal] 13SI1/222312958 23SI1/222312979 33SI1/222313413 
+[normal] e-mail:
+[Heading 1] FORM LAPORAN KONTRIBUSI ANGGOTA KELOMPOK
+[Heading 2] A. Identitas Kelompok
+[normal] Mata Kuliah: Interaksi Manusia dan Komputer (IMK)
+Kelas: __________
+Nama Project/Aplikasi: ______________________________
+Tanggal Pengumpulan: __________________
+[Heading 2] B. Daftar Anggota Kelompok
+[Heading 2] C. Laporan Kontribusi Masing-Masing Anggota
+[normal] Tuliskan kontribusi nyata setiap anggota dalam pengerjaan tugas.
+[normal] Catatan: Persentase kontribusi seluruh anggota harus berjumlah 100%.
+[Heading 2] D. Rincian Jenis Kontribusi
+[normal] Berikan tanda  pada pekerjaan yang dilakukan dan jelaskan kontribusinya.
+[normal] FORM ANALISIS PROJECT REDESIGN – BEFORE & AFTER
+[normal] IMK – Sub-CPMK 8 dan Sub-CPMK 9
+[normal] Kelompok: 8
+[normal] Nama Aplikasi/Website: Website Dinas Pemadam Kebakaran Kota Bandar Lampung
+[normal] Anggota: Alif Zakiansyah As Syauqi (222312958); Andrian Fajar Fahmi (222312979); Valentina Lasma Situmorang (222313413)
+[normal] Link Prototype Figma: ........................................................................................................
+[normal] Ketentuan Pengisian
+[normal] • Setiap materi dapat memiliki beberapa baris/aspek sesuai dengan kebutuhan project.
+[normal] • Tidak semua baris wajib diisi; isi hanya aspek yang relevan dengan project.
+[normal] • Setiap perubahan harus menunjukkan kondisi Before dan hasil After.
+[normal] • Screenshot harus berasal dari aplikasi/website existing dan hasil redesign.
+[normal] • Kolom Alasan/Dasar Perubahan diisi dengan alasan berdasarkan konsep, prinsip, atau panduan IMK.
+[normal] • Jika suatu materi tidak relevan, tuliskan “Tidak relevan” beserta alasan singkat.
+[normal] • Perubahan tidak hanya berupa warna/font/layout, tetapi harus menunjukkan perbaikan usability, interaction, atau user experience.
+[normal] Ringkasan Hasil Redesain
+[normal] Masalah utama pada BEFORE:
+[normal] ........................................................................................................................
+[normal] Perbaikan utama pada AFTER:
+[normal] ........................................................................................................................
+[normal] Dampak terhadap pengguna/UX:
+[normal] ........................................................................................................................
+--- TABLE ---
+No. | Nama Anggota | NIM | Peran Utama
+1 |  |  | 
+2 |  |  | 
+3 |  |  | 
+4 |  |  | 
+5 |  |  | 
+--- TABLE ---
+No. | Nama Anggota | Tugas/Kontribusi yang Dikerjakan | Output yang Dihasilkan | Persentase Kontribusi
+1 |  |  |  | ___%
+2 |  |  |  | ___%
+3 |  |  |  | ___%
+4 |  |  |  | ___%
+5 |  |  |  | ___%
+ | TOTAL |  |  | 100%
+--- TABLE ---
+Jenis Pekerjaan | Anggota 1 | Anggota 2 | Anggota 3 | Anggota 4
+Analisis aplikasi/website existing |  |  |  | 
+Identifikasi pengguna |  |  |  | 
+Analisis Information Search |  |  |  | 
+Identifikasi masalah usability |  |  |  | 
+Studi/referensi teori IMK |  |  |  | 
+User flow |  |  |  | 
+Ide/solusi redesign |  |  |  | 
+Desain UI di Figma |  |  |  | 
+Prototype interaktif |  |  |  | 
+Pengujian/evaluasi desain |  |  |  | 
+Dokumentasi/laporan |  |  |  | 
+Presentasi |  |  |  | 
+Lainnya: __________ |  |  |  | 
+--- TABLE ---
+No. | Materi IMK | Aspek/Fitur yang Dianalisis | BEFORE – Kondisi Existing | AFTER – Hasil Redesain | Alasan/Dasar Perubahan
+1 | Expressive Human & Command Languages | Expressive Interface |  |  | Beranda baru menempatkan hero, layanan utama, statistik, berita, pengumuman, dokumen populer, dan tombol darurat dalam hierarki yang lebih jelas dan membuat fungsi utama lebih mudah dikenali.
+2 |  | Bahasa/label/perintah | Label dan istilah pada website lama cenderung formal/teknis; beberapa istilah seperti LKJIP dan SOP tidak diberi penjelasan bagi pengguna awam. | Setiap dokumen kini dilengkapi deskripsi singkat yang menjelaskan isi dan tujuan dokumen, sehingga pengguna dapat memahami informasi sebelum mengunduh. | Perubahan dilakukan untuk menerapkan prinsip Match Between System and the Real World, yaitu menggunakan bahasa dan informasi yang lebih mudah dipahami pengguna serta mengurangi beban pengguna dalam menafsirkan istilah teknis.
+3 |  | Feedback terhadap tindakan pengguna |  |  | Menerapkan prinsip Visibility of System Status: pengguna perlu mengetahui posisi dan hasil tindakannya melalui feedback visual.
+4 |  | Emotional Design | Halaman Home lebih banyak menampilkan dokumentasi kegiatan dan berita, sedangkan informasi mengenai layanan darurat belum menjadi fokus utama. | Halaman Home memprioritaskan informasi penting, seperti tombol DARURAT 113, berita, pengumuman, dan layanan utama. | Perubahan dilakukan agar website memberikan kesan lebih responsif terhadap kebutuhan pengguna, terutama saat membutuhkan layanan darurat.
+5 |  | Elemen yang membangun pengalaman emosional | Elemen pada halaman Home belum memberikan penekanan yang jelas terhadap layanan utama yang dibutuhkan pengguna. | Tombol DARURAT 113, kartu layanan, berita, pengumuman, dan informasi utama dibuat lebih menonjol melalui penataan visual yang terstruktur. | Elemen visual tersebut digunakan untuk membangun pengalaman yang lebih jelas, meyakinkan, dan sesuai dengan konteks layanan Damkar.
+6 | Advancing the User Experience | Kemudahan penggunaan | Pengguna perlu menelusuri menu untuk menemukan informasi; tombol darurat belum menonjol. | Navigasi utama dibuat konsisten, pencarian tersedia di header, kategori informasi dibuat lebih terstruktur, dan tombol DARURAT 113 terlihat jelas. | UCD menekankan desain berdasarkan kebutuhan pengguna; mengurangi langkah dan beban ingatan pengguna saat mengakses informasi penting.
+7 |  | Efisiensi interaksi |  |  | Mempercepat akses ke informasi yang sering atau penting digunakan.
+8 |  | Kepuasan pengguna | [Screenshot] | [Screenshot] | 
+9 |  | Permasalahan UX lainnya | [Screenshot] | [Screenshot] | 
+10 | The Timely User Experiences | Konteks penggunaan | [Screenshot] | [Screenshot] | 
+11 |  | Ketepatan waktu informasi | [Screenshot] | [Screenshot] | 
+12 |  | Respons sistem terhadap kondisi pengguna | [Screenshot] | [Screenshot] | 
+13 |  | Informasi/fitur yang dibutuhkan pada saat tertentu | [Screenshot] | [Screenshot] | 
+14 | Information Search | Search/pencarian | [Screenshot] | [Screenshot] | 
+15 |  | Search suggestion/autocomplete | [Screenshot] | [Screenshot] | 
+16 |  | Search result | [Screenshot] | [Screenshot] | 
+17 |  | Filter | [Screenshot] | [Screenshot] | 
+18 |  | Sorting | [Screenshot] | [Screenshot] | 
+19 |  | Navigasi dalam menemukan informasi | [Screenshot] | [Screenshot] | 
+20 |  | No-result/error/feedback | [Screenshot] | [Screenshot] | 
+21 | Data Visualization | Jenis visualisasi | [Screenshot] | [Screenshot] | 
+22 |  | Penyajian informasi/data | [Screenshot] | [Screenshot] | 
+23 |  | Kejelasan grafik | [Screenshot] | [Screenshot] | 
+24 |  | Label/legend | [Screenshot] | [Screenshot] | 
+25 |  | Efektivitas visualisasi | [Screenshot] | [Screenshot] | 
+26 | Wireframe, Mockup & Prototype | Wireframe | [Screenshot] | [Screenshot] | 
+27 |  | Mockup | [Screenshot] | [Screenshot] | 
+28 |  | Alur/interaksi prototype | [Screenshot] | [Screenshot] | 
+29 | High-Fidelity Prototype | Detail antarmuka | [Screenshot] | [Screenshot] | 
+30 |  | Konsistensi desain | [Screenshot] | [Screenshot] | 
+31 |  | Interaksi prototype | [Screenshot] | [Screenshot] | 
+32 |  | Penyelesaian desain keseluruhan | [Screenshot] | [Screenshot] | 

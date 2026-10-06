@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1460" viewBox="0 0 1240 1460">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .container-box { fill: #ffffff; stroke: #333333; stroke-width: 1; }
+      .sub-container { fill: #ffffff; stroke: #333333; stroke-width: 1; }
+      .node-box { fill: #ffffff; stroke: #333333; stroke-width: 1; }
+      .output-box { fill: #f8fafc; stroke: #333333; stroke-width: 1; }
+      .diamond { fill: #ffffff; stroke: #333333; stroke-width: 1.2; }
+      .title-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #1e293b; }
+      .node-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 10px; font-weight: bold; fill: #0f172a; text-anchor: middle; }
+      .node-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 9px; fill: #334155; text-anchor: middle; }
+      .node-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 9.5px; fill: #0f172a; text-anchor: middle; }
+      .label-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 9px; fill: #475569; text-anchor: middle; }
+      .arrow-line { stroke: #333333; stroke-width: 1; fill: none; }
+      .arrow-loop { stroke: #333333; stroke-width: 1; stroke-dasharray: 4 2; fill: none; }
+    </style>
+    <marker id="arr" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#333333" />
+    </marker>
+  </defs>
+
+  <rect width="1240" height="1460" class="bg" />
+
+  <!-- ================= TAHAP 1 ================= -->
+  <rect x="40" y="30" width="1160" height="165" class="container-box" />
+  <text x="50" y="50" class="title-text">TAHAP 1: INISIASI RISET &amp; MASALAH EMPIRIS</text>
+
+  <!-- Box 1A -->
+  <rect x="70" y="65" width="350" height="46" class="node-box" />
+  <text x="245" y="83" class="node-title">Audit Awal Website Eksisting &amp; Survei Pendahuluan (N=22)</text>
+  <text x="245" y="99" class="node-sub">(Rerata kepuasan rendah: 2,70 / 5,00)</text>
+
+  <!-- Box 1B -->
+  <rect x="445" y="65" width="350" height="46" class="node-box" />
+  <text x="620" y="83" class="node-title">Tuntutan Regulasi SPM Permendagri No. 114/2018</text>
+  <text x="620" y="99" class="node-sub">(Standar response time &lt; 15 menit)</text>
+
+  <!-- Box 1C -->
+  <rect x="820" y="65" width="350" height="46" class="node-box" />
+  <text x="995" y="83" class="node-title">Analisis Data Frekuensi Bencana Kebakaran &amp; Rescue</text>
+  <text x="995" y="99" class="node-sub">(413 insiden &#39;23; 271 &#39;24; 198 &#39;25; 518 aksi rescue &#39;25)</text>
+
+  <!-- Box 1D -->
+  <rect x="370" y="138" width="500" height="38" class="node-box" />
+  <text x="620" y="162" class="node-title">Identifikasi Masalah &amp; Perumusan Kesenjangan Riset</text>
+
+  <!-- Panah Tahap 1 -->
+  <path d="M 245 111 L 245 125 L 470 125 L 470 138" class="arrow-line" marker-end="url(#arr)" />
+  <path d="M 620 111 L 620 138" class="arrow-line" marker-end="url(#arr)" />
+  <path d="M 995 111 L 995 125 L 770 125 L 770 138" class="arrow-line" marker-end="url(#arr)" />
+
+  <!-- ================= UCD CONTAINER ================= -->
+  <rect x="40" y="215" width="1160" height="1065" class="container-box" />
+  <text x="50" y="235" class="title-text">SIKLUS ITERASI USER-CENTERED DESIGN (ISO 9241-210:2019)</text>
+
+  <!-- Panah dari 1D ke UCD -->
+  <path d="M 620 176 L 620 250" class="arrow-line" marker-end="url(#arr)" />
+
+  <!-- FASE 1 -->
+  <rect x="55" y="250" width="1130" height="145" class="sub-container" />
+  <text x="65" y="269" class="title-text" font-size="10">FASE 1: Memahami Konteks Penggunaan (Context of Use)</text>
+
+  <rect x="70" y="280" width="350" height="42" class="node-box" />
+  <text x="245" y="306" class="node-desc">Analisis Kondisi Psikologis (Kepanikan saat Krisis) &amp; Akses Seluler</text>
+
+  <rect x="445" y="280" width="350" height="42" class="node-box" />
+  <text x="620" y="306" class="node-desc">Perumusan User Persona (Emergency Persona vs Public Persona)</text>
+
+  <rect x="820" y="280" width="350" height="42" class="node-box" />
+  <text x="995" y="306" class="node-desc">Identifikasi Karakteristik &amp; Kebutuhan Pengguna</text>
+
+  <rect x="390" y="345" width="460" height="34" class="output-box" />
+  <text x="620" y="366" class="node-title">Luaran: Peta Konteks Penggunaan &amp; Task Scenarios</text>
+
+  <path d="M 245 322 L 245 334 L 480 334 L 480 345" class="arrow-line" marker-end="url(#arr)" />
+  <path d="M 620 322 L 620 345" class="arrow-line" marker-end="url(#arr)" />
+  <path d="M 995 322 L 995 334 L 760 334 L 760 345" class="arrow-line" marker-end="url(#arr)" />
+
+  <!-- Panah Fase 1 ke Fase 2 -->
+  <path d="M 620 379 L 620 415" class="arrow-line" marker-end="url(#arr)" />
+
+  <!-- FASE 2 -->
+  <rect x="55" y="415" width="1130" height="145" class="sub-container" />
+  <text x="65" y="434" class="title-text" font-size="10">FASE 2: Menentukan Kebutuhan Pengguna (Specify User Requirements)</text>
+
+  <rect x="70" y="445" width="350" height="42" class="node-box" />
+  <text x="245" y="471" class="node-desc">Perumusan Parameter HCI: Emotional Design, Fitts&#39;s Law, Fluid Navigation</text>
+
+  <rect x="445" y="445" width="350" height="42" class="node-box" />
+  <text x="620" y="471" class="node-desc">Klasifikasi Severity Rating Masalah Usabilitas (Skala 0-4)</text>
+
+  <rect x="820" y="445" width="350" height="42" class="node-box" />
+  <text x="995" y="471" class="node-desc">Audit Inspeksi 10 Prinsip Heuristik Nielsen pada Website Eksisting</text>
+
+  <rect x="370" y="510" width="500" height="34" class="output-box" />
+  <text x="620" y="531" class="node-title">Luaran: Matriks Kebutuhan Pengguna &amp; Dokumen Spesifikasi Desain</text>
+
+  <path d="M 245 487 L 245 499 L 470 499 L 470 510" class="arrow-line" marker-end="url(#arr)" />
+  <path d="M 620 487 L 620 510" class="arrow-line" marker-end="url(#arr)" />
+  <path d="M 995 487 L 995 499 L 770 499 L 770 510" class="arrow-line" marker-end="url(#arr)" />
+
+  <!-- Panah Fase 2 ke Fase 3 -->
+  <path d="M 620 544 L 620 580" class="arrow-line" marker-end="url(#arr)" />
+
+  <!-- FASE 3 -->
+  <rect x="55" y="580" width="1130" height="150" class="sub-container" />
+  <text x="65" y="599" class="title-text" font-size="10">FASE 3: Merancang Solusi Desain (Produce Design Solutions)</text>
+
+  <rect x="70" y="610" width="260" height="46" class="node-box" />
+  <text x="200" y="629" class="node-desc">Purwarupa Interaktif Tinggi Fidelitas</text>
+  <text x="200" y="644" class="node-sub">(Figma &amp; Full-Stack Next.js/Tailwind)</text>
+
+  <rect x="350" y="610" width="260" height="46" class="node-box" />
+  <text x="480" y="629" class="node-desc">Arsitektur Informasi (IA) Dua-Jalur</text>
+  <text x="480" y="644" class="node-sub">&amp; Skematik User Flow</text>
+
+  <rect x="630" y="610" width="260" height="46" class="node-box" />
+  <text x="760" y="629" class="node-desc">Perancangan Rendah Fidelitas</text>
+  <text x="760" y="644" class="node-sub">Low-Fidelity Wireframe (Sketsa Balsamiq)</text>
+
+  <rect x="910" y="610" width="260" height="46" class="node-box" />
+  <text x="1040" y="629" class="node-desc">Sistem Desain &amp; Aksesibilitas WCAG 2.1 AA</text>
+  <text x="1040" y="644" class="node-sub">(Primary Navy &amp; Emergency Red)</text>
+
+  <rect x="370" y="680" width="500" height="34" class="output-box" />
+  <text x="620" y="701" class="node-title">Luaran: Live Interactive Prototype Web &amp; Cetak Biru Wireframe</text>
+
+  <path d="M 200 656 L 200 668 L 440 668 L 440 680" class="arrow-line" marker-end="url(#arr)" />
+  <path d="M 480 656 L 480 668 L 560 668 L 560 680" class="arrow-line" marker-end="url(#arr)" />
+  <path d="M 760 656 L 760 668 L 680 668 L 680 680" class="arrow-line" marker-end="url(#arr)" />
+  <path d="M 1040 656 L 1040 668 L 800 668 L 800 680" class="arrow-line" marker-end="url(#arr)" />
+
+  <!-- Panah Fase 3 ke Fase 4 -->
+  <path d="M 620 714 L 620 750" class="arrow-line" marker-end="url(#arr)" />
+
+  <!-- FASE 4 -->
+  <rect x="55" y="750" width="1130" height="150" class="sub-container" />
+  <text x="65" y="769" class="title-text" font-size="10">FASE 4: Evaluasi Desain terhadap Kebutuhan (Evaluate Against Requirements)</text>
+
+  <rect x="70" y="780" width="260" height="46" class="node-box" />
+  <text x="200" y="799" class="node-desc">Pengukuran Task Completion Time</text>
+  <text x="200" y="814" class="node-sub">Penemuan Kontak Darurat (&lt; 3 Detik)</text>
+
+  <rect x="350" y="780" width="260" height="46" class="node-box" />
+  <text x="480" y="799" class="node-desc">Pengujian Kuantitatif WebQual 4.0</text>
+  <text x="480" y="814" class="node-sub">Komparatif Before vs After (22 Indikator)</text>
+
+  <rect x="630" y="780" width="260" height="46" class="node-box" />
+  <text x="760" y="799" class="node-desc">Uji Beda Berpasangan Wilcoxon</text>
+  <text x="760" y="814" class="node-sub">Signed-Rank Test (Signifikansi p &lt; 0,001)</text>
+
+  <rect x="910" y="780" width="260" height="46" class="node-box" />
+  <text x="1040" y="799" class="node-desc">Audit Aksesibilitas WCAG 2.1 Level AA</text>
+  <text x="1040" y="814" class="node-sub">(Uji WAVE &amp; Rasio Kontras)</text>
+
+  <rect x="350" y="850" width="540" height="34" class="output-box" />
+  <text x="620" y="871" class="node-title">Luaran: Skor WebQual 4.0, Output Wilcoxon, &amp; Bukti Bebas Galat WAVE</text>
+
+  <path d="M 200 826 L 200 838 L 430 838 L 430 850" class="arrow-line" marker-end="url(#arr)" />
+  <path d="M 480 826 L 480 838 L 550 838 L 550 850" class="arrow-line" marker-end="url(#arr)" />
+  <path d="M 760 826 L 760 838 L 690 838 L 690 850" class="arrow-line" marker-end="url(#arr)" />
+  <path d="M 1040 826 L 1040 838 L 810 838 L 810 850" class="arrow-line" marker-end="url(#arr)" />
+
+  <!-- Panah Fase 4 ke Decision Diamond -->
+  <path d="M 620 884 L 620 920" class="arrow-line" marker-end="url(#arr)" />
+
+  <!-- DECISION DIAMOND -->
+  <polygon points="620,920 830,975 620,1030 410,975" class="diamond" />
+  <text x="620" y="971" class="node-title">Apakah Kriteria Usabilitas &amp; Standar SPM Terpenuhi?</text>
+  <text x="620" y="987" class="node-sub">(Skor WebQual &#8805; 4,00 | p &lt; 0,05 | Akses &lt; 3 detik | WCAG 0 Error)</text>
+
+  <!-- Cabang TIDAK -->
+  <rect x="840" y="1120" width="240" height="38" class="node-box" />
+  <text x="960" y="1144" class="node-desc">Iterasi UCD: Penyesuaian Desain &amp; Fitur</text>
+
+  <path d="M 620 1030 L 620 1075 L 960 1075 L 960 1120" class="arrow-line" marker-end="url(#arr)" />
+  <rect x="670" y="1063" width="130" height="18" fill="#ffffff" stroke="#e2e8f0" rx="3" />
+  <text x="735" y="1076" class="label-text">TIDAK (Perlu Perbaikan)</text>
+
+  <!-- Feedback Loop ke Fase 3 -->
+  <path d="M 1080 1139 L 1150 1139 L 1150 655 L 1185 655" class="arrow-loop" marker-end="url(#arr)" />
+
+  <!-- Cabang YA -->
+  <path d="M 620 1030 L 620 1310" class="arrow-line" marker-end="url(#arr)" />
+  <rect x="545" y="1235" width="150" height="20" fill="#ffffff" stroke="#e2e8f0" rx="3" />
+  <text x="620" y="1249" class="label-text">YA (Memenuhi Kriteria)</text>
+
+
+  <!-- ================= TAHAP AKHIR ================= -->
+  <rect x="40" y="1310" width="1160" height="110" class="container-box" />
+  <text x="50" y="1330" class="title-text">TAHAP AKHIR: LUARAN RISET &amp; PUBLIKASI</text>
+
+  <rect x="70" y="1345" width="260" height="46" class="node-box" />
+  <text x="200" y="1364" class="node-desc">Matriks Analisis 32 Aspek IMK</text>
+  <text x="200" y="1379" class="node-sub">Before &amp; After Terisi Lengkap 100%</text>
+
+  <rect x="350" y="1345" width="260" height="46" class="node-box" />
+  <text x="480" y="1364" class="node-desc">Portal Web Redesain Siap Pakai</text>
+  <text x="480" y="1379" class="node-sub">(Production Ready di Vercel)</text>
+
+  <rect x="630" y="1345" width="260" height="46" class="node-box" />
+  <text x="760" y="1364" class="node-desc">Peningkatan Mutu Terbukti Signifikan</text>
+  <text x="760" y="1379" class="node-sub">(+1,94; p &lt; 0,001)</text>
+
+  <rect x="910" y="1345" width="260" height="46" class="node-box" />
+  <text x="1040" y="1364" class="node-desc">Naskah Makalah Ilmiah Standar Publikasi</text>
+  <text x="1040" y="1379" class="node-sub">Bebas Halusinasi (31 Rujukan APA 7th)</text>
+
+</svg>

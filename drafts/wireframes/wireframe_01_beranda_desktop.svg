@@ -1,0 +1,361 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1820" viewBox="0 0 1200 1820">
+  
+  <defs>
+    <style>
+      .bg-canvas { fill: #f8fafc; }
+      .browser-chrome { fill: #f1f5f9; stroke: #cbd5e1; stroke-width: 1; }
+      .browser-dot-red { fill: #ef4444; }
+      .browser-dot-yellow { fill: #f59e0b; }
+      .browser-dot-green { fill: #10b981; }
+      .browser-url-bar { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1; rx: 6; }
+      .text-url { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; fill: #475569; }
+      
+      .top-bar-bg { fill: #1e293b; }
+      .top-bar-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; font-weight: 600; fill: #f8fafc; }
+      .top-bar-badge { fill: #dc2626; rx: 4; }
+      
+      .navbar-bg { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1; }
+      .nav-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15px; font-weight: 700; fill: #0f172a; }
+      .nav-subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; fill: #64748b; }
+      .nav-link { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 500; fill: #475569; }
+      .nav-link-active { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #1e40af; }
+      
+      .hero-bg { fill: #f1f5f9; stroke: #e2e8f0; stroke-width: 1; }
+      .heading-xl { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 24px; font-weight: 800; fill: #0f172a; }
+      .heading-lg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 18px; font-weight: 700; fill: #0f172a; }
+      .heading-md { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15px; font-weight: 700; fill: #1e293b; }
+      .text-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; fill: #475569; }
+      .text-sm { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; fill: #64748b; }
+      
+      .card-bg { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1; rx: 8; }
+      .placeholder-box { fill: #e2e8f0; stroke: #94a3b8; stroke-width: 1; stroke-dasharray: 4 4; }
+      .placeholder-line { stroke: #cbd5e1; stroke-width: 1.5; }
+      .placeholder-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; fill: #64748b; font-weight: 600; text-anchor: middle; }
+      
+      .btn-primary { fill: #dc2626; rx: 6; }
+      .btn-primary-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .btn-secondary { fill: #ffffff; stroke: #94a3b8; stroke-width: 1.5; rx: 6; }
+      .btn-secondary-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: #1e293b; text-anchor: middle; }
+      .btn-navy { fill: #1e3a8a; rx: 6; }
+      .btn-navy-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: #ffffff; text-anchor: middle; }
+
+      .badge-bg { fill: #e2e8f0; rx: 4; }
+      .badge-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; font-weight: 600; fill: #334155; }
+      .badge-red-bg { fill: #fee2e2; stroke: #fca5a5; stroke-width: 1; rx: 4; }
+      .badge-red-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; font-weight: 700; fill: #991b1b; }
+      .badge-blue-bg { fill: #dbeafe; stroke: #93c5fd; stroke-width: 1; rx: 4; }
+      .badge-blue-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; font-weight: 700; fill: #1e40af; }
+      
+      .annotation-box { fill: #fef3c7; stroke: #f59e0b; stroke-width: 1.5; rx: 4; }
+      .annotation-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; font-weight: 700; fill: #92400e; }
+      
+      .sticky-btn-pulse { fill: #fee2e2; stroke: #ef4444; stroke-width: 2; stroke-dasharray: 4 2; }
+      .sticky-btn-body { fill: #dc2626; rx: 28; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.25)); }
+      .sticky-btn-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 800; fill: #ffffff; text-anchor: middle; }
+
+      .table-hdr { fill: #f1f5f9; stroke: #cbd5e1; stroke-width: 1; }
+      .table-cell { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1; }
+      .table-cell-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; fill: #1e293b; }
+      .table-hdr-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; font-weight: 700; fill: #0f172a; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="1820" class="bg-canvas" />
+
+  
+    <!-- Browser Window Header -->
+    <rect x="0" y="0" width="1200" height="46" class="browser-chrome" />
+    <circle cx="20" cy="23" r="6" class="browser-dot-red" />
+    <circle cx="38" cy="23" r="6" class="browser-dot-yellow" />
+    <circle cx="56" cy="23" r="6" class="browser-dot-green" />
+    <rect x="180" y="9" width="840" height="28" class="browser-url-bar" />
+    <text x="600" y="28" class="text-url" text-anchor="middle">🔒 https://damkar.bandarlampungkota.go.id/</text>
+    
+  
+    <!-- Top Emergency Bar -->
+    <g transform="translate(0, 46)">
+      <rect x="0" y="0" width="1200" height="34" class="top-bar-bg" />
+      <rect x="40" y="7" width="115" height="20" class="top-bar-badge" />
+      <text x="97" y="21" class="top-bar-text" text-anchor="middle">SIAGA 24 JAM</text>
+      <text x="170" y="21" class="top-bar-text">KOMITMEN SPM WAKTU TANGGAP &lt; 15 MENIT | POSKO UTAMA: (0721) 252741</text>
+      <rect x="1020" y="5" width="140" height="24" fill="#dc2626" rx="4" />
+      <text x="1090" y="21" class="top-bar-text" text-anchor="middle" font-weight="bold">📞 HOTLINE 113</text>
+    </g>
+    
+  
+    <!-- Main Navbar -->
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="1200" height="66" class="navbar-bg" />
+      <!-- Logo wireframe -->
+      <rect x="40" y="13" width="40" height="40" fill="#e2e8f0" stroke="#94a3b8" rx="6" />
+      <text x="60" y="38" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#64748b">🚒</text>
+      <text x="92" y="30" class="nav-title">Dinas Pemadam Kebakaran &amp; Penyelamatan</text>
+      <text x="92" y="47" class="nav-subtitle">Portal Informasi &amp; Kesiapsiagaan Publik Kota Bandar Lampung</text>
+      
+      <text x="420" y="36" class="nav-link-active">Beranda</text><line x1="420" y1="46" x2="472.5" y2="46" stroke="#1e40af" stroke-width="2.5" /><text x="514.5" y="36" class="nav-link">Berita &amp; Operasi</text><text x="694.5" y="36" class="nav-link">Dokumen &amp; SOP</text><text x="846.0" y="36" class="nav-link">Galeri Edukasi</text><text x="1007.0" y="36" class="nav-link">Kontak &amp; Posko</text>
+
+      <!-- Search input mock -->
+      <rect x="960" y="17" width="190" height="32" fill="#f8fafc" stroke="#cbd5e1" rx="6" />
+      <text x="975" y="38" font-family="sans-serif" font-size="11" fill="#94a3b8">🔍 Cari informasi...</text>
+    </g>
+    
+
+  <!-- HERO SECTION -->
+  <g transform="translate(40, 165)">
+    <rect x="0" y="0" width="1120" height="300" class="hero-bg" rx="12" />
+    
+    <!-- Hero Badges -->
+    <rect x="30" y="25" width="180" height="24" class="badge-red-bg" />
+    <text x="120" y="41" class="badge-red-text" text-anchor="middle">🚨 KESIAPSIAGAAN 24/7</text>
+    
+    <rect x="220" y="25" width="220" height="24" class="badge-blue-bg" />
+    <text x="330" y="41" class="badge-blue-text" text-anchor="middle">⏱️ SPM WAKTU TANGGAP &lt; 15 MENIT</text>
+
+    <!-- Headline & Subhead -->
+    <text x="30" y="85" class="heading-xl">Respon Cepat Tanggap Darurat Kebakaran &amp;</text>
+    <text x="30" y="115" class="heading-xl">Penyelamatan Kota Bandar Lampung</text>
+    <text x="30" y="150" class="text-body" fill="#334155">Pelayanan terpadu penanggulangan bencana kebakaran dan aksi penyelamatan (rescue) warga</text>
+    <text x="30" y="170" class="text-body" fill="#334155">siaga penuh 24 jam bebas biaya di seluruh wilayah kecamatan Kota Bandar Lampung.</text>
+
+    <!-- CTAs -->
+    <rect x="30" y="205" width="230" height="48" class="btn-primary" />
+    <text x="145" y="235" class="btn-primary-text">📞 HUBUNGI DARURAT 113</text>
+
+    <rect x="275" y="205" width="220" height="48" class="btn-secondary" />
+    <text x="385" y="235" class="btn-secondary-text">📝 Lapor Insiden Online</text>
+
+    <!-- Hero Image Placeholder -->
+    
+    <g transform="translate(680, 25)">
+      <rect x="0" y="0" width="410" height="250" class="placeholder-box" />
+      <line x1="0" y1="0" x2="410" y2="250" class="placeholder-line" />
+      <line x1="0" y1="250" x2="410" y2="0" class="placeholder-line" />
+      <rect x="115" y="111" width="180" height="28" fill="#f8fafc" rx="4" stroke="#cbd5e1" />
+      <text x="205" y="129" class="placeholder-text">Foto Armada Damkarmat &amp; Personil</text>
+    </g>
+    
+  </g>
+
+  <!-- EMERGENCY BROADCAST ALERT BANNER -->
+  <g transform="translate(40, 485)">
+    <rect x="0" y="0" width="1120" height="50" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5" rx="8" />
+    <text x="25" y="31" font-size="16">⚠️</text>
+    <text x="55" y="31" font-family="sans-serif" font-size="12" font-weight="bold" fill="#92400e">[PERINGATAN DINI KEBENCANAAN]:</text>
+    <text x="270" y="31" font-family="sans-serif" font-size="12" fill="#78350f">Waspada Potensi Kebakaran Lahan di Musim Kemarau. Segera hubungi 113 jika menemukan titik api.</text>
+    <rect x="1000" y="12" width="95" height="26" fill="#fef3c7" stroke="#d97706" rx="4" />
+    <text x="1047" y="29" font-family="sans-serif" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">Baca Panduan</text>
+  </g>
+
+  <!-- QUICK ACCESS SERVICES SECTION (4 CARDS) -->
+  <g transform="translate(40, 560)">
+    <text x="0" y="20" class="heading-lg">Layanan Utama Kedaruratan &amp; Penyelamatan</text>
+    <text x="0" y="38" class="text-sm">Akses cepat penanganan insiden darurat dan administrasi layanan proteksi kebakaran</text>
+
+    <!-- Card 1: Pemadaman -->
+    <rect x="0" y="55" width="265" height="180" class="card-bg" />
+    <rect x="20" y="75" width="36" height="36" fill="#fee2e2" rx="6" />
+    <text x="38" y="98" font-size="18" text-anchor="middle">🔥</text>
+    <text x="20" y="135" class="heading-md">Pemadaman Kebakaran</text>
+    <text x="20" y="155" class="text-sm">Penanganan kebakaran ruko,</text>
+    <text x="20" y="170" class="text-sm">perumahan, gudang, &amp; lahan.</text>
+    <rect x="20" y="188" width="130" height="28" fill="#dc2626" rx="4" />
+    <text x="85" y="206" class="btn-primary-text" font-size="11">Panggil 113 &gt;</text>
+
+    <!-- Card 2: Rescue -->
+    <rect x="285" y="55" width="265" height="180" class="card-bg" />
+    <rect x="305" y="75" width="36" height="36" fill="#e0f2fe" rx="6" />
+    <text x="323" y="98" font-size="18" text-anchor="middle">🛡️</text>
+    <text x="305" y="135" class="heading-md">Aksi Penyelamatan</text>
+    <text x="305" y="155" class="text-sm">Evakuasi satwa liar (ular/tawon),</text>
+    <text x="305" y="170" class="text-sm">pelepasan cincin, &amp; banjir.</text>
+    <rect x="305" y="188" width="130" height="28" fill="#0284c7" rx="4" />
+    <text x="370" y="206" class="btn-primary-text" font-size="11">Lapor Rescue &gt;</text>
+
+    <!-- Card 3: Posko Siaga -->
+    <rect x="570" y="55" width="265" height="180" class="card-bg" />
+    <rect x="590" y="75" width="36" height="36" fill="#fef3c7" rx="6" />
+    <text x="608" y="98" font-size="18" text-anchor="middle">📍</text>
+    <text x="590" y="135" class="heading-md">Posko Siaga Kecamatan</text>
+    <text x="590" y="155" class="text-sm">Direktori 6 posko siaga terdekat</text>
+    <text x="590" y="170" class="text-sm">dengan respon langsung &lt;15 mnt.</text>
+    <rect x="590" y="188" width="130" height="28" fill="#d97706" rx="4" />
+    <text x="655" y="206" class="btn-primary-text" font-size="11">Lihat Posko &gt;</text>
+
+    <!-- Card 4: Dokumen & SOP -->
+    <rect x="855" y="55" width="265" height="180" class="card-bg" />
+    <rect x="875" y="75" width="36" height="36" fill="#f1f5f9" rx="6" />
+    <text x="893" y="98" font-size="18" text-anchor="middle">📄</text>
+    <text x="875" y="135" class="heading-md">Dokumen &amp; SOP Publik</text>
+    <text x="875" y="155" class="text-sm">Unduh SOP proteksi kebakaran,</text>
+    <text x="875" y="170" class="text-sm">LKJIP 2024, regulasi, &amp; formulir.</text>
+    <rect x="875" y="188" width="130" height="28" fill="#475569" rx="4" />
+    <text x="940" y="206" class="btn-primary-text" font-size="11">Unduh SOP &gt;</text>
+  </g>
+
+  <!-- OPERATIONAL STATISTICS DASHBOARD -->
+  <g transform="translate(40, 825)">
+    <text x="0" y="20" class="heading-lg">Transparansi Kinerja &amp; Statistik Operasional</text>
+    <text x="0" y="38" class="text-sm">Data riil volume penanganan bencana dan pemenuhan Standar Pelayanan Minimal (SPM)</text>
+
+    <!-- Stat 1 -->
+    <rect x="0" y="55" width="265" height="110" class="card-bg" />
+    <text x="25" y="98" font-family="sans-serif" font-size="32" font-weight="800" fill="#dc2626">271</text>
+    <text x="25" y="122" class="heading-md" font-size="13">Insiden Kebakaran</text>
+    <text x="25" y="142" class="text-sm">Total kejadian tertangani 2024</text>
+
+    <!-- Stat 2 -->
+    <rect x="285" y="55" width="265" height="110" class="card-bg" />
+    <text x="310" y="98" font-family="sans-serif" font-size="32" font-weight="800" fill="#0284c7">518</text>
+    <text x="310" y="122" class="heading-md" font-size="13">Aksi Penyelamatan</text>
+    <text x="310" y="142" class="text-sm">Rescue non-kebakaran (Jan-Jul 2025)</text>
+
+    <!-- Stat 3 -->
+    <rect x="570" y="55" width="265" height="110" class="card-bg" />
+    <text x="595" y="98" font-family="sans-serif" font-size="32" font-weight="800" fill="#059669">18</text>
+    <text x="595" y="122" class="heading-md" font-size="13">Armada Mobil Siaga</text>
+    <text x="595" y="142" class="text-sm">Unit pancar, tangki, &amp; rescue aktif</text>
+
+    <!-- Stat 4 -->
+    <rect x="855" y="55" width="265" height="110" class="card-bg" />
+    <text x="880" y="98" font-family="sans-serif" font-size="32" font-weight="800" fill="#7c3aed">&lt; 15 mnt</text>
+    <text x="880" y="122" class="heading-md" font-size="13">Waktu Tanggap SPM</text>
+    <text x="880" y="142" class="text-sm">Standar Permendagri No. 114/2018</text>
+  </g>
+
+  <!-- KECAMATAN STATIONS DIRECTORY (3x2 GRID) -->
+  <g transform="translate(40, 1025)">
+    <text x="0" y="20" class="heading-lg">Direktori 6 Posko Siaga Kecamatan se-Bandar Lampung</text>
+    <text x="0" y="38" class="text-sm">Penyebaran posko siaga untuk menjamin waktu respon di bawah 15 menit ke lokasi warga</text>
+
+    <!-- Posko 1 -->
+    <rect x="0" y="55" width="360" height="95" class="card-bg" />
+    <text x="20" y="80" class="heading-md">Mako Pusat (Tanjung Karang Pusat)</text>
+    <text x="20" y="100" class="text-sm">Jl. Kapten Piere Tendean No. 2 | Telp: (0721) 252741</text>
+    <rect x="20" y="112" width="105" height="24" fill="#dc2626" rx="4" />
+    <text x="72" y="128" class="btn-primary-text" font-size="10">Hubungi Mako</text>
+
+    <!-- Posko 2 -->
+    <rect x="380" y="55" width="360" height="95" class="card-bg" />
+    <text x="400" y="80" class="heading-md">Posko Wilayah Kedaton</text>
+    <text x="400" y="100" class="text-sm">Jl. Teuku Umar No. 88 | Telp: (0721) 701113</text>
+    <rect x="400" y="112" width="105" height="24" fill="#1e3a8a" rx="4" />
+    <text x="452" y="128" class="btn-primary-text" font-size="10">Hubungi Posko</text>
+
+    <!-- Posko 3 -->
+    <rect x="760" y="55" width="360" height="95" class="card-bg" />
+    <text x="780" y="80" class="heading-md">Posko Wilayah Sukarame</text>
+    <text x="780" y="100" class="text-sm">Jl. Endro Suratmin | Telp: (0721) 782113</text>
+    <rect x="780" y="112" width="105" height="24" fill="#1e3a8a" rx="4" />
+    <text x="832" y="128" class="btn-primary-text" font-size="10">Hubungi Posko</text>
+
+    <!-- Posko 4 -->
+    <rect x="0" y="165" width="360" height="95" class="card-bg" />
+    <text x="20" y="190" class="heading-md">Posko Wilayah Kemiling</text>
+    <text x="20" y="210" class="text-sm">Jl. Imam Bonjol | Telp: (0721) 271113</text>
+    <rect x="20" y="222" width="105" height="24" fill="#1e3a8a" rx="4" />
+    <text x="72" y="238" class="btn-primary-text" font-size="10">Hubungi Posko</text>
+
+    <!-- Posko 5 -->
+    <rect x="380" y="165" width="360" height="95" class="card-bg" />
+    <text x="400" y="190" class="heading-md">Posko Wilayah Panjang</text>
+    <text x="400" y="210" class="text-sm">Jl. Yos Sudarso No. 12 | Telp: (0721) 31113</text>
+    <rect x="400" y="222" width="105" height="24" fill="#1e3a8a" rx="4" />
+    <text x="452" y="238" class="btn-primary-text" font-size="10">Hubungi Posko</text>
+
+    <!-- Posko 6 -->
+    <rect x="760" y="165" width="360" height="95" class="card-bg" />
+    <text x="780" y="190" class="heading-md">Posko Wilayah Teluk Betung</text>
+    <text x="780" y="210" class="text-sm">Jl. Basuki Rahmat No. 4 | Telp: (0721) 481113</text>
+    <rect x="780" y="222" width="105" height="24" fill="#1e3a8a" rx="4" />
+    <text x="832" y="238" class="btn-primary-text" font-size="10">Hubungi Posko</text>
+  </g>
+
+  <!-- BERITA TERKINI & EDUKASI -->
+  <g transform="translate(40, 1335)">
+    <text x="0" y="20" class="heading-lg">Berita Operasi Pemadaman &amp; Edukasi Terkini</text>
+    <text x="1120" y="20" class="nav-link-active" text-anchor="end">Lihat Seluruh Berita &gt;</text>
+
+    <!-- News 1 -->
+    <rect x="0" y="45" width="360" height="240" class="card-bg" />
+    
+    <g transform="translate(0, 45)">
+      <rect x="0" y="0" width="360" height="130" class="placeholder-box" />
+      <line x1="0" y1="0" x2="360" y2="130" class="placeholder-line" />
+      <line x1="0" y1="130" x2="360" y2="0" class="placeholder-line" />
+      <rect x="90" y="51" width="180" height="28" fill="#f8fafc" rx="4" stroke="#cbd5e1" />
+      <text x="180" y="69" class="placeholder-text">Foto: Operasi Kebakaran</text>
+    </g>
+    
+    <rect x="15" y="185" width="110" height="20" class="badge-red-bg" />
+    <text x="70" y="199" class="badge-red-text" text-anchor="middle">PEMADAMAN</text>
+    <text x="15" y="225" class="heading-md" font-size="13">Kebakaran Gudang di Kedaton Berhasil Padam</text>
+    <text x="15" y="245" class="text-sm">15 Sep 2025 • Waktu tanggap 11 menit</text>
+
+    <!-- News 2 -->
+    <rect x="380" y="45" width="360" height="240" class="card-bg" />
+    
+    <g transform="translate(380, 45)">
+      <rect x="0" y="0" width="360" height="130" class="placeholder-box" />
+      <line x1="0" y1="0" x2="360" y2="130" class="placeholder-line" />
+      <line x1="0" y1="130" x2="360" y2="0" class="placeholder-line" />
+      <rect x="90" y="51" width="180" height="28" fill="#f8fafc" rx="4" stroke="#cbd5e1" />
+      <text x="180" y="69" class="placeholder-text">Foto: Evakuasi Satwa</text>
+    </g>
+    
+    <rect x="395" y="185" width="110" height="20" class="badge-blue-bg" />
+    <text x="450" y="199" class="badge-blue-text" text-anchor="middle">ANIMAL RESCUE</text>
+    <text x="395" y="225" class="heading-md" font-size="13">Tim Rescue Evakuasi Ular Sanca di Sukarame</text>
+    <text x="395" y="245" class="text-sm">12 Sep 2025 • Evakuasi aman tanpa korban</text>
+
+    <!-- News 3 -->
+    <rect x="760" y="45" width="360" height="240" class="card-bg" />
+    
+    <g transform="translate(760, 45)">
+      <rect x="0" y="0" width="360" height="130" class="placeholder-box" />
+      <line x1="0" y1="0" x2="360" y2="130" class="placeholder-line" />
+      <line x1="0" y1="130" x2="360" y2="0" class="placeholder-line" />
+      <rect x="90" y="51" width="180" height="28" fill="#f8fafc" rx="4" stroke="#cbd5e1" />
+      <text x="180" y="69" class="placeholder-text">Foto: Edukasi Sekolah</text>
+    </g>
+    
+    <rect x="775" y="185" width="110" height="20" class="badge-bg" />
+    <text x="830" y="199" class="badge-text" text-anchor="middle">SOSIALISASI</text>
+    <text x="775" y="225" class="heading-md" font-size="13">Simulasi Mitigasi Kebakaran Siswa Sekolah</text>
+    <text x="775" y="245" class="text-sm">08 Sep 2025 • Edukasi APAR sejak dini</text>
+  </g>
+
+  
+    <!-- Footer Global Wireframe -->
+    <g transform="translate(0, 1650)">
+      <rect x="0" y="0" width="1200" height="170" fill="#0f172a" />
+      
+      <text x="40" y="35" font-family="sans-serif" font-size="15" font-weight="bold" fill="#f8fafc">Dinas Pemadam Kebakaran &amp; Penyelamatan Kota Bandar Lampung</text>
+      <text x="40" y="58" font-family="sans-serif" font-size="11" fill="#94a3b8">Markas Komando Pusat: Jl. Kapten Piere Tendean No. 2, Durian Payung, Tj. Karang Pusat</text>
+      <text x="40" y="76" font-family="sans-serif" font-size="11" fill="#94a3b8">Telepon: (0721) 252741 | Hotline Darurat: 113 / 112 (Bebas Pulsa)</text>
+      <text x="40" y="94" font-family="sans-serif" font-size="11" fill="#94a3b8">Posko Siaga: Kedaton | Sukarame | Kemiling | Panjang | Teluk Betung | Tanjung Karang</text>
+      
+      <text x="800" y="35" font-family="sans-serif" font-size="13" font-weight="bold" fill="#f8fafc">Prinsip Desain &amp; Aksesibilitas IMK</text>
+      <text x="800" y="56" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Standar UCD ISO 9241-210:2019 &amp; Evaluasi WebQual 4.0</text>
+      <text x="800" y="74" font-family="sans-serif" font-size="11" fill="#cbd5e1">• Aksesibilitas WCAG 2.1 Level AA (Kontras Rasio &gt; 4,5:1)</text>
+      <text x="800" y="92" font-family="sans-serif" font-size="11" fill="#cbd5e1">• 10 Heuristik Jakob Nielsen &amp; Teori Kognitif Don Norman</text>
+
+      <line x1="40" y1="120" x2="1160" y2="120" stroke="#334155" stroke-width="1" />
+      <text x="40" y="145" font-family="sans-serif" font-size="11" fill="#64748b">© 2026 Redesain IMK Kelompok 8 (Alif Zakiansyah, Andrian Fajar, Valentina Lasma) - Politeknik Statistika STIS</text>
+      <text x="1160" y="145" font-family="sans-serif" font-size="11" fill="#64748b" text-anchor="end">Live Deployment: damkar-bandarlampung-redesign-5wxa.vercel.app</text>
+    </g>
+    
+  
+    <!-- Persistent Sticky Emergency Call Button (Fitts's Law Target) -->
+    <g transform="translate(980, 1530)">
+      <circle cx="36" cy="36" r="42" class="sticky-btn-pulse" />
+      <rect x="0" y="8" width="165" height="56" rx="28" class="sticky-btn-body" />
+      <text x="28" y="43" font-size="22" fill="#ffffff">🚨</text>
+      <text x="56" y="34" class="sticky-btn-text" text-anchor="start">DARURAT 113</text>
+      <text x="56" y="48" font-family="sans-serif" font-size="9" fill="#fee2e2" text-anchor="start">Panggil Cepat 1-Ketukan</text>
+
+      <!-- HCI Callout Badge -->
+      <rect x="20" y="-22" width="125" height="18" class="annotation-box" />
+      <text x="82" y="-10" class="annotation-text" text-anchor="middle">HCI: Fitts's Law Target</text>
+    </g>
+    
+</svg>

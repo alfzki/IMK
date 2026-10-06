@@ -1,0 +1,188 @@
+[Normal] POLITEKNIK STATISTIKA STIS
+[Normal] PROGRAM STUDI D-IV KOMPUTASI STATISTIK
+[Normal] MATA KULIAH: INTERAKSI MANUSIA DAN KOMPUTER (IMK)
+[Normal] LAPORAN EVALUASI & REDESAIN INTERAKSI MANUSIA DAN KOMPUTER:
+ANALISIS SISTEM PENCARIAN, FILTER, SORTING, DAN NAVIGASI INFORMASI PUBLIK
+[Normal] Studi Komparasi Before vs After pada Portal Resmi Dinas Pemadam Kebakaran dan Penyelamatan Kota Bandar Lampung
+[Normal] 1. IDENTIFIKASI FITUR
+[Normal] 1.1 Nama Aplikasi dan Domain Layanan
+[Normal] Aplikasi yang dianalisis dan diredesain adalah Portal Web Resmi Dinas Pemadam Kebakaran dan Penyelamatan Kota Bandar Lampung. Portal ini mengemban fungsi ganda sebagai portal layanan publik kedaruratan (emergency public service) serta portal transparansi pemerintahan elektronik (e-government). Layanan mencakup operasi pemadaman kebakaran, operasi penyelamatan non-kebakaran (evakuasi sarang tawon vespa, evakuasi ular, pelepasan cincin terjepit, penyelamatan korban banjir), serta pemenuhan Standar Pelayanan Minimal (SPM) waktu tanggap di bawah 15 menit (Permendagri No. 114/2018).
+[Normal] 1.2 Fitur yang Dianalisis
+[Normal] Analisis difokuskan secara mendalam pada subsistem Temu Kembali Informasi (Information Search and Retrieval System), yang terdiri atas 7 komponen antarmuka:
+[List Bullet] Search Bar (Bilah Pencarian): Titik masuk input kueri pengguna, baik pada tingkat global (Sticky Top Navbar) maupun pada tingkat modular in-page (Berita, Dokumen, FAQ).
+[List Bullet] Search Suggestion & Autocomplete: Mekanisme petunjuk kueri prediktif dan teks penuntun (contextual placeholder) untuk membantu perumusan kueri pengguna.
+[List Bullet] Filter (Penyaringan Multi-Faset): Mekanisme penyaringan data dinamis berdasarkan taksonomi kategori, tingkat urgensi pengumuman, jenis dokumen, dan posko siaga.
+[List Bullet] Sorting (Pengurutan Informasi): Tata urutan penyajian data berdasarkan temporalitas (terbaru), popularitas pembaca (most viewed), dan derajat urgensi kedinasan.
+[List Bullet] Pencarian Berdasarkan Kategori: Navigasi faset berbasis tombol kapsul (pill category buttons) untuk pemilahan instan tanpa muat ulang halaman.
+[List Bullet] Navigasi Penemuan Informasi (Wayfinding): Struktur navigasi berjenjang (Two-tier sticky header, dropdown Profil, breadcrumbs dinamis, serta Persistent Sticky 113 Emergency Button).
+[List Bullet] Temu Kembali Konten Spesifik: Mekanisme pencarian dan pengunduhan dokumen resmi publik (LKJIP 2025, Renstra, SOP Proteksi Kebakaran), arsip berita lapangan, edaran seleksi rekrutmen PTK, direktori posko siaga kecamatan, dan bank tanya-jawab FAQ interaktif.
+[Normal] 1.3 Tujuan Fitur
+[Normal] Tujuan utama perancangan subsistem pencarian dan navigasi ini didasarkan pada tiga pilar teori Interaksi Manusia dan Komputer (IMK):
+[List Bullet] Mitigasi Beban Kognitif Warga (Cognitive Load Mitigation): Dalam situasi krisis kebakaran atau bencana, pengguna mengalami tingkat stres emosional yang tinggi (high panic load). Sistem dirancang agar nomor darurat 113 dan kontak 6 posko kecamatan dapat ditemukan dalam waktu kurang dari 3 detik (1 ketukan).
+[List Bullet] Efisiensi Temu Kembali Informasi (Information Retrieval Efficiency): Memungkinkan masyarakat, akademisi, dan pelaku usaha menemukan dokumen regulasi proteksi kebakaran atau berita kegiatan tanpa harus menelusuri puluhan halaman secara manual.
+[List Bullet] Pencegahan dan Pemulihan Kesalahan (Error Prevention and Recovery): Mencegah terjadinya jalan buntu (dead-end state) saat kueri pencarian tidak menghasilkan kecocokan melalui desain empty-state interaktif dan tombol reset satu-klik.
+[Normal] 1.4 Informasi yang Ingin Ditemukan Pengguna
+[Normal] Berdasarkan pemetaan kebutuhan warga Kota Bandar Lampung, informasi yang dicari diklasifikasikan ke dalam 4 domain utama:
+[List Bullet] Informasi Kedaruratan & Posko Wilayah: Nomor bebas pulsa 113, nomor Markas Komando (0721) 252741, serta nomor telepon dan alamat 6 Posko Siaga Kecamatan (Kedaton, Sukarame, Kemiling, Panjang, Teluk Betung, dan Tanjung Karang) untuk jaminan respon cepat di bawah 15 menit.
+[List Bullet] Dokumen Regulasi & Akuntabilitas Publik: Berkas PDF resmi Laporan Kinerja Instansi Pemerintah (LKJIP 2025), Rencana Strategis (Renstra), Dokumen Neraca Kinerja, dan SOP Pengujian Alat Pemadam Api Ringan (APAR) untuk gedung/usaha.
+[List Bullet] Pengumuman Rekrutmen & Edaran Resmi: Jadwal pendaftaran Tenaga Kontrak (PTK) Pemadam Kebakaran, lokasi dan tata tertib tes kesamaptaan fisik di Stadion Pahoman, serta pengumuman hasil seleksi akhir.
+[List Bullet] Edukasi & FAQ Pelayanan: Kejelasan biaya operasional (100% Gratis dibiayai APBD), tata cara permohonan evakuasi hewan berbisa/sarang tawon, dan simulasi penanggulangan kebakaran lingkungan.
+[Normal] 1.5 Target Pengguna (User Persona)
+[Normal] Sasaran pengguna portal terdiri dari 4 kelompok persona:
+[List Bullet] Warga dalam Keadaan Darurat (Emergency Callers): Warga yang sedang menghadapi kobaran api atau bahaya fauna. Memerlukan aksi panggil langsung dan penunjuk lokasi posko terdekat.
+[List Bullet] Masyarakat Umum & Pencari Edukasi (General Citizens): Warga yang mencari jadwal sosialisasi APAR, klarifikasi biaya damkar melalui FAQ, dan berita operasional.
+[List Bullet] Pengelola Bangunan & Pemilik Usaha (Business Managers): Pihak swasta yang memerlukan dokumen standar proteksi kebakaran dan persyaratan teknis sertifikasi keselamatan kebakaran.
+[List Bullet] Pelamar Pekerjaan / Tenaga Kontrak (Job Seekers): Pemuda daerah yang mencari informasi formasi PTK Damkar, mengunduh berkas pendaftaran, dan memantau tanggal seleksi fisik.
+[Normal] 2. ANALISIS INFORMATION SEARCH (KONDISI EKSISTING / SEBELUM REDESAIN)
+[Normal] Berdasarkan pengujian usabilitas awal terhadap portal eksisting Dinas Pemadam Kebakaran dan Penyelamatan Kota Bandar Lampung (https://damkar.bandarlampungkota.go.id), berikut adalah analisis rinci terhadap 11 pertanyaan evaluasi pencarian informasi:
+[Normal] 1. Bagaimana pengguna memulai pencarian?
+[Normal] Pada situs sebelum redesain, pengguna memulai pencarian dengan kebingungan (hesitation). Area header tidak menyediakan kolom pencarian yang jelas. Pengguna dipaksa menggulir layar ke bagian sidebar kanan bawah atau footer untuk menemukan kotak input pencarian bawaan CMS lawas. Hal ini melanggar prinsip Visibility of System Status dan Fitts's Law karena elemen pengendali utama tidak berada pada area fokal visual.
+[Normal] 2. Apakah fitur search mudah ditemukan?
+[Normal] Sangat sulit ditemukan. Ikon pencarian berukuran kecil (kurang dari 24x24 px), kontras warna rendah (abu-abu pudar di atas latar putih kusam), dan menyatu di antara tumpukan tautan navigasi statis yang padat. Pada perangkat seluler, bilah pencarian bahkan sering kali tersembunyi sepenuhnya di balik menu hamburger yang kaku.
+[Normal] 3. Bagaimana pengguna memasukkan kata kunci?
+[Normal] Pengguna memasukkan kata kunci pada kotak input teks HTML biasa tanpa tombol pembersih cepat (clear button). Teks placeholder hanya bertuliskan kata generik 'Search...' tanpa memberikan contoh atau konteks. Pengguna wajib menekan tombol fisik Enter pada keyboard atau menekan tombol submit kecil di samping kotak.
+[Normal] 4. Apakah terdapat autocomplete atau search suggestion?
+[Normal] Sama sekali tidak tersedia. Tidak ada mekanisme prediksi kueri (autocomplete), tidak ada rekomendasi pencarian populer, dan tidak ada toleransi kesalahan ketik (fuzzy/typo tolerance). Kesalahan pengetikan satu karakter saja (misal: 'sukaramee' alih-alih 'sukarame') berakibat pada kegagalan total pencarian. Hal ini membebani memori kerja pengguna (Recall rather than Recognition).
+[Normal] 5. Bagaimana hasil pencarian ditampilkan?
+[Normal] Hasil pencarian ditampilkan melalui mekanisme muat ulang halaman secara penuh (full page reload). Tampilan hasil berupa daftar artikel panjang vertikal yang tidak terstruktur, tanpa penyorotan (highlighting) kata kunci yang dicari, dan tanpa cuplikan ringkasan yang relevan, memaksa pengguna membaca seluruh isi postingan secara manual.
+[Normal] 6. Apakah hasil yang paling relevan mudah ditemukan?
+[Normal] Sangat sulit. Algoritma situs lama hanya mengurutkan hasil berdasarkan urutan kronologis postingan basis data (ID descending), bukan berdasarkan relevansi kueri. Dokumen SOP atau kontak posko yang sangat krusial sering kali terkubur di bawah berita seremonial lama.
+[Normal] 7. Apakah tersedia filter?
+[Normal] Tidak tersedia filter interaktif. Pengguna tidak memiliki opsi untuk menyaring hasil berdasarkan kategori layanan, rentang tanggal publikasi, jenis berkas dokumen, maupun lokasi kecamatan. Pengguna dipaksa memilah hasil secara visual (manual visual scanning) dari halaman ke halaman.
+[Normal] 8. Apakah tersedia sorting?
+[Normal] Tidak tersedia opsi sorting. Kontrol pengurutan (misalnya urutkan berdasarkan terpopuler, terbaru, abjad A-Z, atau urgensi penting) tidak disediakan oleh sistem, sehingga kebebasan kendali pengguna (User Control and Freedom) tereduksi.
+[Normal] 9. Apakah pengguna mendapatkan feedback dari sistem?
+[Normal] Tidak ada umpan balik yang layak. Saat pengguna menekan submit, layar sempat membeku (blank screen freeze) selama 2-4 detik tanpa indikator loading spinner. Sistem juga tidak memberikan informasi jumlah data yang ditemukan (misalnya: tidak ada teks 'Ditemukan X hasil untuk kata kunci Y').
+[Normal] 10. Apa yang terjadi jika pencarian tidak menghasilkan informasi?
+[Normal] Sistem menampilkan halaman kosong putih dengan pesan teks singkat: 'No results found' atau 'Data Tidak Ditemukan'. Halaman tersebut bersifat jalan buntu (dead-end page) tanpa rekomendasi kata kunci alternatif, tanpa opsi reset pencarian, dan tanpa tombol navigasi kembali ke katalog utama.
+[Normal] 11. Berapa langkah yang diperlukan pengguna sampai menemukan informasi yang dicari?
+[Normal] Pengguna rata-rata membutuhkan 5 hingga 8 langkah interaksi yang melelahkan: (1) Buka beranda -> (2) Cari letak kotak search di sidebar -> (3) Ketik kueri tanpa panduan -> (4) Tunggu reload halaman -> (5) Buka artikel hasil yang tidak relevan -> (6) Kembali ke halaman sebelumnya -> (7) Ulangi kueri baru -> (8) Baru menemukan informasi. Tingkat kegagalan tugas (task failure rate) pada pengujian awal mencapai 45% dalam konteks pencarian nomor posko kecamatan.
+[Normal] 3. SOLUSI REDESAIN SISTEM TEMU KEMBALI INFORMASI
+[Normal] Untuk mengatasi kelemahan antarmuka eksisting, tim merancang solusi redesain menyeluruh berbasis arsitektur modern Next.js 15 dan prinsip User-Centered Design (ISO 9241-210:2019):
+[Normal] 3.1 Redesign Search Bar (Global & In-Page)
+[Normal] Bilah pencarian dirancang ulang menjadi dua lapis fungsional:
+a. Global Expandable Search (Navbar): Terletak di kanan bilah navigasi dengan ikon kaca pembesar Lucide React. Menggunakan animasi ekspansi transisi yang elegan tanpa merusak struktur menu desktop/mobile. Kueri otomatis diarahkan ke rute berita (/berita?q=kueri).
+b. In-Page Full-Width Search: Pada modul Berita, Dokumen, dan FAQ, bilah pencarian disajikan dengan ukuran fokal yang jelas (padding py-3, rounded-xl/2xl, border-gray-200), dilengkapi ikon pencarian di sisi kiri dan tombol hapus silang (X) instan di sisi kanan saat input terisi.
+[Normal] 3.2 Redesign Search Suggestion & Contextual Placeholder
+[Normal] Placeholder input tidak lagi generik, melainkan berfungsi sebagai petunjuk kueri interaktif (contextual prompt). Contoh pada halaman FAQ: 'Ketik kata kunci pertanyaan (misal: 113, gratis, SPM, ular, tawon)...', pada Dokumen: 'Cari dokumen berdasarkan judul atau kata kunci...', dan pada Berita: 'Cari berita berdasarkan judul atau isi kabar...'. Ini memicu daya ingat pengenalan warga (recognition) terhadap layanan-layanan vital dinas.
+[Normal] 3.3 Redesign Search Result Presentation
+[Normal] Hasil pencarian tidak lagi disajikan secara teks mentah berderet, melainkan menggunakan pola kartu modular (Card Grid) responsif:
+- Modul Berita: Grid 3 kolom desktop / 2 kolom mobile dengan gambar SafeImage rasio konsisten, badge kategori biru, metadata tanggal & view counter, serta judul Plus Jakarta Sans yang tegas.
+- Modul Dokumen: Format tabel grid 12 kolom profesional yang memisahkan nomor urut, judul dokumen, badge kategori, ukuran berkas PDF, serta tombol aksi 'Unduh PDF' dengan micro-interaction spinner.
+- Filter Real-time di Sisi Klien: Pencarian dilakukan secara instan (< 100 ms) menggunakan React useMemo yang mencocokkan kueri pada judul, ringkasan, maupun isi konten tanpa memicu pemuatan ulang halaman.
+[Normal] 3.4 Redesign Filter (Interactive Pill Buttons)
+[Normal] Menyediakan deretan tombol faset kapsul (pill category buttons) yang langsung dapat ditekan. Setiap tombol memiliki target sentuh minimal 44x44 px sesuai standar WCAG 2.1 AA. Status tombol aktif ditandai secara mencolok dengan latar biru solid (#1D4ED8) dan teks putih, didukung atribut aksesibilitas aria-pressed='true'.
+[Normal] 3.5 Redesign Sorting & Prioritas Urgensi
+[Normal] Penataan urutan data tidak lagi statis acak, melainkan disusun berdasarkan hierarki kepentingan masyarakat:
+- Modul Pengumuman: Pengumuman yang memiliki tingkat urgensi tinggi secara otomatis disematkan lencana khusus 'Penting' berlatar merah muda (#FEE2E2 / text-red-700).
+- Modul Dokumen: Dilengkapi penanda Tahun Anggaran/Berlaku (misal: 2024–2025) guna memastikan transparansi dokumen mutakhir.
+- Beranda: Menyajikan widget kurasi Berita Terkini dan Dokumen Populer yang dipilah berdasarkan data terbaru.
+[Normal] 3.6 Redesign Kategori Kedinasan
+[Normal] Struktur kategori disederhanakan dan disesuaikan dengan nomenklatur kedinasan:
+- Berita: Kegiatan Apel, Pendidikan/Sosialisasi, Rekrutmen, dan Operasional Lapangan.
+- Dokumen: LKJIP (Akuntabilitas), SOP (Standar Operasional), Renstra (Perencanaan), dan Regulasi.
+- Pengumuman: Rekrutmen PTK, Penerimaan Berkas, dan Informasi Layanan.
+- FAQ: Darurat, Layanan, Dokumen, dan Rekrutmen.
+[Normal] 3.7 Redesign Navigasi & Arsitektur Informasi
+[Normal] Arsitektur penunjuk arah (wayfinding) diperkuat dengan 4 pilar:
+1. Top Emergency Bar: Bilah biru tua (#172554) paling atas yang memuat kontak telepon Mako, email kedinasan, jam operasional kantor, serta tombol merah menyala 'DARURAT: 113' beranimasi denyut.
+2. Persistent Floating Sticky 113 Button: Tombol darurat melayang persisten di kanan bawah layar (fixed bottom-6 right-6 z-50) dengan animasi denyut emergencyPulse. Satu ketukan membuka modal pilihan panggilan darurat 113 (Bebas Pulsa), 112 (Darurat Nasional), dan Mako Pusat.
+3. Dynamic Breadcrumbs: Setiap sub-halaman dilengkapi komponen PageHeader dengan rekam jejak navigasi (misal: Beranda / Dokumen Publik) agar pengguna selalu mengetahui posisinya.
+4. Direktori 6 Posko Kecamatan: Halaman Kontak menyajikan direktori lengkap Posko Siaga Kecamatan se-Bandar Lampung dengan tombol 'Hubungi Posko' langsung untuk pemenuhan SPM waktu tanggap 15 menit.
+[Normal] 3.8 Redesign Sistem Feedback (Umpan Balik Real-Time)
+[Normal] Sistem memberikan umpan balik visual dan pembaca layar secara berkesinambungan:
+- Dynamic Counter: Menampilkan teks status dinamis: 'Menampilkan N berita kategori "Operasional" untuk kata kunci "banjir"' yang diberi atribut aria-live='polite'.
+- Download Simulation & Toast: Saat tombol unduh diklik, tombol berubah menampilkan animasi putar 'Mengunduh...' selama 800ms, menghasilkan berkas PDF asli, dan memicu notifikasi toast hijau melayang di sudut atas: 'Dokumen X berhasil diunduh.'
+- Real-Time Form Validation: Input formulir kontak pengaduan memberikan indikator hijau & centang jika valid, serta garis tepi merah dan pesan koreksi jika tidak memenuhi syarat.
+[Normal] 3.9 Redesign Empty / Zero-Result State
+[Normal] Ketika kueri pencarian tidak menghasilkan kecocokan, sistem tidak lagi menyajikan layar kosong buntu, melainkan kotak pemulihan interaktif:
+- Ikon ilustrasi tematik (misal: Newspaper atau FileText berwarna abu-abu lembut).
+- Judul penjelas yang menenangkan: 'Tidak Ada Berita yang Cocok' / 'Dokumen Tidak Ditemukan'.
+- Teks saran pemulihan: 'Coba gunakan kata kunci lain atau pilih kategori "Semua" untuk melihat seluruh artikel.'
+- Tombol aksi satu-klik: 'Tampilkan Semua Berita / Reset Filter' yang otomatis mengembalikan state kueri dan kategori ke awal tanpa memuat ulang halaman.
+[Normal] 4. EVALUASI BEFORE VS AFTER DENGAN SCREEN CAPTURE KOMPARATIF
+[Normal] Bagian ini membandingkan antarmuka website lama (https://damkar.bandarlampungkota.go.id) dengan antarmuka website hasil redesain (https://damkar-bandarlampung-redesign-5wxa.vercel.app), baik melalui matriks parameter terukur maupun bukti visual tangkapan layar (screencap).
+[Normal] 4.1 Matriks Perbandingan Komprehensif
+[Normal] 4.2 Bukti Visual Tangkapan Layar (Screencap) Before vs After
+[Normal] Berikut adalah dokumentasi visual perbandingan antarmuka website sebelum redesain dengan sesudah redesain pada berbagai modul layanan:
+[Normal] A. Halaman Beranda Utama (Homepage)
+[Normal] Pada website lama (Before), tata letak beranda padat dengan banner gambar yang tidak responsif, navigasi teks rapat tanpa penegasan visual darurat, dan ketiadaan akses cepat ke posko kecamatan. Pada website hasil redesain (After), beranda mengintegrasikan Top Emergency Bar 113, slider hero modern dengan tombol Call-to-Action darurat merah menyala, bilah Akses Cepat 6 Layanan (Pengumuman, Berita, Dokumen, Galeri, FAQ, Kontak), serta penegasan komitmen Standar Pelayanan Minimal (SPM) waktu tanggap di bawah 15 menit.
+[Normal] Gambar 1: Tampilan Beranda Website Lama (damkar.bandarlampungkota.go.id) — Navigasi padat, ketiadaan search bar utama dan tombol darurat persisten.
+[Normal] Gambar 2: Tampilan Beranda Website Hasil Redesain (damkar-bandarlampung-redesign-5wxa.vercel.app) — Topbar darurat 113, banner SPM 15 menit, quick services grid, dan persistent emergency button melayang.
+[Normal] B. Modul Berita dan Pencarian Kata Kunci
+[Normal] Pada website lama (Before), berita disajikan dalam format feed teks sederhana tanpa sarana filter kategori dan tanpa indikator jumlah pembaca. Pada website hasil redesain (After), modul berita dilengkapi bilah pencarian responsif dengan tombol pembersih (X), deretan filter kategori berbentuk kapsul (Semua, Kegiatan Apel, Pendidikan, Rekrutmen, Operasional), status counter dinamis penemuan data, kartu berita terstruktur dengan cuplikan intisari, dan empty-state jika kata kunci tidak cocok.
+[Normal] Gambar 3: Halaman Berita Website Lama — Penyajian berita vertikal standar tanpa filter faset dan tanpa search bar in-page.
+[Normal] Gambar 4: Halaman Berita Website Hasil Redesain — Search bar in-page dengan clear button, filter kategori pil interaktif, dan status counter 'Menampilkan N berita'.
+[Normal] C. Modul Dokumen Publik & Unduh Regulasi
+[Normal] Pada website lama (Before), dokumen publik hanya berupa tautan daftar teks sederhana tanpa informasi ukuran berkas dan tanpa pratinjau deskripsi. Pada website hasil redesain (After), dokumen disajikan dalam format tabel modern yang memuat nomor urut, judul dengan akordeon deskripsi, kategori, ukuran berkas PDF, serta tombol unduh interaktif yang memicu proses pengunduhan langsung dan menampilkan notifikasi toast hijau.
+[Normal] Gambar 5: Halaman Dokumen Website Lama — Daftar tautan teks statis tanpa metadata ukuran dan tanpa pratinjau deskripsi.
+[Normal] Gambar 6: Halaman Dokumen Website Hasil Redesain — Tabel dokumen terstruktur, kotak panduan unduh, filter kategori LKJIP/SOP/Renstra, dan tombol unduh PDF resmi.
+[Normal] D. Modul Pertanyaan Umum (FAQ) dengan Suggestion Placeholder
+[Normal] Website lama tidak memiliki modul FAQ khusus, sehingga warga sering kali bingung mengenai legalitas biaya pemadaman dan prosedur evakuasi sarang tawon/hewan liar. Pada website hasil redesain, modul FAQ dibangun dengan bilah pencarian ber-placeholder petunjuk ('113, gratis, SPM, ular, tawon'), filter kategori warna-warni, serta akordeon interaktif yang membuka jawaban secara mulus.
+[Normal] Gambar 7: Halaman FAQ Interaktif Website Hasil Redesain — Search bar dengan saran kueri kontekstual, filter kategori (Darurat, Layanan, Dokumen, Rekrutmen), dan akordeon jawaban instan.
+[Normal] E. Modul Kontak, Direktori Posko Kecamatan SPM 15 Menit & Form Pengaduan
+[Normal] Website lama hanya mencantumkan nomor telepon kantor di markas komando Teluk Betung tanpa mencantumkan nomor posko di kecamatan lain. Pada website hasil redesain, modul Kontak menyajikan direktori lengkap 6 Posko Siaga Kecamatan se-Bandar Lampung yang dilengkapi tombol telepon langsung, jam siaga 24 jam nonstop, serta formulir pengaduan interaktif dengan validasi visual warna hijau/merah secara real-time dan dialog konfirmasi pengiriman.
+[Normal] Gambar 8: Halaman Kontak Website Hasil Redesain — Informasi kantor resmi, formulir pengaduan dengan validasi instan, dan direktori posko siaga pemadam 6 kecamatan.
+[Normal] 4.3 Analisis Efisiensi Alur Tugas Pengguna (Task Scenario Flow)
+[Normal] Keunggulan sistem hasil redesain dapat dibuktikan melalui pembandingan dua skenario penelusuran tugas nyata warga:
+[Normal] Skenario 1: Warga Mencari Nomor Telepon Posko Siaga Pemadam Terdekat (Kecamatan Sukarame)
+[Normal] • Alur pada Website Lama (Before):
+  1. Pengguna membuka situs damkar.bandarlampungkota.go.id.
+  2. Mencari menu kontak pada dropdown navigasi yang lambat merespon.
+  3. Membuka halaman kontak, namun hanya menemukan nomor Mako Pusat Teluk Betung.
+  4. Menggunakan search bar lama mengetik 'posko sukarame'.
+  5. Menunggu halaman reload 3 detik, namun hasil pencarian menampilkan postingan berita seremonial tahun lalu yang tidak memuat nomor darurat posko.
+  6. Pengguna mengalami kebingungan dan frustrasi dalam kondisi panik (Waktu habis > 3 menit).
+
+• Alur pada Website Redesain (After):
+  1. Pengguna membuka situs damkar-bandarlampung-redesign-5wxa.vercel.app.
+  2. Dapat langsung menekan tombol melayang merah 113 di kanan bawah (1 ketukan), ATAU mengklik menu 'Kontak'.
+  3. Di halaman kontak, langsung terpampang grid 'Daftar Posko Siaga Tingkat Kecamatan' dengan kartu khusus 'Posko Sukarame' (Jl. Endro Suratmin).
+  4. Pengguna menekan tombol biru 'Hubungi (0812-7890-1234)' -> Telepon langsung terhubung.
+  Hasil: Selesai dalam 2 langkah interaksi dengan durasi kurang dari 5 detik.
+[Normal] Skenario 2: Akademisi / Warga Mengunduh Laporan Kinerja Instansi Pemerintah (LKJIP 2025)
+[Normal] • Alur pada Website Lama (Before):
+  1. Membuka website dan mengklik tautan 'dokumen.html'.
+  2. Disajikan daftar teks panjang tak terindeks tanpa tahun anggaran.
+  3. Mengetik 'LKJIP' pada kotak pencarian umum, menunggu halaman reload.
+  4. Menemukan tautan teks unduhan, namun ketika diklik menghasilkan kesalahan 404 (tautan rusak).
+
+• Alur pada Website Redesain (After):
+  1. Membuka modul 'Dokumen' melalui Navbar atau tombol cepat di beranda.
+  2. Mengklik tombol pil faset 'LKJIP' atau mengetik 'LKJIP' pada kotak pencarian in-page.
+  3. Tabel secara instan (< 100 ms) menyaring data dan menampilkan 'Laporan Kinerja Instansi Pemerintah (LKJIP) Tahun 2025' lengkap dengan ukuran berkas 3.4 MB.
+  4. Pengguna dapat mengklik judul dokumen untuk membaca intisari cakupan evaluasi (Accordion).
+  5. Mengklik tombol biru 'Unduh PDF' -> Micro-interaction spinner aktif, berkas PDF resmi terunduh, dan notifikasi toast hijau muncul mengonfirmasi keberhasilan.
+  Hasil: Berhasil diunduh dalam 3 langkah interaksi secara transparan dan akuntabel.
+[Normal] 5. KESIMPULAN DAN REKOMENDASI
+[Normal] 5.1 Kesimpulan Evaluasi IMK
+[Normal] Berdasarkan hasil analisis, perancangan, implementasi, dan pengujian komparatif, dapat ditarik beberapa kesimpulan mendasar:
+[List Bullet] Transformasi Paradigma Layanan Publik: Redesain ini berhasil mengubah paradigma portal pemadam kebakaran dari sekadar 'katalog berita birokrasi statis' menjadi 'sistem layanan publik kedaruratan yang cepat, responsif, dan adaptif terhadap psikologi warga'.
+[List Bullet] Peningkatan Drastis Metrik Usabilitas: Penggunaan filter instan di sisi klien (React useMemo), bilah pencarian terintegrasi, dan petunjuk kueri kontekstual memangkas langkah interaksi penemuan informasi dari 5–8 langkah menjadi 1–3 langkah saja (peningkatan efisiensi > 60%).
+[List Bullet] Penegasan Standar Pelayanan Minimal (SPM 15 Menit): Integrasi tombol darurat persisten 113 dan direktori posko 6 kecamatan menjamin terpenuhinya amanat Permendagri No. 114/2018 terkait respon cepat penanganan kebakaran.
+[List Bullet] Kepatuhan Aksesibilitas Internasional: Antarmuka baru sepenuhnya memenuhi standar WCAG 2.1 Level AA dengan rasio kontras teks >= 4.5:1, target sentuh seluler >= 44x44 px, navigasi keyboard penuh (Escape untuk menutup modal/lightbox, panah navigasi), dan live status region (aria-live='polite') untuk pembaca layar tunanetra.
+[Normal] 5.2 Rekomendasi Pengembangan Lebih Lanjut
+[Normal] Untuk keberlanjutan pengembangan sistem, direkomendasikan:
+[List Bullet] Integrasi Peta Interaktif Geospasial (GIS): Menambahkan modul peta GIS interaktif pada direktori posko kecamatan yang secara otomatis menghitung rute dan estimasi waktu tempuh armada ke lokasi warga berbasis GPS browser.
+[List Bullet] Pencarian Suara Kedaruratan (Voice Search): Menyediakan input suara darurat berbasis Web Speech API agar warga dalam kondisi panik hebat dapat langsung mengucapkan 'Posko Kemiling' atau 'Lapor Kebakaran' tanpa harus mengetik.
+[List Bullet] Koneksi Penuh Basis Data Supabase: Mengintegrasikan endpoint REST API /api/pengaduan ke tabel PostgreSQL Supabase secara persisten untuk pelacakan tiket aduan secara daring oleh warga.
+
+=== TABLE 1 ===
+Nama Aplikasi / Portal | Dinas Pemadam Kebakaran dan Penyelamatan Kota Bandar Lampung
+URL Eksisting (Before) | https://damkar.bandarlampungkota.go.id
+URL Redesign (After) | https://damkar-bandarlampung-redesign-5wxa.vercel.app
+Kelompok Peneliti / Pengembang | Kelompok 8 (IMK Komputasi Statistik): 1. Alif Zakiansyah As Syauqi (222312958) 2. Andrian Fajar Fahmi (222312979) 3. Valentina Lasma Situmorang (222313413)
+Fokus Evaluasi & Rekayasa | Search Bar, Suggestion/Autocomplete, Filter, Sorting, Kategori, Wayfinding, Aksesibilitas WCAG 2.1 AA, dan SPM 15 Menit
+
+=== TABLE 2 ===
+Aspek Pengujian | Sebelum Redesign (Eksisting) | Sesudah Redesign (Hasil IMK) | Heuristik Nielsen Terpenuhi
+Search Bar & Visibilitas | Tersembunyi di sidebar/footer; ukuran kecil; kontras rendah; sulit dikenali saat darurat. | Sticky Expandable Navbar Search + In-Page Full-Width Search berikon jelas dan border biru tegas. | Visibility of System Status & Fitts's Law
+Kontrol Input Pencarian | Input teks kaku tanpa tombol hapus; kesalahan ketik harus dihapus manual backspace. | Input interaktif dilengkapi tombol silang (X) instan untuk mereset kata kunci satu klik. | User Control and Freedom & Error Prevention
+Suggestion & Placeholder | Placeholder generik 'Search...'; tidak ada saran kueri atau contoh kata kunci. | Contextual Placeholder interaktif memberi rekomendasi kata kunci relevan (113, gratis, SPM, ular, tawon). | Recognition rather than Recall
+Respon Hasil Pencarian | Lambat (2–4 detik); memicu pemuatan ulang penuh halaman (full page reload). | Instan (< 100 ms); penyaringan dinamis di sisi klien melalui React useMemo tanpa reload. | Flexibility & Efficiency of Use
+Filter Multi-Kategori | Nihil; arsip berita dan dokumen disajikan bercampur aduk secara vertikal. | Interactive Pill Buttons multi-kategori dengan kontras warna aktif biru solid dan aria-pressed. | Flexibility & Efficiency of Use
+Sorting & Prioritas | Statis sesuai urutan basis data lama tanpa opsi kendali pengguna. | Prioritisasi terstruktur (Lencana 'Penting' merah pada edaran genting, tahun anggaran dokumen, kurasi populer). | Match Between System and Real World
+Navigasi Kedaruratan | Hotline tercampur informasi kantor; tidak ada penunjuk posko per kecamatan. | Top Emergency Bar 113 + Persistent Floating 113 Emergency Button beranimasi denyut + Direktori 6 Posko. | Emotional Design (Don Norman) & SPM 15 Min
+Sistem Umpan Balik (Feedback) | Layar membeku tanpa kejelasan; tidak ada indikator jumlah hasil yang ditemukan. | Live Counter ('Menampilkan N data...') dengan aria-live='polite', spinner unduh, dan toast notifikasi hijau. | Visibility of System Status
+Penanganan Empty State | Halaman putih kosong teks 'No results found' yang menyebabkan jalan buntu (dead-end). | Rich Empty State dengan ikon tematik, kalimat penjelas ramah, dan tombol aksi 'Reset Filter / Tampilkan Semua'. | Help Users Recognize, Diagnose, and Recover from Errors
+Efisiensi Interaksi | 5 – 8 langkah penelusuran; tingkat kegagalan tugas tinggi (45%). | 1 – 3 langkah penyelesaian tugas instan; tingkat keberhasilan tugas 100%. | Hick's Law & Nielsen Usability Principles

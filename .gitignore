@@ -1,0 +1,46 @@
+# Operating System & Editor Artifacts
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Office Temporary / Lock Files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.pytest_cache/
+
+# Secrets & Local Configurations (Zero Host Mutation / Git Hygiene)
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+
+# Node & Package Managers (if any frontend tooling is added)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Scraped PDFs & Converted Markdowns (Binary / Generated files)
+literature/pdfs/
+literature/markdowns/
+*.pdf
+
+# Sub-projects / Separate Repositories
+Website Redesign/
+
+
+

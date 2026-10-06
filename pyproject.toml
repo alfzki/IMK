@@ -1,0 +1,33 @@
+[project]
+name = "calm-carson"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Alif Zakiansyah As Syauqi", email = "alifzakiansyahassyauqi@gmail.com" }
+]
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "arxiv>=4.0.1",
+    "cryptography>=50.0.1",
+    "imbalanced-learn>=0.14.2",
+    "latex2mathml>=3.81.1",
+    "marker-pdf<2.0.0",
+    "mathml2omml>=0.0.2",
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.5",
+    "pyalex>=0.21",
+    "pypdf>=6.16.2",
+    "python-docx>=1.2.0",
+    "requests>=2.34.2",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.15.0",
+    "tqdm>=4.70.0",
+]
+
+[project.scripts]
+calm-carson = "calm_carson:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"

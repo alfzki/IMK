@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1020" viewBox="0 0 1000 1020">
+  
+  <defs>
+    <style>
+      .sketch-bg { fill: #ffffff; }
+      .sketch-border { stroke: #222222; stroke-width: 2; fill: none; }
+      .sketch-window-top { fill: #cccccc; stroke: #222222; stroke-width: 2; }
+      .sketch-window-nav { fill: #ffffff; stroke: #222222; stroke-width: 2; }
+      .sketch-card { fill: #eaeaea; stroke: #222222; stroke-width: 2; }
+      .sketch-card-white { fill: #ffffff; stroke: #222222; stroke-width: 2; }
+      .sketch-line { stroke: #222222; stroke-width: 2; }
+      .sketch-line-thin { stroke: #222222; stroke-width: 1.5; }
+      .sketch-line-gray { stroke: #777777; stroke-width: 1.5; }
+      .sketch-text-bar { fill: #777777; rx: 2; }
+      .sketch-text-bar-light { fill: #aaaaaa; rx: 2; }
+      
+      .font-title { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", "Arial Rounded MT Bold", sans-serif; font-size: 20px; font-weight: bold; fill: #111111; }
+      .font-subhead { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 15px; font-weight: bold; fill: #222222; }
+      .font-body { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 12px; fill: #333333; }
+      .font-body-bold { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 12px; font-weight: bold; fill: #111111; }
+      .font-small { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 10px; fill: #555555; }
+      .font-btn { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 12px; font-weight: bold; fill: #111111; text-anchor: middle; }
+      .font-btn-white { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+      
+      .btn-sketch-white { fill: #ffffff; stroke: #222222; stroke-width: 2; rx: 4; }
+      .btn-sketch-dark { fill: #222222; stroke: #222222; stroke-width: 2; rx: 4; }
+      .btn-sketch-gray { fill: #dddddd; stroke: #222222; stroke-width: 2; rx: 4; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="1020" class="sketch-bg" />
+  <rect x="2" y="2" width="996" height="1016" class="sketch-border" />
+
+  
+    <!-- BROWSER WINDOW CHROME (BALSAMIQ RETRO STYLE) -->
+    <!-- Outer Window Border -->
+    <rect x="2" y="2" width="996" height="68" class="sketch-window-top" />
+    <text x="500" y="19" class="font-body-bold" text-anchor="middle">Browser</text>
+    <!-- Close Box X -->
+    <rect x="974" y="6" width="18" height="16" fill="#ffffff" stroke="#222222" stroke-width="1.5" />
+    <text x="983" y="19" class="font-body-bold" font-size="11" text-anchor="middle">✕</text>
+
+    <!-- Nav Toolbar Strip -->
+    <rect x="2" y="28" width="996" height="42" class="sketch-window-nav" />
+    
+    <!-- Back / Forward Buttons -->
+    <rect x="12" y="35" width="68" height="28" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.8" />
+    <line x1="46" y1="35" x2="46" y2="63" stroke="#222222" stroke-width="1.5" />
+    <text x="29" y="54" class="font-body-bold" text-anchor="middle">←</text>
+    <text x="63" y="54" class="font-body-bold" text-anchor="middle">→</text>
+
+    <!-- Refresh Button -->
+    <rect x="86" y="35" width="30" height="28" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.8" />
+    <text x="101" y="54" class="font-body-bold" text-anchor="middle">↻</text>
+
+    <!-- URL Address Bar -->
+    <rect x="124" y="35" width="860" height="28" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.8" />
+    <text x="136" y="53" class="font-body">http://damkar.bandarlampungkota.go.id/dokumen</text>
+    
+
+  <!-- NAVBAR COMPACT -->
+  <g transform="translate(15, 80)">
+    <rect x="0" y="0" width="970" height="45" class="sketch-card-white" />
+    <text x="15" y="28" class="font-body-bold">DAMKAR BDL</text>
+    <text x="380" y="28" class="font-body">[ Beranda ]</text>
+    <text x="470" y="28" class="font-body">[ Berita ]</text>
+    <text x="545" y="28" class="font-body-bold" text-decoration="underline">[ Dokumen ]</text>
+    <text x="635" y="28" class="font-body">[ Galeri ]</text>
+    <text x="710" y="28" class="font-body">[ Kontak ]</text>
+    <rect x="830" y="8" width="125" height="28" class="btn-sketch-dark" />
+    <text x="893" y="26" class="font-btn-white" font-size="11">DARURAT 113</text>
+  </g>
+
+  <!-- HEADER -->
+  <g transform="translate(15, 140)">
+    <text x="0" y="15" class="font-small">Beranda  /  Dokumen &amp; SOP</text>
+    <text x="0" y="45" class="font-title">DOKUMEN KEDINASAN, SOP, &amp; REGULASI</text>
+    <rect x="0" y="58" width="580" height="8" class="sketch-text-bar" />
+<rect x="0" y="71" width="490" height="8" class="sketch-text-bar" />
+
+  </g>
+
+  <!-- SEARCH & FILTER TOOLBAR -->
+  <g transform="translate(15, 225)">
+    <rect x="0" y="0" width="970" height="50" class="sketch-card" />
+    <rect x="15" y="10" width="420" height="30" class="sketch-card-white" />
+    <text x="25" y="30" class="font-body">🔍 Cari dokumen (LKJIP, SOP Gedung, Renstra)...</text>
+
+    <!-- Dropdown Filter Mock -->
+    <rect x="450" y="10" width="220" height="30" class="sketch-card-white" />
+    <text x="465" y="30" class="font-body">Semua Kategori Dokumen</text>
+    <text x="645" y="30" class="font-body-bold">▼</text>
+
+    <text x="950" y="30" class="font-small" text-anchor="end">Menampilkan 5 dari 24 Dokumen</text>
+  </g>
+
+  <!-- DATA TABLE -->
+  <g transform="translate(15, 290)">
+    <!-- Table Header -->
+    <rect x="0" y="0" width="970" height="35" class="sketch-card" />
+    <text x="15" y="22" class="font-body-bold">NAMA DOKUMEN &amp; DESKRIPSI</text>
+    <text x="500" y="22" class="font-body-bold">KATEGORI</text>
+    <text x="660" y="22" class="font-body-bold">FORMAT / UKURAN</text>
+    <text x="810" y="22" class="font-body-bold">TANGGAL</text>
+    <text x="910" y="22" class="font-body-bold">AKSI</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(0, 35)">
+      <rect x="0" y="0" width="970" height="70" class="sketch-card-white" />
+      <text x="15" y="25" class="font-body-bold">SOP Penanggulangan Kebakaran Gedung</text>
+      <rect x="15" y="35" width="440" height="7" class="sketch-text-bar" />
+<rect x="15" y="46" width="380" height="7" class="sketch-text-bar" />
+
+      <text x="500" y="32" class="font-body">SOP Kedaruratan</text>
+      <text x="660" y="32" class="font-body">PDF (2,4 MB)</text>
+      <text x="810" y="32" class="font-body">12 Jan 2025</text>
+      <rect x="880" y="16" width="75" height="30" class="btn-sketch-dark" />
+      <text x="917" y="35" class="font-btn-white" font-size="11">Unduh</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 105)">
+      <rect x="0" y="0" width="970" height="70" class="sketch-card" />
+      <text x="15" y="25" class="font-body-bold">Laporan Kinerja (LKJIP) Tahun 2024</text>
+      <rect x="15" y="35" width="440" height="7" class="sketch-text-bar" />
+<rect x="15" y="46" width="380" height="7" class="sketch-text-bar" />
+
+      <text x="500" y="32" class="font-body">Akuntabilitas</text>
+      <text x="660" y="32" class="font-body">PDF (4,1 MB)</text>
+      <text x="810" y="32" class="font-body">28 Feb 2025</text>
+      <rect x="880" y="16" width="75" height="30" class="btn-sketch-dark" />
+      <text x="917" y="35" class="font-btn-white" font-size="11">Unduh</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 175)">
+      <rect x="0" y="0" width="970" height="70" class="sketch-card-white" />
+      <text x="15" y="25" class="font-body-bold">SOP Evakuasi Satwa Liar (Ular / Tawon)</text>
+      <rect x="15" y="35" width="440" height="7" class="sketch-text-bar" />
+<rect x="15" y="46" width="380" height="7" class="sketch-text-bar" />
+
+      <text x="500" y="32" class="font-body">Layanan Rescue</text>
+      <text x="660" y="32" class="font-body">PDF (1,8 MB)</text>
+      <text x="810" y="32" class="font-body">05 Mei 2024</text>
+      <rect x="880" y="16" width="75" height="30" class="btn-sketch-dark" />
+      <text x="917" y="35" class="font-btn-white" font-size="11">Unduh</text>
+    </g>
+
+    <!-- Row 4 -->
+    <g transform="translate(0, 245)">
+      <rect x="0" y="0" width="970" height="70" class="sketch-card" />
+      <text x="15" y="25" class="font-body-bold">Perda No. 03/2021 Proteksi Kebakaran</text>
+      <rect x="15" y="35" width="440" height="7" class="sketch-text-bar" />
+<rect x="15" y="46" width="380" height="7" class="sketch-text-bar" />
+
+      <text x="500" y="32" class="font-body">Regulasi Daerah</text>
+      <text x="660" y="32" class="font-body">PDF (3,5 MB)</text>
+      <text x="810" y="32" class="font-body">14 Nov 2021</text>
+      <rect x="880" y="16" width="75" height="30" class="btn-sketch-dark" />
+      <text x="917" y="35" class="font-btn-white" font-size="11">Unduh</text>
+    </g>
+
+    <!-- Row 5 -->
+    <g transform="translate(0, 315)">
+      <rect x="0" y="0" width="970" height="70" class="sketch-card-white" />
+      <text x="15" y="25" class="font-body-bold">Formulir Permohonan Simulasi Pelatihan</text>
+      <rect x="15" y="35" width="440" height="7" class="sketch-text-bar" />
+<rect x="15" y="46" width="380" height="7" class="sketch-text-bar" />
+
+      <text x="500" y="32" class="font-body">Formulir Publik</text>
+      <text x="660" y="32" class="font-body">PDF (820 KB)</text>
+      <text x="810" y="32" class="font-body">10 Agu 2024</text>
+      <rect x="880" y="16" width="75" height="30" class="btn-sketch-dark" />
+      <text x="917" y="35" class="font-btn-white" font-size="11">Unduh</text>
+    </g>
+  </g>
+
+  <!-- FEEDBACK TOAST NOTIFICATION -->
+  <g transform="translate(15, 710)">
+    <rect x="0" y="0" width="460" height="42" class="sketch-card-white" stroke-width="2" />
+    <text x="15" y="26" class="font-body-bold">[ v ] Berkas "SOP Penanggulangan Kebakaran Gedung" berhasil diunduh.</text>
+  </g>
+
+  <!-- REQUEST BOX -->
+  <g transform="translate(15, 775)">
+    <rect x="0" y="0" width="970" height="100" class="sketch-card" />
+    <text x="25" y="35" class="font-title" font-size="16">TIDAK MENEMUKAN DOKUMEN YANG DICARI?</text>
+    <rect x="25" y="48" width="620" height="8" class="sketch-text-bar" />
+<rect x="25" y="61" width="560" height="8" class="sketch-text-bar" />
+
+    <rect x="760" y="32" width="180" height="38" class="btn-sketch-white" />
+    <text x="850" y="56" class="font-btn">Ajukan Permohonan &gt;</text>
+  </g>
+
+  <!-- FOOTER -->
+  <g transform="translate(15, 960)">
+    <rect x="0" y="0" width="970" height="45" class="sketch-card" />
+    <text x="15" y="28" class="font-small">Dinas Pemadam Kebakaran &amp; Penyelamatan Kota Bandar Lampung • Siaga 24 Jam Hotline: 113</text>
+    <text x="955" y="28" class="font-small" text-anchor="end">Kelompok 8 IMK STIS © 2026</text>
+  </g>
+</svg>

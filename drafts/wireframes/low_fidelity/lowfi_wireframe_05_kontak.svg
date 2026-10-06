@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1180" viewBox="0 0 1000 1180">
+  
+  <defs>
+    <style>
+      .sketch-bg { fill: #ffffff; }
+      .sketch-border { stroke: #222222; stroke-width: 2; fill: none; }
+      .sketch-window-top { fill: #cccccc; stroke: #222222; stroke-width: 2; }
+      .sketch-window-nav { fill: #ffffff; stroke: #222222; stroke-width: 2; }
+      .sketch-card { fill: #eaeaea; stroke: #222222; stroke-width: 2; }
+      .sketch-card-white { fill: #ffffff; stroke: #222222; stroke-width: 2; }
+      .sketch-line { stroke: #222222; stroke-width: 2; }
+      .sketch-line-thin { stroke: #222222; stroke-width: 1.5; }
+      .sketch-line-gray { stroke: #777777; stroke-width: 1.5; }
+      .sketch-text-bar { fill: #777777; rx: 2; }
+      .sketch-text-bar-light { fill: #aaaaaa; rx: 2; }
+      
+      .font-title { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", "Arial Rounded MT Bold", sans-serif; font-size: 20px; font-weight: bold; fill: #111111; }
+      .font-subhead { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 15px; font-weight: bold; fill: #222222; }
+      .font-body { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 12px; fill: #333333; }
+      .font-body-bold { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 12px; font-weight: bold; fill: #111111; }
+      .font-small { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 10px; fill: #555555; }
+      .font-btn { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 12px; font-weight: bold; fill: #111111; text-anchor: middle; }
+      .font-btn-white { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+      
+      .btn-sketch-white { fill: #ffffff; stroke: #222222; stroke-width: 2; rx: 4; }
+      .btn-sketch-dark { fill: #222222; stroke: #222222; stroke-width: 2; rx: 4; }
+      .btn-sketch-gray { fill: #dddddd; stroke: #222222; stroke-width: 2; rx: 4; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="1180" class="sketch-bg" />
+  <rect x="2" y="2" width="996" height="1176" class="sketch-border" />
+
+  
+    <!-- BROWSER WINDOW CHROME (BALSAMIQ RETRO STYLE) -->
+    <!-- Outer Window Border -->
+    <rect x="2" y="2" width="996" height="68" class="sketch-window-top" />
+    <text x="500" y="19" class="font-body-bold" text-anchor="middle">Browser</text>
+    <!-- Close Box X -->
+    <rect x="974" y="6" width="18" height="16" fill="#ffffff" stroke="#222222" stroke-width="1.5" />
+    <text x="983" y="19" class="font-body-bold" font-size="11" text-anchor="middle">✕</text>
+
+    <!-- Nav Toolbar Strip -->
+    <rect x="2" y="28" width="996" height="42" class="sketch-window-nav" />
+    
+    <!-- Back / Forward Buttons -->
+    <rect x="12" y="35" width="68" height="28" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.8" />
+    <line x1="46" y1="35" x2="46" y2="63" stroke="#222222" stroke-width="1.5" />
+    <text x="29" y="54" class="font-body-bold" text-anchor="middle">←</text>
+    <text x="63" y="54" class="font-body-bold" text-anchor="middle">→</text>
+
+    <!-- Refresh Button -->
+    <rect x="86" y="35" width="30" height="28" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.8" />
+    <text x="101" y="54" class="font-body-bold" text-anchor="middle">↻</text>
+
+    <!-- URL Address Bar -->
+    <rect x="124" y="35" width="860" height="28" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.8" />
+    <text x="136" y="53" class="font-body">http://damkar.bandarlampungkota.go.id/kontak</text>
+    
+
+  <!-- NAVBAR COMPACT -->
+  <g transform="translate(15, 80)">
+    <rect x="0" y="0" width="970" height="45" class="sketch-card-white" />
+    <text x="15" y="28" class="font-body-bold">DAMKAR BDL</text>
+    <text x="380" y="28" class="font-body">[ Beranda ]</text>
+    <text x="470" y="28" class="font-body">[ Berita ]</text>
+    <text x="545" y="28" class="font-body">[ Dokumen ]</text>
+    <text x="635" y="28" class="font-body">[ Galeri ]</text>
+    <text x="710" y="28" class="font-body-bold" text-decoration="underline">[ Kontak ]</text>
+    <rect x="830" y="8" width="125" height="28" class="btn-sketch-dark" />
+    <text x="893" y="26" class="font-btn-white" font-size="11">DARURAT 113</text>
+  </g>
+
+  <!-- HEADER -->
+  <g transform="translate(15, 140)">
+    <text x="0" y="15" class="font-small">Beranda  /  Kontak &amp; Posko</text>
+    <text x="0" y="45" class="font-title">KONTAK POSKO SIAGA &amp; FORMULIR LAPORAN KEJADIAN</text>
+    <rect x="0" y="58" width="580" height="8" class="sketch-text-bar" />
+<rect x="0" y="71" width="510" height="8" class="sketch-text-bar" />
+
+  </g>
+
+  <!-- TWO-COLUMN ARCHITECTURE -->
+  <g transform="translate(15, 220)">
+    
+    <!-- LEFT COLUMN: DIREKTORI 6 POSKO (w=420) -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="20" class="font-title" font-size="16">DIREKTORI POSKO SIAGA</text>
+
+      <!-- Mako Pusat Card -->
+      <g transform="translate(0, 35)">
+        <rect x="0" y="0" width="420" height="135" class="sketch-card" stroke-width="2.5" />
+        <rect x="15" y="12" width="145" height="20" class="btn-sketch-dark" />
+        <text x="87" y="26" class="font-btn-white" font-size="10">MARKAS PUSAT (24/7)</text>
+        <text x="15" y="55" class="font-subhead">Mako Pemadam Kebakaran</text>
+        <text x="15" y="73" class="font-body">Jl. Kapt. Piere Tendean No. 2, Tj. Karang</text>
+        <text x="15" y="90" class="font-body-bold">Telp: (0721) 252741  |  Hotline: 113 / 112</text>
+        <rect x="15" y="100" width="150" height="26" class="btn-sketch-white" />
+        <text x="90" y="118" class="font-btn" font-size="10">📞 Panggil Mako</text>
+      </g>
+
+      <!-- Posko Kedaton -->
+      <g transform="translate(0, 185)">
+        <rect x="0" y="0" width="420" height="75" class="sketch-card-white" />
+        <text x="15" y="25" class="font-body-bold">Posko Wilayah Kedaton</text>
+        <text x="15" y="43" class="font-small">Jl. Teuku Umar No. 88 | Wilayah: Rajabasa, Kedaton</text>
+        <text x="15" y="60" class="font-body-bold">Telp: (0721) 701113</text>
+        <rect x="310" y="25" width="95" height="28" class="btn-sketch-dark" />
+        <text x="357" y="44" class="font-btn-white" font-size="10">Telepon</text>
+      </g>
+
+      <!-- Posko Sukarame -->
+      <g transform="translate(0, 275)">
+        <rect x="0" y="0" width="420" height="75" class="sketch-card-white" />
+        <text x="15" y="25" class="font-body-bold">Posko Wilayah Sukarame</text>
+        <text x="15" y="43" class="font-small">Jl. Endro Suratmin | Wilayah: Sukarame, Way Halim</text>
+        <text x="15" y="60" class="font-body-bold">Telp: (0721) 782113</text>
+        <rect x="310" y="25" width="95" height="28" class="btn-sketch-dark" />
+        <text x="357" y="44" class="font-btn-white" font-size="10">Telepon</text>
+      </g>
+
+      <!-- Posko Kemiling -->
+      <g transform="translate(0, 365)">
+        <rect x="0" y="0" width="420" height="75" class="sketch-card-white" />
+        <text x="15" y="25" class="font-body-bold">Posko Wilayah Kemiling</text>
+        <text x="15" y="43" class="font-small">Jl. Imam Bonjol | Wilayah: Kemiling, Langkapura</text>
+        <text x="15" y="60" class="font-body-bold">Telp: (0721) 271113</text>
+        <rect x="310" y="25" width="95" height="28" class="btn-sketch-dark" />
+        <text x="357" y="44" class="font-btn-white" font-size="10">Telepon</text>
+      </g>
+
+      <!-- Posko Panjang -->
+      <g transform="translate(0, 455)">
+        <rect x="0" y="0" width="420" height="75" class="sketch-card-white" />
+        <text x="15" y="25" class="font-body-bold">Posko Wilayah Panjang</text>
+        <text x="15" y="43" class="font-small">Jl. Yos Sudarso No. 12 | Wilayah: Panjang, Bumi Waras</text>
+        <text x="15" y="60" class="font-body-bold">Telp: (0721) 31113</text>
+        <rect x="310" y="25" width="95" height="28" class="btn-sketch-dark" />
+        <text x="357" y="44" class="font-btn-white" font-size="10">Telepon</text>
+      </g>
+
+      <!-- Posko Teluk Betung -->
+      <g transform="translate(0, 545)">
+        <rect x="0" y="0" width="420" height="75" class="sketch-card-white" />
+        <text x="15" y="25" class="font-body-bold">Posko Wilayah Teluk Betung</text>
+        <text x="15" y="43" class="font-small">Jl. Basuki Rahmat No. 4 | Wilayah: Teluk Betung</text>
+        <text x="15" y="60" class="font-body-bold">Telp: (0721) 481113</text>
+        <rect x="310" y="25" width="95" height="28" class="btn-sketch-dark" />
+        <text x="357" y="44" class="font-btn-white" font-size="10">Telepon</text>
+      </g>
+    </g>
+
+    <!-- RIGHT COLUMN: FORMULIR LAPORAN (w=520) -->
+    <g transform="translate(450, 0)">
+      <text x="0" y="20" class="font-title" font-size="16">FORMULIR LAPORAN INSIDEN</text>
+
+      <rect x="0" y="35" width="520" height="660" class="sketch-card" />
+      
+      <g transform="translate(25, 20)">
+        <!-- Input 1: Nama -->
+        <text x="0" y="20" class="font-body-bold">Nama Pelapor *</text>
+        <rect x="0" y="30" width="470" height="34" class="sketch-card-white" />
+        <text x="15" y="52" class="font-body">Alif Zakiansyah</text>
+        <text x="445" y="53" class="font-body-bold">[ v ]</text>
+
+        <!-- Input 2: Kontak -->
+        <text x="0" y="90" class="font-body-bold">Nomor Telepon / WhatsApp Aktif *</text>
+        <rect x="0" y="100" width="470" height="34" class="sketch-card-white" />
+        <text x="15" y="122" class="font-body">0812-9876-5432</text>
+        <text x="445" y="123" class="font-body-bold">[ v ]</text>
+
+        <!-- Input 3: Lokasi -->
+        <text x="0" y="160" class="font-body-bold">Alamat &amp; Kecamatan Lokasi Kejadian *</text>
+        <rect x="0" y="170" width="470" height="34" class="sketch-card-white" />
+        <text x="15" y="192" class="font-body">Jl. Raden Intan No. 45, Kecamatan Enggal</text>
+        <text x="445" y="193" class="font-body-bold">[ v ]</text>
+
+        <!-- Input 4: Jenis Kejadian Dropdown -->
+        <text x="0" y="230" class="font-body-bold">Jenis Kejadian Bencana / Rescue *</text>
+        <rect x="0" y="240" width="470" height="34" class="sketch-card-white" />
+        <text x="15" y="262" class="font-body">Kebakaran Bangunan Pemukiman / Ruko</text>
+        <text x="445" y="262" class="font-body-bold">▼</text>
+
+        <!-- Input 5: Keterangan -->
+        <text x="0" y="300" class="font-body-bold">Keterangan Situasi &amp; Titik Api *</text>
+        <rect x="0" y="310" width="470" height="80" class="sketch-card-white" />
+        <rect x="15" y="325" width="430" height="8" class="sketch-text-bar" />
+<rect x="15" y="338" width="400" height="8" class="sketch-text-bar" />
+<rect x="15" y="351" width="360" height="8" class="sketch-text-bar" />
+
+        <text x="460" y="380" class="font-small" text-anchor="end">128/500 karakter</text>
+
+        <!-- Input 6: Upload Drag & Drop -->
+        <text x="0" y="415" class="font-body-bold">Unggah Foto Bukti Kejadian (Opsional)</text>
+        <rect x="0" y="425" width="470" height="60" class="sketch-card-white" stroke-dasharray="6 3" />
+        <text x="235" y="455" class="font-small" text-anchor="middle">[ Seret &amp; Lepas Berkas Foto ke Sini ]</text>
+        <text x="235" y="472" class="font-small" text-anchor="middle">(Maksimal 3 foto JPG/PNG)</text>
+
+        <!-- Warning Anti-Prank -->
+        <g transform="translate(0, 500)">
+          <rect x="0" y="0" width="470" height="34" class="sketch-card-white" />
+          <text x="15" y="22" class="font-small">Pencegahan galat: Petugas akan menelepon konfirmasi dalam &lt;60 detik.</text>
+        </g>
+
+        <!-- Submit Button -->
+        <rect x="0" y="550" width="470" height="44" class="btn-sketch-dark" />
+        <text x="235" y="578" class="font-btn-white" font-size="13">🚨 KIRIM LAPORAN KEJADIAN SEKARANG</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- FOOTER -->
+  <g transform="translate(15, 1120)">
+    <rect x="0" y="0" width="970" height="45" class="sketch-card" />
+    <text x="15" y="28" class="font-small">Dinas Pemadam Kebakaran &amp; Penyelamatan Kota Bandar Lampung • Siaga 24 Jam Hotline: 113</text>
+    <text x="955" y="28" class="font-small" text-anchor="end">Kelompok 8 IMK STIS © 2026</text>
+  </g>
+</svg>

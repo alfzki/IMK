@@ -1,0 +1,130 @@
+"""
+Script untuk menghasilkan berkas Diagram Alir Penelitian dalam format Draw.io (.drawio)
+berbasis User-Centered Design (ISO 9241-210:2019) untuk Kelompok 8 IMK STIS.
+"""
+
+import os
+import xml.etree.ElementTree as ET
+
+OUT_DIR = "drafts/figures"
+os.makedirs(OUT_DIR, exist_ok=True)
+DRAWIO_PATH = os.path.join(OUT_DIR, "gambar_01_diagram_alir_penelitian.drawio")
+
+DRAWIO_XML = """<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-10-01T16:25:00.000Z" agent="Antigravity/1.0" version="24.0.0">
+  <diagram id="research-flowchart-kelompok-8" name="Diagram Alir Penelitian">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1650" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- 1. HEADER BANNER -->
+        <mxCell id="title" value="&lt;b style=&quot;font-size: 18px;&quot;&gt;DIAGRAM ALIR PENELITIAN USER-CENTERED DESIGN (ISO 9241-210:2019)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size: 12px; color: #94A3B8;&quot;&gt;Redesain Website Dinas Pemadam Kebakaran dan Penyelamatan Kota Bandar Lampung • Kelompok 8 IMK STIS&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F172A;strokeColor=#1E293B;fontColor=#FFFFFF;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="1020" height="74" as="geometry" />
+        </mxCell>
+
+        <!-- 2. TAHAP 1: INISIASI RISET -->
+        <mxCell id="tahap1" value="&lt;div&gt;&lt;span style=&quot;background-color:#2563EB; color:#FFFFFF; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 10px;&quot;&gt;TAHAP 1: INISIASI RISET&lt;/span&gt; &lt;b style=&quot;font-size: 14px; color: #1E3A8A; margin-left: 10px;&quot;&gt;Identifikasi Masalah Empiris &amp;amp; Pengumpulan Data Awal&lt;/b&gt;&lt;/div&gt;&lt;ul style=&quot;margin-top: 10px; margin-bottom: 0px; font-size: 12px; color: #1E293B; line-height: 1.6;&quot;&gt;&lt;li&gt;&lt;b&gt;Urgensi Bencana Kebakaran:&lt;/b&gt; 413 insiden (2023), 271 (2024), 198 (2025); 518 aksi rescue non-kebakaran (2025).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Regulasi SPM Permendagri No. 114/2018:&lt;/b&gt; Standar Pelayanan Minimal waktu tanggap (response time) &amp;lt; 15 menit.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Audit Inspeksi Awal Website Eksisting:&lt;/b&gt; damkar.bandarlampungkota.go.id mengalami masalah navigasi berat.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Survei Pendahuluan Pengguna (N = 22):&lt;/b&gt; Rerata kepuasan 2,70 / 5,00 (daya tarik visual sangat rendah: 2,23 / 5,00).&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="130" width="920" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- Panah dari Tahap 1 ke Fase 1 -->
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=2;" edge="1" parent="1" source="tahap1" target="fase1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 3. SIKLUS UCD CONTAINER -->
+        <mxCell id="ucd_container" value="&lt;span style=&quot;background-color:#1E293B; color:#F8FAFC; padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 12px;&quot;&gt;🔄 SIKLUS ITERASI USER-CENTERED DESIGN (ISO 9241-210:2019)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#94A3B8;strokeWidth=1.5;dashed=1;dashPattern=6 4;verticalAlign=top;align=left;spacingLeft=25;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="315" width="980" height="970" as="geometry" />
+        </mxCell>
+
+        <!-- 4. FASE 1: CONTEXT OF USE -->
+        <mxCell id="fase1" value="&lt;div&gt;&lt;span style=&quot;background-color:#1D4ED8; color:#FFFFFF; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 10px;&quot;&gt;FASE 1 (ISO 9241-210)&lt;/span&gt; &lt;b style=&quot;font-size: 14px; color: #1E40AF; margin-left: 10px;&quot;&gt;Memahami dan Menentukan Konteks Penggunaan (Context of Use)&lt;/b&gt;&lt;/div&gt;&lt;ul style=&quot;margin-top: 10px; margin-bottom: 0px; font-size: 12px; color: #1E293B; line-height: 1.5;&quot;&gt;&lt;li&gt;&lt;b&gt;Karakteristik Pengguna &amp;amp; Persona:&lt;/b&gt; Merumuskan Emergency Persona (korban kebakaran panik) &amp;amp; Public Persona (pencari SOP).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Kondisi Emosional &amp;amp; Beban Kognitif:&lt;/b&gt; Mitigasi kepanikan warga di bawah stres tinggi saat mencari kontak bantuan darurat.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Lingkungan Operasional Penggunaan:&lt;/b&gt; Dominasi akses perangkat seluler (smartphone) di lapangan dalam situasi genting.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Luaran Fase 1:&lt;/b&gt; Dokumen profil pengguna, task scenarios, dan peta konteks kebutuhan interaksi darurat.&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF6FF;strokeColor=#1D4ED8;strokeWidth=1.5;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="355" width="920" height="145" as="geometry" />
+        </mxCell>
+
+        <!-- Panah dari Fase 1 ke Fase 2 -->
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=2;" edge="1" parent="1" source="fase1" target="fase2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 5. FASE 2: SPECIFY USER REQUIREMENTS -->
+        <mxCell id="fase2" value="&lt;div&gt;&lt;span style=&quot;background-color:#B45309; color:#FFFFFF; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 10px;&quot;&gt;FASE 2 (ISO 9241-210)&lt;/span&gt; &lt;b style=&quot;font-size: 14px; color: #92400E; margin-left: 10px;&quot;&gt;Menentukan Kebutuhan Pengguna &amp;amp; Organisasi (Specify User Requirements)&lt;/b&gt;&lt;/div&gt;&lt;ul style=&quot;margin-top: 10px; margin-bottom: 0px; font-size: 12px; color: #1E293B; line-height: 1.5;&quot;&gt;&lt;li&gt;&lt;b&gt;Evaluasi Heuristik (10 Prinsip Jakob Nielsen):&lt;/b&gt; Inspeksi komprehensif pada website eksisting dan pemetaan Severity Rating (0–4).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Identifikasi 3 Titik Kritis Kegagalan Antarmuka:&lt;/b&gt; (1) Jam operasional salah (07.00-16.00); (2) Nomor 113 tersembunyi; (3) Pencarian kaku.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Integrasi Teori Interaksi Manusia dan Komputer:&lt;/b&gt; Emotional Design Norman (Visceral, Behavioral, Reflective) &amp;amp; Fitts's Law.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Spesifikasi Kebutuhan Antarmuka:&lt;/b&gt; Persistent Sticky 113 Button, Direktori 6 Posko Kecamatan, Formulir dengan Validasi Real-time.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Luaran Fase 2:&lt;/b&gt; Matriks Kebutuhan Pengguna, Matriks Masalah Heuristik Nielsen, dan User Requirements Document.&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFBEB;strokeColor=#B45309;strokeWidth=1.5;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="535" width="920" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Panah dari Fase 2 ke Fase 3 -->
+        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=2;" edge="1" parent="1" source="fase2" target="fase3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 6. FASE 3: PRODUCE DESIGN SOLUTIONS -->
+        <mxCell id="fase3" value="&lt;div&gt;&lt;span style=&quot;background-color:#047857; color:#FFFFFF; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 10px;&quot;&gt;FASE 3 (ISO 9241-210)&lt;/span&gt; &lt;b style=&quot;font-size: 14px; color: #065F46; margin-left: 10px;&quot;&gt;Merancang Solusi Perancangan Berjenjang (Produce Design Solutions)&lt;/b&gt;&lt;/div&gt;&lt;ul style=&quot;margin-top: 10px; margin-bottom: 0px; font-size: 12px; color: #1E293B; line-height: 1.5;&quot;&gt;&lt;li&gt;&lt;b&gt;Arsitektur Informasi (IA) Dua-Jalur:&lt;/b&gt; Pemisahan jalur darurat (Emergency Fast-Track) dan jalur informasi publik (E-Government Track).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Alur Pengguna (User Flow):&lt;/b&gt; Skenario pemanggilan darurat 1-ketukan (&amp;lt; 3 detik) dan alur pelaporan insiden online anti-prank.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Kerangka Rendah Fidelitas (Low-Fidelity Wireframe):&lt;/b&gt; Sketsa Balsamiq 6 modul (Beranda, Berita, Dokumen, Galeri, Kontak, Mobile).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Sistem Desain &amp;amp; Aksesibilitas WCAG 2.1 AA:&lt;/b&gt; Primary Navy (#172554, rasio 12,6:1), Emergency Red (#DC2626), Tipografi Inter.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Purwarupa Tinggi Fidelitas (High-Fidelity Prototype):&lt;/b&gt; Interaktif Figma &amp;amp; Full-Stack Web Next.js, TypeScript, Tailwind CSS.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Luaran Fase 3:&lt;/b&gt; Web fungsional live (damkar-bandarlampung-redesign-5wxa.vercel.app) &amp;amp; Cetak biru wireframe.&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#047857;strokeWidth=1.5;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="740" width="920" height="195" as="geometry" />
+        </mxCell>
+
+        <!-- Panah dari Fase 3 ke Fase 4 -->
+        <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=2;" edge="1" parent="1" source="fase3" target="fase4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 7. FASE 4: EVALUATE AGAINST REQUIREMENTS -->
+        <mxCell id="fase4" value="&lt;div&gt;&lt;span style=&quot;background-color:#6D28D9; color:#FFFFFF; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 10px;&quot;&gt;FASE 4 (ISO 9241-210)&lt;/span&gt; &lt;b style=&quot;font-size: 14px; color: #5B21B6; margin-left: 10px;&quot;&gt;Mengevaluasi Desain terhadap Kebutuhan (Evaluate Against Requirements)&lt;/b&gt;&lt;/div&gt;&lt;ul style=&quot;margin-top: 10px; margin-bottom: 0px; font-size: 12px; color: #1E293B; line-height: 1.5;&quot;&gt;&lt;li&gt;&lt;b&gt;Instrumen WebQual 4.0 Komparatif (Before vs After):&lt;/b&gt; 22 indikator Likert 1–5 pada dimensi Usability, Information, &amp;amp; Service.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Uji Signifikansi Statistik Inferensial:&lt;/b&gt; Uji beda berpasangan Wilcoxon Signed-Rank Test (p &amp;lt; 0,001; Z = -4,107).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Pengujian Aksesibilitas WCAG 2.1 Level AA:&lt;/b&gt; Audit otomatis WAVE (0 Errors, 0 Contrast Errors) dan pengujian keterbacaan teks.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Pengukuran Task Completion Time Penemuan Kontak Darurat:&lt;/b&gt; Waktu akses nomor darurat (&amp;lt; 3 detik vs &amp;gt; 180 detik).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Luaran Fase 4:&lt;/b&gt; Dataset perbandingan Before-After WebQual 4.0, output uji hipotesis, dan laporan pemenuhan SPM 15 menit.&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F3FF;strokeColor=#6D28D9;strokeWidth=1.5;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="970" width="920" height="175" as="geometry" />
+        </mxCell>
+
+        <!-- Panah dari Fase 4 ke Decision Diamond -->
+        <mxCell id="arrow5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=2;" edge="1" parent="1" source="fase4" target="decision">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 8. DECISION DIAMOND -->
+        <mxCell id="decision" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;Apakah Desain Memenuhi&lt;br/&gt;Kriteria Usabilitas &amp;amp; SPM?&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size: 9.5px; color: #7F1D1D;&quot;&gt;Skor WebQual &amp;gt; 4,00 | p &amp;lt; 0,05 | Waktu &amp;lt; 3 dtk&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FEF2F2;strokeColor=#DC2626;strokeWidth=2;fontColor=#991B1B;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1175" width="320" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- Cabang TIDAK: Iterative Loop ke Fase 3 -->
+        <mxCell id="loop_arrow" value="&lt;b style=&quot;color: #DC2626; background-color: #FEE2E2; padding: 2px 4px; border-radius: 3px;&quot;&gt;[ TIDAK ] Iterasi UCD: Revisi Desain &amp;amp; Fitur&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#DC2626;strokeWidth=2.2;dashed=1;dashPattern=6 3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="decision" target="fase3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="30" y="1218" />
+              <mxPoint x="30" y="838" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Cabang YA: Ke Tahap Final -->
+        <mxCell id="arrow_yes" value="&lt;b style=&quot;color: #16A34A; background-color: #DCFCE7; padding: 2px 6px; border-radius: 3px;&quot;&gt;[ YA ] Memenuhi Kriteria&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16A34A;strokeWidth=2.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="decision" target="final">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 9. TAHAP FINAL: LUARAN RISET -->
+        <mxCell id="final" value="&lt;div&gt;&lt;span style=&quot;background-color:#15803D; color:#FFFFFF; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 10px;&quot;&gt;TAHAP AKHIR: LUARAN RISET&lt;/span&gt; &lt;b style=&quot;font-size: 14px; color: #14532D; margin-left: 10px;&quot;&gt;Hasil Akhir, Rekomendasi Kebijakan, &amp;amp; Publikasi Ilmiah&lt;/b&gt;&lt;/div&gt;&lt;ul style=&quot;margin-top: 10px; margin-bottom: 0px; font-size: 12px; color: #1E293B; line-height: 1.5;&quot;&gt;&lt;li&gt;&lt;b&gt;Portal Web Redesain Siap Pakai (Production Ready):&lt;/b&gt; Live deployment interaktif responsif pada desktop dan perangkat seluler.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Peningkatan Mutu Terbukti Secara Signifikan:&lt;/b&gt; Skor WebQual naik dari 2,63 menjadi 4,57 (+1,94; p &amp;lt; 0,001) memenuhi standar SPM.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Matriks Analisis 32 Aspek IMK:&lt;/b&gt; Dokumentasi evaluasi komparatif Before &amp;amp; After Sub-CPMK 8 dan 9 terisi lengkap 100%.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Naskah Makalah Ilmiah Berstandar Publikasi:&lt;/b&gt; Artikel ilmiah UAS IMK Polstat STIS bebas halusinasi dengan 31 rujukan peer-reviewed.&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FDF4;strokeColor=#16A34A;strokeWidth=2;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1335" width="920" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- 10. CAPTION -->
+        <mxCell id="caption" value="Gambar 1. Diagram Alir Penelitian Redesain Website Damkar Bandar Lampung dengan Pendekatan User-Centered Design (ISO 9241-210:2019)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#CBD5E1;fontColor=#475569;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1515" width="920" height="35" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+"""
+
+def main():
+    with open(DRAWIO_PATH, "w", encoding="utf-8") as f:
+        f.write(DRAWIO_XML.strip())
+    print(f"[*] Berhasil menulis berkas Draw.io: {DRAWIO_PATH} ({os.path.getsize(DRAWIO_PATH):,} bytes)")
+
+    # Validasi XML
+    try:
+        ET.fromstring(DRAWIO_XML.strip())
+        print("[OK] Validasi XML Draw.io: BERHASIL (Well-formed XML)")
+    except ET.ParseError as e:
+        print(f"[!] Validasi XML GAGAL: {e}")
+
+if __name__ == "__main__":
+    main()

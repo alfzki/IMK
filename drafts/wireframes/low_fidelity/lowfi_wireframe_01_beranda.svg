@@ -1,0 +1,350 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1200" viewBox="0 0 1000 1200">
+  
+  <defs>
+    <style>
+      .sketch-bg { fill: #ffffff; }
+      .sketch-border { stroke: #222222; stroke-width: 2; fill: none; }
+      .sketch-window-top { fill: #cccccc; stroke: #222222; stroke-width: 2; }
+      .sketch-window-nav { fill: #ffffff; stroke: #222222; stroke-width: 2; }
+      .sketch-card { fill: #eaeaea; stroke: #222222; stroke-width: 2; }
+      .sketch-card-white { fill: #ffffff; stroke: #222222; stroke-width: 2; }
+      .sketch-line { stroke: #222222; stroke-width: 2; }
+      .sketch-line-thin { stroke: #222222; stroke-width: 1.5; }
+      .sketch-line-gray { stroke: #777777; stroke-width: 1.5; }
+      .sketch-text-bar { fill: #777777; rx: 2; }
+      .sketch-text-bar-light { fill: #aaaaaa; rx: 2; }
+      
+      .font-title { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", "Arial Rounded MT Bold", sans-serif; font-size: 20px; font-weight: bold; fill: #111111; }
+      .font-subhead { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 15px; font-weight: bold; fill: #222222; }
+      .font-body { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 12px; fill: #333333; }
+      .font-body-bold { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 12px; font-weight: bold; fill: #111111; }
+      .font-small { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 10px; fill: #555555; }
+      .font-btn { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 12px; font-weight: bold; fill: #111111; text-anchor: middle; }
+      .font-btn-white { font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", "Segoe Print", sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+      
+      .btn-sketch-white { fill: #ffffff; stroke: #222222; stroke-width: 2; rx: 4; }
+      .btn-sketch-dark { fill: #222222; stroke: #222222; stroke-width: 2; rx: 4; }
+      .btn-sketch-gray { fill: #dddddd; stroke: #222222; stroke-width: 2; rx: 4; }
+    </style>
+  </defs>
+
+  <!-- Base Background -->
+  <rect x="0" y="0" width="1000" height="1200" class="sketch-bg" />
+  <rect x="2" y="2" width="996" height="1196" class="sketch-border" />
+
+  
+    <!-- BROWSER WINDOW CHROME (BALSAMIQ RETRO STYLE) -->
+    <!-- Outer Window Border -->
+    <rect x="2" y="2" width="996" height="68" class="sketch-window-top" />
+    <text x="500" y="19" class="font-body-bold" text-anchor="middle">Browser</text>
+    <!-- Close Box X -->
+    <rect x="974" y="6" width="18" height="16" fill="#ffffff" stroke="#222222" stroke-width="1.5" />
+    <text x="983" y="19" class="font-body-bold" font-size="11" text-anchor="middle">✕</text>
+
+    <!-- Nav Toolbar Strip -->
+    <rect x="2" y="28" width="996" height="42" class="sketch-window-nav" />
+    
+    <!-- Back / Forward Buttons -->
+    <rect x="12" y="35" width="68" height="28" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.8" />
+    <line x1="46" y1="35" x2="46" y2="63" stroke="#222222" stroke-width="1.5" />
+    <text x="29" y="54" class="font-body-bold" text-anchor="middle">←</text>
+    <text x="63" y="54" class="font-body-bold" text-anchor="middle">→</text>
+
+    <!-- Refresh Button -->
+    <rect x="86" y="35" width="30" height="28" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.8" />
+    <text x="101" y="54" class="font-body-bold" text-anchor="middle">↻</text>
+
+    <!-- URL Address Bar -->
+    <rect x="124" y="35" width="860" height="28" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.8" />
+    <text x="136" y="53" class="font-body">http://damkar.bandarlampungkota.go.id</text>
+    
+
+  <!-- TOP EMERGENCY BAR -->
+  <g transform="translate(15, 80)">
+    <rect x="0" y="0" width="970" height="30" class="sketch-card" />
+    <rect x="10" y="5" width="110" height="20" fill="#222222" rx="3" />
+    <text x="65" y="19" class="font-btn-white" font-size="10">SIAGA 24 JAM</text>
+    <text x="135" y="20" class="font-body-bold">KOMITMEN SPM WAKTU TANGGAP &lt; 15 MENIT | CALL CENTER: 113 / 112</text>
+    <rect x="820" y="4" width="135" height="22" class="btn-sketch-dark" />
+    <text x="888" y="19" class="font-btn-white">HOTLINE 113</text>
+  </g>
+
+  <!-- NAVBAR -->
+  <g transform="translate(15, 120)">
+    <rect x="0" y="0" width="970" height="55" class="sketch-card-white" />
+    
+    <!-- Logo -->
+    <rect x="12" y="8" width="38" height="38" class="sketch-card" />
+    <text x="31" y="32" class="font-body-bold" text-anchor="middle">LOGO</text>
+    <text x="60" y="28" class="font-title" font-size="15">DAMKAR KOTA BANDAR LAMPUNG</text>
+    <text x="60" y="44" class="font-small">Portal Kesiapsiagaan &amp; Tanggap Bencana</text>
+
+    <!-- Links -->
+    <text x="430" y="33" class="font-body-bold" text-decoration="underline">[ Beranda ]</text>
+    <text x="525" y="33" class="font-body">[ Berita ]</text>
+    <text x="600" y="33" class="font-body">[ Dokumen ]</text>
+    <text x="690" y="33" class="font-body">[ Galeri ]</text>
+    <text x="765" y="33" class="font-body">[ Kontak ]</text>
+
+    <!-- Search Input -->
+    <rect x="840" y="12" width="115" height="30" class="sketch-card-white" />
+    <text x="850" y="31" class="font-small">Cari...</text>
+  </g>
+
+  <!-- HERO SECTION -->
+  <g transform="translate(15, 185)">
+    <rect x="0" y="0" width="970" height="250" class="sketch-card" />
+    
+    <!-- Left Hero: Headline & CTAs -->
+    <g transform="translate(25, 25)">
+      <rect x="0" y="0" width="140" height="22" class="btn-sketch-white" />
+      <text x="70" y="15" class="font-btn" font-size="10">SPM RESPON &lt; 15 MNT</text>
+
+      <text x="0" y="55" class="font-title">RESPON CEPAT TANGGAP DARURAT</text>
+      <text x="0" y="82" class="font-title">KEBAKARAN &amp; PENYELAMATAN</text>
+
+      <!-- Dummy Text Bars -->
+      <rect x="0" y="102" width="460" height="9" class="sketch-text-bar" />
+<rect x="0" y="117" width="420" height="9" class="sketch-text-bar" />
+<rect x="0" y="132" width="380" height="9" class="sketch-text-bar" />
+
+
+      <!-- Primary Action Buttons -->
+      <rect x="0" y="155" width="220" height="42" class="btn-sketch-dark" />
+      <text x="110" y="181" class="font-btn-white">HUBUNGI DARURAT 113</text>
+
+      <rect x="235" y="155" width="200" height="42" class="btn-sketch-white" />
+      <text x="335" y="181" class="font-btn">Lapor Insiden Online</text>
+    </g>
+
+    <!-- Right Hero: Big Image Placeholder with X -->
+    
+    <!-- Placeholder Box with Diagonal X Lines -->
+    <g transform="translate(560, 20)">
+      <rect x="0" y="0" width="385" height="210" class="sketch-card-white" />
+      <line x1="0" y1="0" x2="385" y2="210" class="sketch-line" />
+      <line x1="0" y1="210" x2="385" y2="0" class="sketch-line" />
+      <!-- Label Backdrop -->
+      <rect x="31.5" y="93" width="321" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" rx="3" />
+      <text x="192" y="110" class="font-body-bold" text-anchor="middle">Foto Armada Damkar &amp; Personil</text>
+    </g>
+    
+  </g>
+
+  <!-- EMERGENCY BROADCAST ALERT STRIP -->
+  <g transform="translate(15, 445)">
+    <rect x="0" y="0" width="970" height="38" class="sketch-card-white" stroke-dasharray="6 3" />
+    <text x="15" y="24" class="font-body-bold">[ ! ] PERINGATAN DINI KEBENCANAAN:</text>
+    <rect x="250" y="14" width="580" height="10" class="sketch-text-bar" />
+    <rect x="850" y="7" width="105" height="24" class="btn-sketch-white" />
+    <text x="902" y="23" class="font-btn" font-size="10">Baca Himbauan</text>
+  </g>
+
+  <!-- 4 SERVICES CARDS (LAYANAN UTAMA) -->
+  <g transform="translate(15, 495)">
+    <text x="0" y="18" class="font-title" font-size="16">LAYANAN UTAMA KEDARURATAN</text>
+    
+    <!-- Card 1 -->
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="230" height="150" class="sketch-card" />
+      
+    <!-- Placeholder Box with Diagonal X Lines -->
+    <g transform="translate(15, 12)">
+      <rect x="0" y="0" width="50" height="40" class="sketch-card-white" />
+      <line x1="0" y1="0" x2="50" y2="40" class="sketch-line" />
+      <line x1="0" y1="40" x2="50" y2="0" class="sketch-line" />
+      <!-- Label Backdrop -->
+      <rect x="-0.5" y="8" width="51" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" rx="3" />
+      <text x="25" y="25" class="font-body-bold" text-anchor="middle">Api</text>
+    </g>
+    
+      <text x="75" y="36" class="font-subhead" font-size="13">Pemadaman</text>
+      <rect x="15" y="65" width="195" height="8" class="sketch-text-bar" />
+<rect x="15" y="78" width="180" height="8" class="sketch-text-bar" />
+<rect x="15" y="91" width="160" height="8" class="sketch-text-bar" />
+
+      <rect x="15" y="105" width="110" height="28" class="btn-sketch-dark" />
+      <text x="70" y="123" class="font-btn-white" font-size="10">Panggil 113</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(247, 30)">
+      <rect x="0" y="0" width="230" height="150" class="sketch-card" />
+      
+    <!-- Placeholder Box with Diagonal X Lines -->
+    <g transform="translate(15, 12)">
+      <rect x="0" y="0" width="50" height="40" class="sketch-card-white" />
+      <line x1="0" y1="0" x2="50" y2="40" class="sketch-line" />
+      <line x1="0" y1="40" x2="50" y2="0" class="sketch-line" />
+      <!-- Label Backdrop -->
+      <rect x="-14.0" y="8" width="78" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" rx="3" />
+      <text x="25" y="25" class="font-body-bold" text-anchor="middle">Rescue</text>
+    </g>
+    
+      <text x="75" y="36" class="font-subhead" font-size="13">Aksi Rescue</text>
+      <rect x="15" y="65" width="195" height="8" class="sketch-text-bar" />
+<rect x="15" y="78" width="180" height="8" class="sketch-text-bar" />
+<rect x="15" y="91" width="160" height="8" class="sketch-text-bar" />
+
+      <rect x="15" y="105" width="110" height="28" class="btn-sketch-white" />
+      <text x="70" y="123" class="font-btn" font-size="10">Lapor Rescue</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(494, 30)">
+      <rect x="0" y="0" width="230" height="150" class="sketch-card" />
+      
+    <!-- Placeholder Box with Diagonal X Lines -->
+    <g transform="translate(15, 12)">
+      <rect x="0" y="0" width="50" height="40" class="sketch-card-white" />
+      <line x1="0" y1="0" x2="50" y2="40" class="sketch-line" />
+      <line x1="0" y1="40" x2="50" y2="0" class="sketch-line" />
+      <!-- Label Backdrop -->
+      <rect x="-9.5" y="8" width="69" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" rx="3" />
+      <text x="25" y="25" class="font-body-bold" text-anchor="middle">Posko</text>
+    </g>
+    
+      <text x="75" y="36" class="font-subhead" font-size="13">Posko Siaga</text>
+      <rect x="15" y="65" width="195" height="8" class="sketch-text-bar" />
+<rect x="15" y="78" width="180" height="8" class="sketch-text-bar" />
+<rect x="15" y="91" width="160" height="8" class="sketch-text-bar" />
+
+      <rect x="15" y="105" width="110" height="28" class="btn-sketch-white" />
+      <text x="70" y="123" class="font-btn" font-size="10">Cari Posko</text>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(740, 30)">
+      <rect x="0" y="0" width="230" height="150" class="sketch-card" />
+      
+    <!-- Placeholder Box with Diagonal X Lines -->
+    <g transform="translate(15, 12)">
+      <rect x="0" y="0" width="50" height="40" class="sketch-card-white" />
+      <line x1="0" y1="0" x2="50" y2="40" class="sketch-line" />
+      <line x1="0" y1="40" x2="50" y2="0" class="sketch-line" />
+      <!-- Label Backdrop -->
+      <rect x="-0.5" y="8" width="51" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" rx="3" />
+      <text x="25" y="25" class="font-body-bold" text-anchor="middle">SOP</text>
+    </g>
+    
+      <text x="75" y="36" class="font-subhead" font-size="13">Dokumen SOP</text>
+      <rect x="15" y="65" width="195" height="8" class="sketch-text-bar" />
+<rect x="15" y="78" width="180" height="8" class="sketch-text-bar" />
+<rect x="15" y="91" width="160" height="8" class="sketch-text-bar" />
+
+      <rect x="15" y="105" width="110" height="28" class="btn-sketch-white" />
+      <text x="70" y="123" class="font-btn" font-size="10">Unduh PDF</text>
+    </g>
+  </g>
+
+  <!-- OPERATIONAL STATISTICS (4 STAT BOXES) -->
+  <g transform="translate(15, 695)">
+    <text x="0" y="18" class="font-title" font-size="16">STATISTIK OPERASIONAL &amp; SPM</text>
+
+    <!-- Stat 1 -->
+    <rect x="0" y="30" width="230" height="85" class="sketch-card-white" />
+    <text x="20" y="65" class="font-title" font-size="28">271</text>
+    <text x="20" y="85" class="font-body-bold">Kebakaran (2024)</text>
+    <text x="20" y="100" class="font-small">Insiden tertangani</text>
+
+    <!-- Stat 2 -->
+    <rect x="247" y="30" width="230" height="85" class="sketch-card-white" />
+    <text x="267" y="65" class="font-title" font-size="28">518</text>
+    <text x="267" y="85" class="font-body-bold">Aksi Rescue (2025)</text>
+    <text x="267" y="100" class="font-small">Penyelamatan warga</text>
+
+    <!-- Stat 3 -->
+    <rect x="494" y="30" width="230" height="85" class="sketch-card-white" />
+    <text x="514" y="65" class="font-title" font-size="28">18</text>
+    <text x="514" y="85" class="font-body-bold">Armada Mobil</text>
+    <text x="514" y="100" class="font-small">Unit siaga aktif</text>
+
+    <!-- Stat 4 -->
+    <rect x="740" y="30" width="230" height="85" class="sketch-card-white" />
+    <text x="760" y="65" class="font-title" font-size="28">&lt; 15 m</text>
+    <text x="760" y="85" class="font-body-bold">Respon SPM</text>
+    <text x="760" y="100" class="font-small">Permendagri 114/2018</text>
+  </g>
+
+  <!-- RECENT NEWS SECTION (3 CARDS) -->
+  <g transform="translate(15, 830)">
+    <text x="0" y="18" class="font-title" font-size="16">WARTA KEJADIAN &amp; EDUKASI MITIGASI</text>
+
+    <!-- News 1 -->
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="310" height="195" class="sketch-card" />
+      
+    <!-- Placeholder Box with Diagonal X Lines -->
+    <g transform="translate(10, 10)">
+      <rect x="0" y="0" width="290" height="95" class="sketch-card-white" />
+      <line x1="0" y1="0" x2="290" y2="95" class="sketch-line" />
+      <line x1="0" y1="95" x2="290" y2="0" class="sketch-line" />
+      <!-- Label Backdrop -->
+      <rect x="34.0" y="35" width="222" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" rx="3" />
+      <text x="145" y="52" class="font-body-bold" text-anchor="middle">Foto: Kebakaran Gudang</text>
+    </g>
+    
+      <text x="15" y="125" class="font-body-bold">Kebakaran di Kedaton Tertangani</text>
+      <rect x="15" y="138" width="270" height="8" class="sketch-text-bar" />
+<rect x="15" y="151" width="240" height="8" class="sketch-text-bar" />
+
+      <text x="15" y="175" class="font-small">15 Sep 2025 • Baca selengkapnya &gt;</text>
+    </g>
+
+    <!-- News 2 -->
+    <g transform="translate(330, 30)">
+      <rect x="0" y="0" width="310" height="195" class="sketch-card" />
+      
+    <!-- Placeholder Box with Diagonal X Lines -->
+    <g transform="translate(10, 10)">
+      <rect x="0" y="0" width="290" height="95" class="sketch-card-white" />
+      <line x1="0" y1="0" x2="290" y2="95" class="sketch-line" />
+      <line x1="0" y1="95" x2="290" y2="0" class="sketch-line" />
+      <!-- Label Backdrop -->
+      <rect x="47.5" y="35" width="195" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" rx="3" />
+      <text x="145" y="52" class="font-body-bold" text-anchor="middle">Foto: Animal Rescue</text>
+    </g>
+    
+      <text x="15" y="125" class="font-body-bold">Evakuasi Ular Sanca di Pemukiman</text>
+      <rect x="15" y="138" width="270" height="8" class="sketch-text-bar" />
+<rect x="15" y="151" width="240" height="8" class="sketch-text-bar" />
+
+      <text x="15" y="175" class="font-small">12 Sep 2025 • Baca selengkapnya &gt;</text>
+    </g>
+
+    <!-- News 3 -->
+    <g transform="translate(660, 30)">
+      <rect x="0" y="0" width="310" height="195" class="sketch-card" />
+      
+    <!-- Placeholder Box with Diagonal X Lines -->
+    <g transform="translate(10, 10)">
+      <rect x="0" y="0" width="290" height="95" class="sketch-card-white" />
+      <line x1="0" y1="0" x2="290" y2="95" class="sketch-line" />
+      <line x1="0" y1="95" x2="290" y2="0" class="sketch-line" />
+      <!-- Label Backdrop -->
+      <rect x="38.5" y="35" width="213" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" rx="3" />
+      <text x="145" y="52" class="font-body-bold" text-anchor="middle">Foto: Edukasi Sekolah</text>
+    </g>
+    
+      <text x="15" y="125" class="font-body-bold">Pelatihan Proteksi Dini Siswa SD</text>
+      <rect x="15" y="138" width="270" height="8" class="sketch-text-bar" />
+<rect x="15" y="151" width="240" height="8" class="sketch-text-bar" />
+
+      <text x="15" y="175" class="font-small">08 Sep 2025 • Baca selengkapnya &gt;</text>
+    </g>
+  </g>
+
+  <!-- PERSISTENT STICKY BUTTON (BOTTOM RIGHT) -->
+  <g transform="translate(820, 1070)">
+    <rect x="0" y="0" width="150" height="48" rx="24" class="btn-sketch-dark" />
+    <text x="75" y="29" class="font-btn-white" font-size="13">🚨 DARURAT 113</text>
+  </g>
+
+  <!-- FOOTER -->
+  <g transform="translate(15, 1130)">
+    <rect x="0" y="0" width="970" height="55" class="sketch-card" />
+    <text x="15" y="24" class="font-body-bold">Dinas Pemadam Kebakaran dan Penyelamatan Kota Bandar Lampung</text>
+    <text x="15" y="42" class="font-small">Markas Komando: Jl. Kapt. Piere Tendean No. 2 | Telp: (0721) 252741 | Hotline: 113</text>
+    <text x="955" y="32" class="font-small" text-anchor="end">Kelompok 8 IMK STIS © 2026</text>
+  </g>
+</svg>

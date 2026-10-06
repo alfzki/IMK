@@ -1,0 +1,199 @@
+[Title] Redesain Website Dinas Pemadam Kebakaran Kota Bandar Lampung dengan Pendekatan User-Centered Design
+[normal] Alif Zakiansyah As Syauqi1, Andrian Fajar Fahmi2, Valentina Lasma Situmorang3, Erna Nurmawati4
+[normal] 13SI1/222312958 23SI1/222312979 33SI1/222313413 
+[normal] e-mail: 
+[normal] Abstrak
+[normal] Portal layanan publik digital dinas pemadam kebakaran memegang peranan krusial dalam keselamatan jiwa masyarakat perkotaan, di mana kecepatan akses informasi dan pemanggilan bantuan terikat batasan waktu tanggap maksimal 15 menit sesuai Permendagri No. 114 Tahun 2018. Namun, website resmi Dinas Pemadam Kebakaran dan Penyelamatan Kota Bandar Lampung saat ini menghadapi kendala antarmuka yang serius, seperti pencantuman jam operasional yang salah, ketiadaan alur pelaporan yang konsisten, serta navigasi yang belum memisahkan alur darurat dengan keterbukaan informasi dokumen publik. Temuan survei pendahuluan terhadap 22 responden mengonfirmasi rendahnya persepsi kualitas antarmuka eksisting dengan nilai rata-rata keseluruhan hanya 2,70 dari skala 5,00. Penelitian ini bertujuan untuk mengidentifikasi cacat kebergunaan antarmuka, merancang prototipe interaktif baru yang adaptif terhadap situasi krisis berbasis User-Centered Design, serta mengukur perubahan kualitas antarmuka secara empiris. Metodologi penelitian menerapkan pendekatan metode campuran sekuensial eksplanatori yang mengintegrasikan evaluasi heuristik 10 prinsip Nielsen, perancangan arsitektur informasi dan prototipe dengan menerapkan enam prinsip interaksi manusia dan komputer, serta pengujian komparatif berbasis 22 indikator model WebQual 4.0. Luaran yang dihasilkan dari penelitian ini mencakup rekomendasi perbaikan berbasis matriks keparahan, prototipe antarmuka interaktif responsif, serta pembuktian statistik terhadap peningkatan kualitas kebergunaan, kualitas informasi, dan interaksi layanan melalui uji beda berpasangan. 
+[normal] Kata kunci—3-5 kata kunci
+[normal] Abstract
+[normal]  A maximum 200 word abstract in English in italics with Times New Roman 11 point. Abstract should be clear, descriptive, and should provide a brief overview of the problem studied. Abstract topics include reasons for the selection or the importance of research topics, research methods and a summary of the results. Abstract should end with a comment about the importance of the results or conclusions brief.
+[normal] Keywords—3-5 keywords
+[normal] 1. PENDAHULUAN
+[normal] Transformasi layanan publik digital di Indonesia dituntut mampu menjamin kecepatan akses, akuntabilitas fitur, dan efektivitas interaksi bagi warga (Hardinda et al., 2023). Pada layanan pemadam kebakaran dan penyelamatan (fire and rescue services), efektivitas antarmuka digital berkaitan langsung dengan keselamatan jiwa karena diakses saat masyarakat membutuhkan kontak darurat atau panduan evakuasi dalam hitungan detik. Penataan arsitektur informasi dan hierarki navigasi yang presisi terbukti menentukan keberhasilan pengguna dalam menemukan informasi krusial pada situasi krisis (Falconi et al., 2023).
+[normal] Urgensi tersebut sangat nyata pada Dinas Pemadam Kebakaran dan Penyelamatan Kota Bandar Lampung. Laporan operasional resmi mencatat tingginya beban penanganan insiden di wilayah perkotaan, yaitu 413 kebakaran pada 2023, 271 pada 2024, dan 198 pada 2025 (Dinas Pemadam Kebakaran dan Penyelamatan Kota Bandar Lampung, 2024). Di samping kebakaran, dinas ini memikul tugas penyelamatan nonkebakaran (rescue) dengan volume yang melampaui insiden kebakaran, yakni 558 aksi pada 2023 serta 518 aksi pada Januari—Juli 2025 (mencakup evakuasi satwa liar berbisa, sarang tawon, hingga pelepasan cincin yang menjerat jari warga). Tingginya statistik ini menuntut portal resmi yang adaptif terhadap situasi genting, yaitu portal yang menyediakan tombol panggilan darurat terpadu yang dapat diakses instan, menyajikan visibilitas layanan penyelamatan nonkebakaran secara transparan, serta memuat panduan tanggap darurat mandiri bagi warga. Terlebih, Peraturan Menteri Dalam Negeri Nomor 114 Tahun 2018 mewajibkan pemenuhan batasan waktu tanggap (response time) maksimal 15 menit sejak laporan diterima hingga armada tiba di lokasi (Kementerian Dalam Negeri Republik Indonesia, 2018). Keberadaan situs web yang responsif sangat krusial untuk memangkas friksi kognitif warga pada detik-detik awal bencana.
+[normal] Kondisi faktual antarmuka website resmi saat ini justru memperlihatkan kelemahan interaksi yang berisiko memperlambat tindakan warga. Pada area header utama situs, tercantum teks "Jam Oprasional: 07.00 s/d 16.00", yang secara psikologis sangat menyesatkan (misleading) bagi warga yang membutuhkan pertolongan di luar jam kerja kedinasan, padahal layanan pemadam kebakaran bersiaga 24 jam penuh. Selain itu, nomor darurat 113 dan 112 tidak disajikan sebagai tombol panggil cepat persisten (floating action button), ikon media sosial tidak berfungsi (dead links), serta navigasi menu tidak disusun secara hierarkis.
+[normal] Kelemahan antarmuka tersebut terkonfirmasi melalui survei pendahuluan terhadap 22 responden warga Kota Bandar Lampung (didominasi usia produktif 20–29 tahun dan 54,5% pengguna gawai pintar). Menggunakan instrumen WebQual 4.0 berskala Likert 1–5, nilai rerata kepuasan secara keseluruhan hanya mencapai 2,70 (kategori rendah), dengan skor dimensi Usability Quality 2,77, Information Quality 2,63, dan Service Interaction Quality 2,71 (Tim Peneliti, 2026). Indikator dengan skor terendah meliputi daya tarik visual (2,23), ketersediaan data statistik insiden (2,41), jaminan ketersediaan layanan 24/7 (2,41), serta kejelasan prosedur pelaporan (2,45). Temuan empiris ini diperkuat oleh audit awal berbasis 10 Usability Heuristics (Nielsen, 1994), yang mengidentifikasi pelanggaran mendasar pada aspek Visibility of System Status, Match between System and the Real World, serta Flexibility and Efficiency of Use.
+[normal] Untuk mengatasi kendala tersebut, penelitian ini menerapkan metodologi User-Centered Design (UCD) mengacu pada standar ISO 9241-210:2019 yang menempatkan kebutuhan pengguna sebagai poros perancangan (International Organization for Standardization [ISO], 2019; Ramadhan et al., 2022). Alur UCD dipadukan secara komprehensif dengan inspeksi heuristik pakar dan kerangka evaluasi WebQual 4.0 (Barnes & Vidgen, 2002; Chairani & Baroroh, 2024), mengadopsi model evaluasi multimode rekomendasi Raposo et al. (2026). Kajian terdahulu umumnya memisahkan audit evaluatif murni atau perancangan antarmuka pada domain nonkebencanaan (Falconi et al., 2023; Maryani, 2023). Penelitian ini mengisi celah keilmuan tersebut dengan menghasilkan prototipe interaktif yang adaptif terhadap situasi darurat sekaligus menguji signifikansi pergeseran kualitas antarmuka sebelum dan sesudah redesain.
+[normal] Berdasarkan latar belakang tersebut, penelitian ini merumuskan tiga pertanyaan penelitian sebagai berikut.
+[normal] Masalah kebergunaan (usability) apa saja yang teridentifikasi pada website Dinas Pemadam Kebakaran dan Penyelamatan Kota Bandar Lampung berdasarkan evaluasi heuristik Nielsen dan persepsi pengguna?
+[normal] Bagaimana merancang ulang antarmuka website berbasis User-Centered Design (UCD) yang mampu meminimalkan beban kognitif pengguna dalam mencari informasi publik dan melakukan panggilan darurat?
+[normal] Bagaimana signifikansi pergeseran persepsi kualitas pengguna sebelum dan sesudah redesain berdasarkan dimensi WebQual 4.0?
+[normal] Sejalan dengan pertanyaan tersebut, tujuan penelitian ini adalah sebagai berikut.
+[normal] Mengidentifikasi dan mengklasifikasikan kelemahan antarmuka website eksisting melalui evaluasi heuristik Nielsen dan survei pendahuluan
+[normal] Menghasilkan prototipe antarmuka interaktif high-fidelity berbasis UCD yang mengedepankan akses cepat tanggap darurat dan transparansi informasi publik;
+[normal] Mengukur dan menganalisis peningkatan kualitas antarmuka secara empiris sebelum dan sesudah redesain menggunakan model evaluasi WebQual 4.0. 
+[normal] 2. METODOLOGI
+[normal] 2.1 Desain Penelitian
+[normal] Penelitian ini menerapkan pendekatan metode campuran (mixed-methods research design) model sekuensial eksplanatori (Creswell & Cresswell, 2018). Pendekatan kuantitatif diterapkan melalui survei pengukuran sebelum dan sesudah redesain untuk menguji signifikansi peningkatan kualitas pengalaman pengguna secara empiris (Raposo et al., 2026). Siklus perancangan terstandarisasi ISO 9241-210:2019 menuntun keseluruhan tahapan penelitian melalui empat fase berulang (iterative cycle), yaitu memahami konteks penggunaan, menentukan kebutuhan pengguna, merancang solusi desain, dan mengevaluasi desain terhadap kebutuhan. Diagram alir desain penelitian disajikan secara sistematis pada Gambar 1.
+[normal] Gambar 1. Diagram alur tahapan penelitian berbasis User-Centered Design
+[normal] 2.2 Analisis Konteks Penggunaan (Context of Use)
+[normal] Fase pertama UCD berfokus pada identifikasi karakteristik pengguna, tugas-tugas operasional, lingkungan penggunaan, serta permasalahan faktual pada antarmuka eksisting (ISO, 2018; Norman, 2013).
+[normal] 2.2.1 Survei Pendahuluan dan Pemodelan Persona
+[normal] Untuk memetakan konteks penggunaan di masyarakat, penelitian ini menyelenggarakan survei pendahuluan (preliminary survey) sebagai instrumen penggalian kebutuhan awal (Tim Peneliti, 2026). Pengambilan sampel dilakukan menggunakan teknik purposive sampling, yaitu teknik penentuan sampel non-probabilitas berdasarkan kriteria spesifik yang relevan dengan tujuan riset (Etikan et al., 2016). Kriteria inklusi responden mencakup beberapa hal sebagai berikut.
+[normal] Warga masyarakat Kota Bandar Lampung
+[normal] Berpotensi mengakses layanan kebencanaan perkotaan serta informasi publik pemerintah daerah.
+[normal] Instrumen survei pendahuluan berupa kuesioner daring yang memuat 21 butir pernyataan tertutup berskala Likert 1—5 (1 = Sangat Tidak Setuju hingga 5 = Sangat Setuju) guna mengukur persepsi awal terhadap website eksisting. Data yang terkumpul kemudian diolah menggunakan metode pemodelan persona (persona modeling method) menurut Cooper et al. (2014) guna menyusun dua arketipe representasi pengguna antara lain sebagai berikut.
+[normal] Pengguna Kritis/Darurat (Emergency Persona): Warga yang menghadapi kebakaran atau ancaman kedaruratan hewan buas dalam kondisi panik (stress-induced context), di mana akses panggil darurat satu klik menjadi kebutuhan vital.
+[normal] Pengguna Publik/Informatif (Information Persona): Warga, pelaku usaha, atau akademisi yang membutuhkan data statistik kebencanaan, regulasi proteksi kebakaran, dokumen LKJIP/Renstra, dan berita kedinasan.
+[normal] 2.2.2 Evaluasi Heuristik Antarmuka Eksisting
+[normal] Secara simultan, dilakukan evaluasi heuristik sebagai metode inspeksi kebergunaan formal (formal usability inspection) yang dilakukan oleh penilai (evaluator) untuk mengidentifikasi anomali pada antarmuka web eksisting tanpa bias pengguna awam (Nielsen & Mack, 1994). Evaluasi dilakukan dengan merujuk pada panduan 10 Usability Heuristics yang dikembangkan oleh Nielsen (1994) antara lain sebagai berikut.
+[normal] Visibility of system status (H1): Sistem harus selalu memberikan umpan balik yang relevan mengenai status operasi yang sedang berlangsung dalam waktu yang wajar.
+[normal] Match between system and the real world (H2): Bahasa, terminologi, dan konsep sistem harus merefleksikan dunia nyata yang akrab bagi masyarakat awam.
+[normal] User control and freedom (H3): Menyediakan fasilitas pembatalan atau jalan keluar yang jelas saat pengguna salah memilih opsi.
+[normal] Consistency and standards (H4): Mempertahankan konsistensi penamaan elemen, ikon, dan tata letak di seluruh halaman.
+[normal] Error prevention (H5): Mencegah terjadinya kesalahan input sejak awal melalui rancangan antarmuka yang presisi.
+[normal] Recognition rather than recall (H6): Meminimalkan beban memori pengguna dengan membuat opsi dan tindakan terlihat secara eksplisit.
+[normal] Flexibility and efficiency of use (H7): Menyediakan akselerator tindakan cepat yang memudahkan navigasi pengguna.
+[normal] Aesthetic and minimalist design (H8): Menghindari elemen visual yang tidak relevan yang berpotensi mengaburkan informasi penting.
+[normal] Help users recognize, diagnose, and recover from errors (H9): Menyajikan pesan galat yang informatif dengan instruksi solusi yang jelas.
+[normal] Help and documentation (H10): Menyediakan panduan penggunaan dan dokumentasi yang ringkas dan mudah ditemukan.
+[normal] Untuk menetapkan prioritas penanganan masalah antarmuka, setiap temuan diklasifikasikan tingkat keparahannya menggunakan skala Severity Rating menurut Nielsen (1994) antara lain sebagai berikut.
+[normal] Skor 0: Bukan masalah kebergunaan (not a usability problem).
+[normal] Skor 1: Masalah kosmetik belaka, perbaikan berprioritas rendah.
+[normal] Skor 2: Masalah kebergunaan minor, perbaikan berprioritas sedang.
+[normal] Skor 3: Masalah kebergunaan mayor, perbaikan berprioritas tinggi.
+[normal] Skor 4: Bencana kebergunaan (usability catasthrope), menghalangi interaksi esensial sehingga wajib diperbaiki sebelum sistem dirilis.
+[normal] 2.3 Spesifikasi Kebutuhan dan Parameter Prinsip HCI
+[normal] Fase kedua UCD bertujuan menerjemahkan temuan konteks pengguna dan kelemahan heuristik ke dalam spesifikasi kebutuhan sistem yang terukur (ISO, 2019).
+[normal] 2.3.1 Perumusan Matriks Kebutuhan Pengguna
+[normal] Kebutuhan sistem dirumuskan ke dalam matriks kebutuhan fungsional dan non-fungsional antarmuka. Kebutuhan fungsional menitikberatkan pada penyediaan tombol panggil cepat darurat, formulir pelaporan terpisah antara kebakaran dan non-kebakaran, modul penelusuran berkas SOP dan LKJIP, serta penyajian statistik visual kejadian. Kebutuhan non-fungsional mencakup kecepatan waktu muat halaman (load time), kejelasan hierarki teks, serta pemenuhan standar aksebilitas visual berbasis Web Content Accessibility Guidelines (WCAG) 2.1 Level AA dengan rasio kontras warna minimal 4,5:1 untuk teks normal (World Wide Web Consortium [W3C], 2018).
+[normal] 2.3.2 Parameter Penerapan 5 Prinsip Interaksi Manusia dan Komputer
+[normal] Perancangan sistem dipandu oleh lima parameter prinsip HCI antara lain sebagai berikut.
+[normal] Navigasi Fluid (Fluid Navigation): Menerapkan navigasi persisten (sticky header) dan rekam jejak tautan (breadcrumbs) untuk meminimalkan disorientasi spasial pengguna di setiap level halaman (Kalbach, 2007; Nielsen & Loranger, 2006).
+[normal] Bahasa Ekspresif (Expresive Human and Command Languages): Mengganti istilah birokrasi yang kaku dengan label perintah berorientasi tindakan yang tegas, seperti “DARURAT: 113” dan “Panggil Bantuan Segera”, serta menyajikan teks umpan balik sistem yang komunikatif saat interaksi berhasil atau gagal (Shneiderman et al., 2016).
+[normal] Manipulasi Langsung (Direct Manipulation): Mengadopsi prinsip Shneiderman (1983) melalui representasi visual objek interaksi secara berkelanjutan, aksi fisik yang cepat beripa penekanan tombol penyaring (filter pills) sekali klik, dan kemampuan inisiasi panggilan telepon darurat langsung dari peramban gawa via protokol tautan.
+[normal] Pengalaman Tepat Waktu (The Timely User Experiences): Menerapkan prinsip desain emosional dan viseral (Norman, 2004) dengan menampilkan status kesiapsiagaan operasional secara waktu nyata (real-time 24/7) serta menyediakan bilah aksi darurat mengambang (floating emergency action bar) yang senantiasa terlihat (always visible) di seluruh halaman.
+[normal] Pencarian Informasi (Information Search): Mengadopsi kerangka kerja pencarian dinamis (Falconi et al., 2023; Shneiderman et al., 1997) melalui penyediaan kotak pencarian instan (instant search), penanganan status hasil pencarian kosong (empty-state feedback), dan penyaringan dokumen bertingkat.
+[normal] 2.4 Perancangan Solusi Desain (Produce Design Solutions)
+[normal] Fase ketiga UCD merealisasikan spesifikasi kebutuhan sistem ke dalam bentuk rancangan antarmuka visual secara bertahap dari fidelitas rendah hingga fidelitas tinggi (Preece et al., 2019).
+[normal] 2.4.1 Arsitektur Informasi dan Pemodelan User Flow
+[normal] 2.4.2 Prosedur Wireframe, Mockup, dan Prototype
+[normal] 2.5 Evaluasi Desain (Instrumen dan Analisis Data WebQual 4.0)
+[normal] 3. HASIL DAN PEMBAHASAN
+[normal] Pembahasan terhadap hasil penelitian dan pengujian yang diperoleh disajikan dalam bentuk uraian teoritik, baik secara kualitatif maupun kuantitatif. Hasil olah data secara deskriptif ditampilkan dalam bentuk grafik ataupun tabel.
+[normal] 3.1 Hasil Audit Kondisi Awal
+[normal] 3.1.1 Visibility of System Status
+[normal] Tidak tersedia indikator status pemuatan (loading indicator)r), umpan balik saat mengirim pesan nihil, dan carousel spanduk berputar tanpapenanda titik (dots).
+[normal] 3.1.2 Match between System and Real World
+[normal] Penggunaan akronim teknis birokrasi seperti "LKJIP", "Renstra", dan"SOP Uji Proteksi" tanpa penjelasan awam bagi masyarakat yang membutuhkan informasi darurat.
+[normal] 3.1.3 User Control and Freedom
+[normal] Sebagian besar tautan eksternal dan unduhan dokumen membuka tab baru peramban secara paksa tanpa opsi kembali atau kontrol pembatalan.
+[normal] 3.1.4 Consistency and Standards
+[normal] Ukuran font, gaya tombol, dan penataan kolom tidak konsisten antara halaman Profil, Galeri, dan Berita.
+[normal] 3.1.5 Error Prevention
+[normal] Formulir kontak tidak memiliki validasi format nomor ponsel danalamat email, serta tidak memiliki modal konfirmasi sebelum data dikirim.
+[normal] 3.2 Hasil Perancangan Prototipe Redesain
+[normal] 3.2.1 Expressive Human & Command Languages
+[normal] Antarmuka awal menyajikan label tombol yang kaku ("Kirim Pesan","Submit", "Download File") tanpa kepastian respons. Pada purwarupa redesain, bahasa perintah diubah menjadi frasa yang humanis dan berorientasi aksi langsung ("Hubungi Posko 113 Sekarang", "Unduh Panduan Keselamatan PDF", "Kirimkan Laporan Kejadian"). Saat pengguna berinteraksi, sistem memberikan umpan balik mikro (micro-interaction) berupa perubahan status tombol (hover state, status pengiriman, dan ikon centang sukses) yang menegaskan bahwa tindakan pengguna telah diterima sistem.
+[normal] 3.2.2 Advancing the User Experience
+[normal] Pengalaman pengguna ditingkatkan secara terukur melalui reduksi waktu penemuan informasi (time-to-information). Pada kondisi awal, pengguna membutuhkan rata-rata 4 kali klik untuk menemukan kontak darurat posko kecamatan. Pada prototipe baru, informasi posko terdekat disajikan di halaman utama dalam kartuinteraktif yang dapat diakses hanya dalam 1 kali klik (zero-latency touchpoint).
+[normal] 3.2.3 Data Visualization
+[normal] 3.3 Hasil Pengujian Kuantatif
+[normal] Kondisi website setelah redesain.
+[normal] 4. KESIMPULAN DAN SARAN
+[normal] Kesimpulan harus mengindikasi secara jelas hasil-hasil yang diperoleh, kelebihan dan kekurangannya, serta kemungkinan pengembangan selanjutnya. Kesimpulan dapat ditulis dalam bentuk narasi/paragraf maupun pointer/numbering. Kesimpulan harus menjawab tujuan penelitian.
+[normal] Saran dibuat berdasarkan kesimpulan penelitian, terkait dengan hasil penelitian yang diperoleh. Saran harus bersifat aplikatif dan tidak normatif.
+[normal] DAFTAR PUSTAKA 
+[normal] (Pakai Style APA dan Tools References seperti Zotero atau Mendeley)
+[normal] Daftar Pustaka disusun menurut abjad nama belakang penulis/pengarang yang dirujuk.
+[normal] Contoh:
+[normal] Agresti, A. (2000). Categorical Data Analysis (2nd ed). New York: John Wiley & Sons.
+[normal] Astuti, E.T. & Yanagawa, T. (2000). Testing nonlinear trend in proportions under binomial and extra-binomial variabilities. Bulletin of Informatics & Cybernetics, 32(2), 157-168.
+[normal] Bain, L.J. & Engelhardt, M. (2000) Introduction to Probability and Mathematical Statistics (2nd ed). Boston: PWS-KENT.
+[Heading 1] FORM LAPORAN KONTRIBUSI ANGGOTA KELOMPOK
+[Heading 2] A. Identitas Kelompok
+[normal] Mata Kuliah: Interaksi Manusia dan Komputer (IMK)
+Kelas: __________
+Nama Project/Aplikasi: ______________________________
+Tanggal Pengumpulan: __________________
+[Heading 2] B. Daftar Anggota Kelompok
+[Heading 2] C. Laporan Kontribusi Masing-Masing Anggota
+[normal] Tuliskan kontribusi nyata setiap anggota dalam pengerjaan tugas.
+[normal] Catatan: Persentase kontribusi seluruh anggota harus berjumlah 100%.
+[Heading 2] D. Rincian Jenis Kontribusi
+[normal] Berikan tanda  pada pekerjaan yang dilakukan dan jelaskan kontribusinya.
+[normal] FORM ANALISIS PROJECT REDESIGN – BEFORE & AFTER
+[normal] IMK – Sub-CPMK 8 dan Sub-CPMK 9
+[normal] Kelompok: 8
+[normal] Nama Aplikasi/Website: Website Dinas Pemadam Kebakaran Kota Bandar Lampung
+[normal] Anggota: Alif Zakiansyah As Syauqi (222312958); Andrian Fajar Fahmi (222312979); Valentina Lasma Situmorang (222313413)
+[normal] Link Prototype Figma: ........................................................................................................
+[normal] Ketentuan Pengisian
+[normal] • Setiap materi dapat memiliki beberapa baris/aspek sesuai dengan kebutuhan project.
+[normal] • Tidak semua baris wajib diisi; isi hanya aspek yang relevan dengan project.
+[normal] • Setiap perubahan harus menunjukkan kondisi Before dan hasil After.
+[normal] • Screenshot harus berasal dari aplikasi/website existing dan hasil redesign.
+[normal] • Kolom Alasan/Dasar Perubahan diisi dengan alasan berdasarkan konsep, prinsip, atau panduan IMK.
+[normal] • Jika suatu materi tidak relevan, tuliskan “Tidak relevan” beserta alasan singkat.
+[normal] • Perubahan tidak hanya berupa warna/font/layout, tetapi harus menunjukkan perbaikan usability, interaction, atau user experience.
+[normal] Ringkasan Hasil Redesain
+[normal] Masalah utama pada BEFORE:
+[normal] ........................................................................................................................
+[normal] Perbaikan utama pada AFTER:
+[normal] ........................................................................................................................
+[normal] Dampak terhadap pengguna/UX:
+[normal] ........................................................................................................................
+--- TABLE ---
+No. | Nama Anggota | NIM | Peran Utama
+1 |  |  | 
+2 |  |  | 
+3 |  |  | 
+4 |  |  | 
+5 |  |  | 
+--- TABLE ---
+No. | Nama Anggota | Tugas/Kontribusi yang Dikerjakan | Output yang Dihasilkan | Persentase Kontribusi
+1 |  |  |  | ___%
+2 |  |  |  | ___%
+3 |  |  |  | ___%
+4 |  |  |  | ___%
+5 |  |  |  | ___%
+ | TOTAL |  |  | 100%
+--- TABLE ---
+Jenis Pekerjaan | Anggota 1 | Anggota 2 | Anggota 3 | Anggota 4
+Analisis aplikasi/website existing |  |  |  | 
+Identifikasi pengguna |  |  |  | 
+Analisis Information Search |  |  |  | 
+Identifikasi masalah usability |  |  |  | 
+Studi/referensi teori IMK |  |  |  | 
+User flow |  |  |  | 
+Ide/solusi redesign |  |  |  | 
+Desain UI di Figma |  |  |  | 
+Prototype interaktif |  |  |  | 
+Pengujian/evaluasi desain |  |  |  | 
+Dokumentasi/laporan |  |  |  | 
+Presentasi |  |  |  | 
+Lainnya: __________ |  |  |  | 
+--- TABLE ---
+No. | Materi IMK | Aspek/Fitur yang Dianalisis | BEFORE – Kondisi Existing | AFTER – Hasil Redesain | Alasan/Dasar Perubahan
+1 | Expressive Human & Command Languages | Expressive Interface |  |  | Beranda baru menempatkan hero, layanan utama, statistik, berita, pengumuman, dokumen populer, dan tombol darurat dalam hierarki yang lebih jelas dan membuat fungsi utama lebih mudah dikenali.
+2 |  | Bahasa/label/perintah | Label dan istilah pada website lama cenderung formal/teknis; beberapa istilah seperti LKJIP dan SOP tidak diberi penjelasan bagi pengguna awam. | Setiap dokumen kini dilengkapi deskripsi singkat yang menjelaskan isi dan tujuan dokumen, sehingga pengguna dapat memahami informasi sebelum mengunduh. | Perubahan dilakukan untuk menerapkan prinsip Match Between System and the Real World, yaitu menggunakan bahasa dan informasi yang lebih mudah dipahami pengguna serta mengurangi beban pengguna dalam menafsirkan istilah teknis.
+3 |  | Feedback terhadap tindakan pengguna |  |  | Menerapkan prinsip Visibility of System Status: pengguna perlu mengetahui posisi dan hasil tindakannya melalui feedback visual.
+4 |  | Emotional Design | Halaman Home lebih banyak menampilkan dokumentasi kegiatan dan berita, sedangkan informasi mengenai layanan darurat belum menjadi fokus utama. | Halaman Home memprioritaskan informasi penting, seperti tombol DARURAT 113, berita, pengumuman, dan layanan utama. | Perubahan dilakukan agar website memberikan kesan lebih responsif terhadap kebutuhan pengguna, terutama saat membutuhkan layanan darurat.
+5 |  | Elemen yang membangun pengalaman emosional | Elemen pada halaman Home belum memberikan penekanan yang jelas terhadap layanan utama yang dibutuhkan pengguna. | Tombol DARURAT 113, kartu layanan, berita, pengumuman, dan informasi utama dibuat lebih menonjol melalui penataan visual yang terstruktur. | Elemen visual tersebut digunakan untuk membangun pengalaman yang lebih jelas, meyakinkan, dan sesuai dengan konteks layanan Damkar.
+6 | Advancing the User Experience | Kemudahan penggunaan | Pengguna perlu menelusuri menu untuk menemukan informasi; tombol darurat belum menonjol. | Navigasi utama dibuat konsisten, pencarian tersedia di header, kategori informasi dibuat lebih terstruktur, dan tombol DARURAT 113 terlihat jelas. | UCD menekankan desain berdasarkan kebutuhan pengguna; mengurangi langkah dan beban ingatan pengguna saat mengakses informasi penting.
+7 |  | Efisiensi interaksi |  |  | Mempercepat akses ke informasi yang sering atau penting digunakan.
+8 |  | Kepuasan pengguna | [Screenshot] | [Screenshot] | 
+9 |  | Permasalahan UX lainnya | [Screenshot] | [Screenshot] | 
+10 | The Timely User Experiences | Konteks penggunaan | [Screenshot] | [Screenshot] | 
+11 |  | Ketepatan waktu informasi | [Screenshot] | [Screenshot] | 
+12 |  | Respons sistem terhadap kondisi pengguna | [Screenshot] | [Screenshot] | 
+13 |  | Informasi/fitur yang dibutuhkan pada saat tertentu | [Screenshot] | [Screenshot] | 
+14 | Information Search | Search/pencarian | [Screenshot] | [Screenshot] | 
+15 |  | Search suggestion/autocomplete | [Screenshot] | [Screenshot] | 
+16 |  | Search result | [Screenshot] | [Screenshot] | 
+17 |  | Filter | [Screenshot] | [Screenshot] | 
+18 |  | Sorting | [Screenshot] | [Screenshot] | 
+19 |  | Navigasi dalam menemukan informasi | [Screenshot] | [Screenshot] | 
+20 |  | No-result/error/feedback | [Screenshot] | [Screenshot] | 
+21 | Data Visualization | Jenis visualisasi | [Screenshot] | [Screenshot] | 
+22 |  | Penyajian informasi/data | [Screenshot] | [Screenshot] | 
+23 |  | Kejelasan grafik | [Screenshot] | [Screenshot] | 
+24 |  | Label/legend | [Screenshot] | [Screenshot] | 
+25 |  | Efektivitas visualisasi | [Screenshot] | [Screenshot] | 
+26 | Wireframe, Mockup & Prototype | Wireframe | [Screenshot] | [Screenshot] | 
+27 |  | Mockup | [Screenshot] | [Screenshot] | 
+28 |  | Alur/interaksi prototype | [Screenshot] | [Screenshot] | 
+29 | High-Fidelity Prototype | Detail antarmuka | [Screenshot] | [Screenshot] | 
+30 |  | Konsistensi desain | [Screenshot] | [Screenshot] | 
+31 |  | Interaksi prototype | [Screenshot] | [Screenshot] | 
+32 |  | Penyelesaian desain keseluruhan | [Screenshot] | [Screenshot] | 

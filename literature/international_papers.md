@@ -1,0 +1,111 @@
+# Rekapitulasi Literatur Internasional & Multi-Arsip: Pencarian: 'wireframe mockup prototype user-centered design process'
+
+*Total Karya Terekam*: **10 artikel/buku**
+
+| No | Tahun | Judul Karya | Penulis | Sumber / Venue | Kategori | Sitasi | Akses PDF | Tautan / DOI |
+|---|---|---|---|---|---|---|---|---|
+| 1 | 2023 | **Understanding Design Collaboration Between Designers and Artificial Intelligence: A Systematic Literature Review** | Yang Shi, Tian Gao, Xiaohan Jiao, Nan Cao | **OpenAlex** (Proceedings of the ACM on Human-Computer Interaction) | Paper | 167 | [PDF Tersedia](https://dl.acm.org/doi/pdf/10.1145/3610217) | [Buka Artikel](https://doi.org/10.1145/3610217) |
+| 2 | 2024 | **User Experience Design Professionals’ Perceptions of Generative Artificial Intelligence** | Jie Li, Hancheng Cao, L. Lin, Youyang Hou, Ruihao Zhu et al. | **OpenAlex** (Jurnal / Konferensi Terindeks) | Paper | 144 | [PDF Tersedia](https://ir.cwi.nl/pub/34508/34508.pdf) | [Buka Artikel](https://doi.org/10.1145/3613904.3642114) |
+| 3 | 2021 | **Current Practices, Challenges, and Design Implications for Collaborative AR/VR Application Development** | Veronika Krauß, Alexander Boden, Leif Oppermann, René Reiners | **OpenAlex** (Jurnal / Konferensi Terindeks) | Paper | 132 | [PDF Tersedia](https://nbn-resolving.org/urn:nbn:de:hbz:1044-opus-52716) | [Buka Artikel](https://doi.org/10.1145/3411764.3445335) |
+| 4 | 2023 | **A survey on deep learning-based monocular spacecraft pose estimation: Current state, limitations and prospects** | Leo Pauly, Wassim Rharbaoui, Carl Shneider, Arunkumar Rathinam, Vincent Gaudillière et al. | **OpenAlex** (Acta Astronautica) | Paper | 110 | [PDF Tersedia](https://www.sciencedirect.com/science/article/pii/S0094576523003995) | [Buka Artikel](https://doi.org/10.1016/j.actaastro.2023.08.001) |
+| 5 | 2021 | **Improving Agile Software Development using User-Centered Design and Lean Startup** | Maximilian Zorzetti, Ingrid Signoretti, Larissa Salerno, Sabrina Marczak, Ricardo Melo Bastos | **OpenAlex** (Information and Software Technology) | Paper | 92 | [PDF Tersedia](https://hdl.handle.net/10923/20454) | [Buka Artikel](https://doi.org/10.1016/j.infsof.2021.106718) |
+| 6 | 2022 | **How Experienced Designers of Enterprise Applications Engage AI as a Design Material** | Nur Yildirim, Alex Kass, Teresa Tung, Connor Upton, Donnacha Costello et al. | **OpenAlex** (CHI Conference on Human Factors in Computing Systems) | Paper | 70 | [PDF Tersedia](https://dl.acm.org/doi/pdf/10.1145/3491102.3517491) | [Buka Artikel](https://doi.org/10.1145/3491102.3517491) |
+| 7 | 2021 | **UI/UX Design Web-Based Learning Application Using Design Thinking Method** | Winda Suci Lestari Nasution, Patriot Nusa | **OpenAlex** (ARRUS Journal of Engineering and Technology) | Paper | 69 | [PDF Tersedia](https://jurnal.ahmar.id/index.php/jetech/article/download/532/364) | [Buka Artikel](https://doi.org/10.35877/jetech532) |
+| 8 | 2022 | **A Survey on Cross‐Virtuality Analytics** | Bernhard Fröhler, Christoph Anthes, Fabian Pointecker, Judith Friedl, Daniel Schwajda et al. | **OpenAlex** (Computer Graphics Forum) | Paper | 67 | [PDF Tersedia](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/cgf.14447) | [Buka Artikel](https://doi.org/10.1111/cgf.14447) |
+| 9 | 2025 | **Perancangan Wireframe Pada Desain User Interface Aplikasi Kelola Sampah Menggunakan Pendekatan User Centered Design** | Afrizal Muttaqin, Farhan | **CORE** (Fakultas Teknologi Informasi - Universitas Advent Indonesia) | Paper | 0 | [PDF Tersedia](https://core.ac.uk/download/710914270.pdf) | [Buka Artikel](https://core.ac.uk/download/710914270.pdf) |
+| 10 | 2023 | **Unraveling the Complexity: A User-centered Design Process for Narrative Visualization** | White, Annie, Leonard, Brendan, Tuzcu, Nil, Geofrey, Steven | **CORE** (Center for International Development at Harvard University) | Paper | 0 | Restricted | [Buka Artikel](https://core.ac.uk/works/371768435) |
+
+---
+
+## Ringkasan Abstrak & Kontribusi Utama
+
+### 1. Understanding Design Collaboration Between Designers and Artificial Intelligence: A Systematic Literature Review (2023)
+- **Penulis**: Yang Shi, Tian Gao, Xiaohan Jiao, Nan Cao
+- **Sumber**: OpenAlex | **Kategori**: Paper
+- **Venue**: Proceedings of the ACM on Human-Computer Interaction | **Sitasi**: 167
+- **DOI / URL**: 10.1145/3610217
+- **Direct PDF**: [Download Link](https://dl.acm.org/doi/pdf/10.1145/3610217)
+- **Abstrak / Deskripsi**:
+  > Recent interest in design through the artificial intelligence (AI) lens is rapidly increasing. Designers, as a special user group interacting with AI, have received more attention in the Human-Computer Interaction community. Prior work has discussed emerging challenges that persist in designing for AI. However, few systematic reviews focus on AI for design to understand how designers and AI can augment each other's complementary strengths in design collaboration. In this work, we conducted a landscape analysis of AI for design, via a systematic literature review of 93 papers. The analysis first provides a bird's eye view of overall patterns in this area. The analysis also reveals three themes interpreted from the paper corpus associated with AI for design, including AI assisting designers, designers assisting AI, and characterizing designer-AI collaboration. We discuss the implications of our findings and suggested methodological proposals to guide HCI toward research and practices that center on collaborative creativity.
+
+### 2. User Experience Design Professionals’ Perceptions of Generative Artificial Intelligence (2024)
+- **Penulis**: Jie Li, Hancheng Cao, L. Lin, Youyang Hou, Ruihao Zhu et al.
+- **Sumber**: OpenAlex | **Kategori**: Paper
+- **Venue**: Jurnal / Konferensi Terindeks | **Sitasi**: 144
+- **DOI / URL**: 10.1145/3613904.3642114
+- **Direct PDF**: [Download Link](https://ir.cwi.nl/pub/34508/34508.pdf)
+- **Abstrak / Deskripsi**:
+  > Among creative professionals, Generative Artificial Intelligence (GenAI) has sparked excitement over its capabilities and fear over unanticipated consequences. How does GenAI impact User Experience Design (UXD) practice, and are fears warranted? We interviewed 20 UX Designers, with diverse experience and across companies (startups to large enterprises). We probed them to characterize their practices, and sample their attitudes, concerns, and expectations. We found that experienced designers are confident in their originality, creativity, and empathic skills, and find GenAI’s role as assistive. They emphasized the unique human factors of “enjoyment” and “agency”, where humans remain the arbiters of “AI alignment’’. However, skill degradation, job replacement, and creativity exhaustion can adversely impact junior designers. We discuss implications for human-GenAI collaboration, specifically copyright and ownership, human creativity and agency, and AI literacy and access. Through the lens of responsible and participatory AI, we contribute a deeper understanding of GenAI fears and opportunities for UXD.
+
+### 3. Current Practices, Challenges, and Design Implications for Collaborative AR/VR Application Development (2021)
+- **Penulis**: Veronika Krauß, Alexander Boden, Leif Oppermann, René Reiners
+- **Sumber**: OpenAlex | **Kategori**: Paper
+- **Venue**: Jurnal / Konferensi Terindeks | **Sitasi**: 132
+- **DOI / URL**: 10.1145/3411764.3445335
+- **Direct PDF**: [Download Link](https://nbn-resolving.org/urn:nbn:de:hbz:1044-opus-52716)
+- **Abstrak / Deskripsi**:
+  > Augmented/Virtual Reality (AR/VR) is still a fragmented space to design for due to the rapidly evolving hardware, the interdisciplinarity of teams, and a lack of standards and best practices. We interviewed 26 professional AR/VR designers and developers to shed light on their tasks, approaches, tools, and challenges. Based on their work and the artifacts they generated, we found that AR/VR application creators fulfill four roles: concept developers, interaction designers, content authors, and technical developers. One person often incorporates multiple roles and faces a variety of challenges during the design process from the initial contextual analysis to the deployment. From analysis of their tool sets, methods, and artifacts, we describe critical key challenges. Finally, we discuss the importance of prototyping for the communication in AR/VR development teams and highlight design implications for future tools to create a more usable AR/VR tool chain.
+
+### 4. A survey on deep learning-based monocular spacecraft pose estimation: Current state, limitations and prospects (2023)
+- **Penulis**: Leo Pauly, Wassim Rharbaoui, Carl Shneider, Arunkumar Rathinam, Vincent Gaudillière et al.
+- **Sumber**: OpenAlex | **Kategori**: Paper
+- **Venue**: Acta Astronautica | **Sitasi**: 110
+- **DOI / URL**: 10.1016/j.actaastro.2023.08.001
+- **Direct PDF**: [Download Link](https://www.sciencedirect.com/science/article/pii/S0094576523003995)
+- **Abstrak / Deskripsi**:
+  > Estimating the pose of an uncooperative spacecraft is an important computer vision problem for enabling the deployment of automatic vision-based systems in orbit, with applications ranging from on-orbit servicing to space debris removal. Following the general trend in computer vision, more and more works have been focusing on leveraging Deep Learning (DL) methods to address this problem. However and despite promising research-stage results, major challenges preventing the use of such methods in real-life missions still stand in the way. In particular, the deployment of such computation-intensive algorithms is still under-investigated, while the performance drop when training on synthetic and testing on real images remains to mitigate. The primary goal of this survey is to describe the current DL-based methods for spacecraft pose estimation in a comprehensive manner. The secondary goal is to help define the limitations towards the effective deployment of DL-based spacecraft pose estimation solutions for reliable autonomous vision-based applications. To this end, the survey first summarises the existing algorithms according to two approaches: hybrid modular pipelines and direct end-to-end regression methods. A comparison of algorithms is presented not only in terms of pose accuracy but also with a focus on network architectures and models’ sizes keeping potential deployment in mind. Then, current monocular spacecraft pose estimation datasets used to train and test these methods are discussed. The data generation methods: simulators and testbeds, the domain gap and the performance drop between synthetically generated and lab/space collected images and the potential solutions are also discussed. Finally, the paper presents open research questions and future directions in the field, drawing parallels with other computer vision applications.
+
+### 5. Improving Agile Software Development using User-Centered Design and Lean Startup (2021)
+- **Penulis**: Maximilian Zorzetti, Ingrid Signoretti, Larissa Salerno, Sabrina Marczak, Ricardo Melo Bastos
+- **Sumber**: OpenAlex | **Kategori**: Paper
+- **Venue**: Information and Software Technology | **Sitasi**: 92
+- **DOI / URL**: 10.1016/j.infsof.2021.106718
+- **Direct PDF**: [Download Link](https://hdl.handle.net/10923/20454)
+- **Abstrak / Deskripsi**:
+  > Tidak ada abstrak yang tersedia.
+
+### 6. How Experienced Designers of Enterprise Applications Engage AI as a Design Material (2022)
+- **Penulis**: Nur Yildirim, Alex Kass, Teresa Tung, Connor Upton, Donnacha Costello et al.
+- **Sumber**: OpenAlex | **Kategori**: Paper
+- **Venue**: CHI Conference on Human Factors in Computing Systems | **Sitasi**: 70
+- **DOI / URL**: 10.1145/3491102.3517491
+- **Direct PDF**: [Download Link](https://dl.acm.org/doi/pdf/10.1145/3491102.3517491)
+- **Abstrak / Deskripsi**:
+  > HCI research has explored AI as a design material, suggesting that designers can envision AI’s design opportunities to improve UX. Recent research claimed that enterprise applications offer an opportunity for AI innovation at the user experience level. We conducted design workshops to explore the practices of experienced designers who work on cross-functional AI teams in the enterprise. We discussed how designers successfully work with and struggle with AI. Our findings revealed that designers can innovate at the system and service levels. We also discovered that making a case for an AI feature’s return on investment is a barrier for designers when they propose AI concepts and ideas. Our discussions produced novel insights on designers’ role on AI teams, and the boundary objects they used for collaborating with data scientists. We discuss the implications of these findings as opportunities for future research aiming to empower designers in working with data and AI.
+
+### 7. UI/UX Design Web-Based Learning Application Using Design Thinking Method (2021)
+- **Penulis**: Winda Suci Lestari Nasution, Patriot Nusa
+- **Sumber**: OpenAlex | **Kategori**: Paper
+- **Venue**: ARRUS Journal of Engineering and Technology | **Sitasi**: 69
+- **DOI / URL**: 10.35877/jetech532
+- **Direct PDF**: [Download Link](https://jurnal.ahmar.id/index.php/jetech/article/download/532/364)
+- **Abstrak / Deskripsi**:
+  > Humans are basically inseparable from education in carrying out life. The implementation and development of educational studies must also be adapted to the conditions and social situations that exist in the community. The main focus of Goal 4 on Sustainable Development Goals (SDGs) is to provide inclusive quality education or to ensure everyone has an equal opportunity to get good quality of education. In fact, Indonesia is still struggling in the quality of teacher issue. In the school year of 2019/2020, there are 8.98% unqualified teachers and headmasters on primary school level, 6.16% on junior high school level, 10.07% on senior high school level, and 10% on vocational high school level. Cumulatively, from primary school level to vocational high school level, there are 247.462 unqualified teachers and headmasters in Indonesia. This is a serious problem, considering that teachers are important component in determining the quality of education itself. In this research, UI/UX design prototype of learning web application named “IdeIn” was developed using Design Thinking method that consists of empathize, define, ideate, prototype, and test stages. The main focus of this learning web application is to provides an opportunity to the whole community to support education in Indonesia by conducting online classes.
+
+### 8. A Survey on Cross‐Virtuality Analytics (2022)
+- **Penulis**: Bernhard Fröhler, Christoph Anthes, Fabian Pointecker, Judith Friedl, Daniel Schwajda et al.
+- **Sumber**: OpenAlex | **Kategori**: Paper
+- **Venue**: Computer Graphics Forum | **Sitasi**: 67
+- **DOI / URL**: 10.1111/cgf.14447
+- **Direct PDF**: [Download Link](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/cgf.14447)
+- **Abstrak / Deskripsi**:
+  > Abstract Cross‐virtuality analytics (XVA) is a novel field of research within immersive analytics and visual analytics. A broad range of heterogeneous devices across the reality–virtuality continuum, along with respective visual metaphors and analysis techniques, are currently becoming available. The goal of XVA is to enable visual analytics that use transitional and collaborative interfaces to seamlessly integrate different devices and support multiple users. In this work, we take a closer look at XVA and analyse the existing body of work for an overview of its current state. We classify the related literature regarding ways of establishing cross‐virtuality by interconnecting different stages in the reality–virtuality continuum, as well as techniques for transitioning and collaborating between the different stages. We provide insights into visualization and interaction techniques employed in current XVA systems. We report on ways of evaluating such systems, and analyse the domains where such systems are becoming available. Finally, we discuss open challenges in XVA, giving directions for future research.
+
+### 9. Perancangan Wireframe Pada Desain User Interface Aplikasi Kelola Sampah Menggunakan Pendekatan User Centered Design (2025)
+- **Penulis**: Afrizal Muttaqin, Farhan
+- **Sumber**: CORE | **Kategori**: Paper
+- **Venue**: Fakultas Teknologi Informasi - Universitas Advent Indonesia | **Sitasi**: 0
+- **DOI / URL**: https://core.ac.uk/download/710914270.pdf
+- **Direct PDF**: [Download Link](https://core.ac.uk/download/710914270.pdf)
+- **Abstrak / Deskripsi**:
+  > This research discusses the design of a waste management application interface in Buahdua Village, Sumedang Regency, using a User Centered Design approach. The increasing number of smartphone and internet users presents an opportunity to enhance community awareness regarding waste management. The study aims to create a wireframe for an application that disseminates information and educates users about effective waste management while addressing the challenges faced by the community in understanding and utilizing waste management facilities. The methodology includes qualitative data collection through interviews and quantitative data through the System Usability Scale (SUS) questionnaire. Results indicate that the wireframe design meets user needs, achieving an average SUS score of 81, suggesting high acceptance of the application. Consequently, this application is expected to improve user experience and provide solutions for waste management issues within the community. The research contributes to the development of mobile applications focused on education and communication concerning environmental issues.
+Keywords: Wireframe, User Centered Design, System Usability Scale, User Interface.Penelitian ini membahas perancangan antarmuka aplikasi pengelolaan sampah di Desa Buahdua, Kabupaten Sumedang, dengan menggunakan pendekatan User Centered Design. Meningkatnya jumlah pengguna ponsel pintar dan internet memberikan peluang untuk meningkatkan kesadaran masyarakat tentang pengelolaan sampah. Penelitian ini bertujuan untuk merancang wireframe aplikasi yang dapat menyebarluaskan informasi dan edukasi mengenai pengelolaan sampah, serta mengatasi tantangan yang dihadapi masyarakat terkait pemahaman dan fasilitas pengelolaan sampah. Metode yang digunakan meliputi pengumpulan data kualitatif melalui wawancara dan data kuantitatif menggunakan kuesioner System Usability Scale (SUS). Hasil penelitian menunjukkan bahwa desain wireframe yang dihasilkan memenuhi kebutuhan pengguna dengan skor SUS rata-rata sebesar 81, yang menunjukkan aplikasi tersebut dapat diterima. Dengan demikian, aplikasi ini diharapkan dapat meningkatkan pengalaman pengguna dan memberikan solusi dalam pengelolaan sampah di masyarakat. Penelitian ini memberikan kontribusi dalam pengembangan aplikasi berbasis mobile yang berfokus pada edukasi dan komunikasi terkait isu lingkungan.
+Kata Kunci: Wireframe, User Centered Design, System Usability Scale, User Interface
+
+### 10. Unraveling the Complexity: A User-centered Design Process for Narrative Visualization (2023)
+- **Penulis**: White, Annie, Leonard, Brendan, Tuzcu, Nil, Geofrey, Steven
+- **Sumber**: CORE | **Kategori**: Paper
+- **Venue**: Center for International Development at Harvard University | **Sitasi**: 0
+- **DOI / URL**: https://core.ac.uk/works/371768435
+- **Abstrak / Deskripsi**:
+  > In this case study, we introduce a user-centered design process for developing Metroverse, a narrative visualization platform that communicates urban economic composition and growth opportunities for cities. The primary challenge in making Metroverse stems from the complexity of the underlying research and data, both of which need to be effectively communicated to a wide range of end-users with different backgrounds. To unravel the complexity of the research, and to design the platform, we followed a user-centered design process. Our design process brought together researchers, designers, and various end-users, who collectively guided the design of the narrative visualization. Engaging end-users in the early phases of the project allowed us to identify the valuable insights in the data and subsequently design effective visualizations that convey those insights. We believe findings from our process can provide a template for similar projects that require translating complex research data and methodologies into user-friendly story structures.Version of Recor

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "rilis_2024_kebakaran",
+    "url": "https://lampung.rilis.id/Pemerintahan/Berita/selama-2024-271-kebakaran-terjadi-bandar-lampung-4CDX",
+    "file": "literature/sources_latar_belakang/rilis_2024_kebakaran.html",
+    "size": 140636,
+    "status": 200
+  },
+  {
+    "name": "rilis_2025_kebakaran",
+    "url": "https://lampung.rilis.id/Peristiwa/Berita/tercatat-198-kebakaran-sepanjang-2025-kerugian-6q0f",
+    "file": "literature/sources_latar_belakang/rilis_2025_kebakaran.html",
+    "size": 140406,
+    "status": 200
+  },
+  {
+    "name": "disway_2023_nonkebakaran",
+    "url": "https://lampungnewspaper.disway.id/bandar-lampung/read/7210/damkar-bandar-lampung-catat-558-kejadian-non-kebakaran-sepanjang-2023",
+    "file": "literature/sources_latar_belakang/disway_2023_nonkebakaran.html",
+    "size": 104023,
+    "status": 200
+  },
+  {
+    "name": "idntimes_2025_penyelamatan",
+    "url": "https://lampung.idntimes.com/news/lampung/damkarmat-balam-lakukan-518-evakuasi-periode-januari-juli-2025-00-rf56x-yzzw2x",
+    "file": "literature/sources_latar_belakang/idntimes_2025_penyelamatan.html",
+    "size": 883027,
+    "status": 200
+  },
+  {
+    "name": "tribunnews_2025_evakuasi",
+    "url": "https://lampung.tribunnews.com/2025/05/13/damkarmat-bandar-lampung-lakukan-334-penyelamatan-non-kebakaran-hingga-awal-mei-2025",
+    "file": "literature/sources_latar_belakang/tribunnews_2025_evakuasi.html",
+    "size": 191349,
+    "status": 200
+  },
+  {
+    "name": "tribunnews_2023_kebakaran",
+    "url": "https://lampung.tribunnews.com/lampung/1214751/jumlah-kejadian-kebakaran-di-bandar-lampung-turun-korsleting-listrik-masih-jadi-penyebab-utama",
+    "file": "literature/sources_latar_belakang/tribunnews_2023_kebakaran.html",
+    "size": 194303,
+    "status": 200
+  },
+  {
+    "name": "ipdn_damkar_bandarlampung",
+    "url": "http://eprints.ipdn.ac.id/21642/1/Repository%20Mohammad%20Farhan%2032.0285.pdf",
+    "file": "literature/sources_latar_belakang/ipdn_damkar_bandarlampung.pdf",
+    "size": 522791,
+    "status": 200
+  },
+  {
+    "name": "ipdn_evaluasi_bpkad_bandarlampung",
+    "url": "http://eprints.ipdn.ac.id/22102/1/32.0396_Raka%20Arda%20Wicaksono_REPOSITORY%20copy.pdf",
+    "file": "literature/sources_latar_belakang/ipdn_evaluasi_bpkad_bandarlampung.pdf",
+    "size": 369417,
+    "status": 200
+  },
+  {
+    "name": "permendagri_114_2018",
+    "url": "https://damkar.bulelengkab.go.id/informasi/download/28_standar-pelayanan-tahun-2026_2026-04-29-15-40-30.pdf",
+    "file": "literature/sources_latar_belakang/permendagri_114_2018.pdf",
+    "size": 692548,
+    "status": 200
+  }
+]

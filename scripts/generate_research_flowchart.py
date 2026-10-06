@@ -1,0 +1,296 @@
+"""
+Script generator untuk menghasilkan Diagram Alir Penelitian (Research Methodology Flowchart)
+berbasis User-Centered Design (ISO 9241-210:2019) untuk Kelompok 8 dalam format SVG dan PNG.
+"""
+
+import os
+import subprocess
+
+OUT_DIR = "drafts/figures"
+os.makedirs(OUT_DIR, exist_ok=True)
+
+def generate_flowchart_svg():
+    w, h = 1060, 1680
+    
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+  <defs>
+    <style>
+      .bg-canvas {{ fill: #f8fafc; }}
+      .header-bg {{ fill: #0f172a; rx: 10; }}
+      .title-text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #ffffff; text-anchor: middle; }}
+      .subtitle-text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 500; fill: #94a3b8; text-anchor: middle; }}
+      
+      .phase-container {{ fill: #ffffff; stroke: #94a3b8; stroke-width: 1.5; stroke-dasharray: 6 4; rx: 12; }}
+      .phase-label-bg {{ fill: #1e293b; rx: 6; }}
+      .phase-label-text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; font-weight: 700; fill: #f8fafc; }}
+
+      .card-init {{ fill: #eff6ff; stroke: #3b82f6; stroke-width: 1.5; rx: 8; }}
+      .card-fase1 {{ fill: #eff6ff; stroke: #2563eb; stroke-width: 1.5; rx: 8; }}
+      .card-fase2 {{ fill: #fffbeb; stroke: #d97706; stroke-width: 1.5; rx: 8; }}
+      .card-fase3 {{ fill: #ecfdf5; stroke: #059669; stroke-width: 1.5; rx: 8; }}
+      .card-fase4 {{ fill: #f5f3ff; stroke: #7c3aed; stroke-width: 1.5; rx: 8; }}
+      .card-final {{ fill: #f0fdf4; stroke: #16a34a; stroke-width: 2; rx: 8; }}
+
+      .card-title {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14px; font-weight: 700; }}
+      .card-subtitle {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; font-weight: 600; fill: #475569; }}
+      .bullet-text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11.5px; fill: #1e293b; }}
+      .bullet-dot {{ fill: #475569; }}
+
+      .arrow-line {{ stroke: #334155; stroke-width: 2; fill: none; }}
+      .arrow-line-loop {{ stroke: #dc2626; stroke-width: 2.2; stroke-dasharray: 6 3; fill: none; }}
+      .loop-label-bg {{ fill: #fee2e2; stroke: #dc2626; stroke-width: 1.2; rx: 4; }}
+      .loop-label-text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10.5px; font-weight: 700; fill: #991b1b; text-anchor: middle; }}
+
+      .diamond-bg {{ fill: #fef2f2; stroke: #dc2626; stroke-width: 2; }}
+      .diamond-title {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12.5px; font-weight: 800; fill: #991b1b; text-anchor: middle; }}
+      .diamond-sub {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; font-weight: 600; fill: #7f1d1d; text-anchor: middle; }}
+
+      .badge-ucd {{ fill: #1e40af; rx: 4; }}
+      .badge-ucd-text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; font-weight: 700; fill: #ffffff; text-anchor: middle; }}
+    </style>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155" />
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a" />
+    </marker>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="{w}" height="{h}" class="bg-canvas" />
+
+  <!-- HEADER -->
+  <g transform="translate(30, 25)">
+    <rect x="0" y="0" width="1000" height="74" class="header-bg" />
+    <text x="500" y="32" class="title-text">DIAGRAM ALIR PENELITIAN USER-CENTERED DESIGN (ISO 9241-210:2019)</text>
+    <text x="500" y="54" class="subtitle-text">Redesain Website Dinas Pemadam Kebakaran dan Penyelamatan Kota Bandar Lampung • Kelompok 8 IMK STIS</text>
+  </g>
+
+  <!-- TAHAP 1: INISIASI PENELITIAN -->
+  <g transform="translate(80, 125)">
+    <rect x="0" y="0" width="900" height="155" class="card-init" />
+    <rect x="20" y="14" width="165" height="24" fill="#2563eb" rx="4" />
+    <text x="102" y="30" class="badge-ucd-text">TAHAP 1: INISIASI RISET</text>
+    <text x="200" y="31" class="card-title" fill="#1e3a8a">Identifikasi Masalah Empiris &amp; Pengumpulan Data Awal</text>
+
+    <!-- Bullets 2 columns -->
+    <g transform="translate(20, 52)">
+      <circle cx="6" cy="10" r="3.5" class="bullet-dot" />
+      <text x="18" y="14" class="bullet-text"><tspan font-weight="bold">Urgensi Bencana Kebakaran:</tspan> 413 insiden (2023), 271 (2024), 198 (2025); 518 aksi rescue non-kebakaran (2025).</text>
+
+      <circle cx="6" cy="34" r="3.5" class="bullet-dot" />
+      <text x="18" y="38" class="bullet-text"><tspan font-weight="bold">Regulasi SPM Permendagri No. 114/2018:</tspan> Standar Pelayanan Minimal waktu tanggap (response time) &lt; 15 menit.</text>
+
+      <circle cx="6" cy="58" r="3.5" class="bullet-dot" />
+      <text x="18" y="62" class="bullet-text"><tspan font-weight="bold">Audit Inspeksi Awal Website Eksisting:</tspan> damkar.bandarlampungkota.go.id mengalami masalah navigasi berat.</text>
+
+      <circle cx="6" cy="82" r="3.5" class="bullet-dot" />
+      <text x="18" y="86" class="bullet-text"><tspan font-weight="bold">Survei Pendahuluan Pengguna (N = 22):</tspan> Rerata kepuasan 2,70 / 5,00 (daya tarik visual sangat rendah: 2,23 / 5,00).</text>
+    </g>
+  </g>
+
+  <!-- Panah ke Siklus UCD -->
+  <line x1="530" y1="280" x2="530" y2="315" class="arrow-line" marker-end="url(#arrow)" />
+
+  <!-- SIKLUS UCD ISO 9241-210:2019 CONTAINER BOX -->
+  <g transform="translate(50, 315)">
+    <rect x="0" y="0" width="960" height="975" class="phase-container" />
+    
+    <!-- Header Container -->
+    <rect x="30" y="-14" width="460" height="28" class="phase-label-bg" />
+    <text x="45" y="5" class="phase-label-text">🔄 SIKLUS ITERASI USER-CENTERED DESIGN (ISO 9241-210:2019)</text>
+
+    <!-- FASE 1: UNDERSTAND CONTEXT OF USE -->
+    <g transform="translate(30, 28)">
+      <rect x="0" y="0" width="900" height="150" class="card-fase1" />
+      <rect x="20" y="12" width="220" height="24" fill="#1d4ed8" rx="4" />
+      <text x="130" y="28" class="badge-ucd-text">FASE 1 (ISO 9241-210)</text>
+      <text x="255" y="29" class="card-title" fill="#1e40af">Memahami dan Menentukan Konteks Penggunaan (Context of Use)</text>
+
+      <g transform="translate(20, 48)">
+        <circle cx="6" cy="10" r="3.5" class="bullet-dot" />
+        <text x="18" y="14" class="bullet-text"><tspan font-weight="bold">Karakteristik Pengguna &amp; Persona:</tspan> Merumuskan Emergency Persona (korban kebakaran panik) &amp; Public Persona (pencari SOP).</text>
+
+        <circle cx="6" cy="32" r="3.5" class="bullet-dot" />
+        <text x="18" y="36" class="bullet-text"><tspan font-weight="bold">Kondisi Emosional &amp; Beban Kognitif:</tspan> Mitigasi kepanikan warga di bawah stres tinggi saat mencari kontak bantuan darurat.</text>
+
+        <circle cx="6" cy="54" r="3.5" class="bullet-dot" />
+        <text x="18" y="58" class="bullet-text"><tspan font-weight="bold">Lingkungan Operasional Penggunaan:</tspan> Dominasi akses perangkat seluler (smartphone) di lapangan dalam situasi genting.</text>
+
+        <circle cx="6" cy="76" r="3.5" class="bullet-dot" />
+        <text x="18" y="80" class="bullet-text"><tspan font-weight="bold">Luaran Fase 1:</tspan> Dokumen profil pengguna, task scenarios, dan peta konteks kebutuhan interaksi darurat.</text>
+      </g>
+    </g>
+
+    <!-- Panah Fase 1 -> Fase 2 -->
+    <line x1="480" y1="178" x2="480" y2="208" class="arrow-line" marker-end="url(#arrow)" />
+
+    <!-- FASE 2: SPECIFY USER REQUIREMENTS -->
+    <g transform="translate(30, 208)">
+      <rect x="0" y="0" width="900" height="175" class="card-fase2" />
+      <rect x="20" y="12" width="220" height="24" fill="#b45309" rx="4" />
+      <text x="130" y="28" class="badge-ucd-text">FASE 2 (ISO 9241-210)</text>
+      <text x="255" y="29" class="card-title" fill="#92400e">Menentukan Kebutuhan Pengguna &amp; Organisasi (Specify User Requirements)</text>
+
+      <g transform="translate(20, 48)">
+        <circle cx="6" cy="10" r="3.5" class="bullet-dot" />
+        <text x="18" y="14" class="bullet-text"><tspan font-weight="bold">Evaluasi Heuristik (10 Prinsip Jakob Nielsen):</tspan> Inspeksi komprehensif pada website eksisting dan pemetaan Severity Rating (0–4).</text>
+
+        <circle cx="6" cy="32" r="3.5" class="bullet-dot" />
+        <text x="18" y="36" class="bullet-text"><tspan font-weight="bold">Identifikasi 3 Titik Kritis Kegagalan Antarmuka:</tspan> (1) Jam operasional salah (07.00-16.00); (2) Nomor 113 tersembunyi; (3) Pencarian kaku.</text>
+
+        <circle cx="6" cy="54" r="3.5" class="bullet-dot" />
+        <text x="18" y="58" class="bullet-text"><tspan font-weight="bold">Integrasi Teori Interaksi Manusia dan Komputer:</tspan> Emotional Design Norman (Visceral, Behavioral, Reflective) &amp; Fitts's Law.</text>
+
+        <circle cx="6" cy="76" r="3.5" class="bullet-dot" />
+        <text x="18" y="80" class="bullet-text"><tspan font-weight="bold">Spesifikasi Kebutuhan Antarmuka:</tspan> Persistent Sticky 113 Button, Direktori 6 Posko Kecamatan, Formulir dengan Validasi Real-time.</text>
+
+        <circle cx="6" cy="98" r="3.5" class="bullet-dot" />
+        <text x="18" y="102" class="bullet-text"><tspan font-weight="bold">Luaran Fase 2:</tspan> Matriks Kebutuhan Pengguna, Matriks Masalah Heuristik Nielsen, dan User Requirements Document.</text>
+      </g>
+    </g>
+
+    <!-- Panah Fase 2 -> Fase 3 -->
+    <line x1="480" y1="383" x2="480" y2="413" class="arrow-line" marker-end="url(#arrow)" />
+
+    <!-- FASE 3: PRODUCE DESIGN SOLUTIONS -->
+    <g transform="translate(30, 413)">
+      <rect x="0" y="0" width="900" height="215" class="card-fase3" />
+      <rect x="20" y="12" width="220" height="24" fill="#047857" rx="4" />
+      <text x="130" y="28" class="badge-ucd-text">FASE 3 (ISO 9241-210)</text>
+      <text x="255" y="29" class="card-title" fill="#065f46">Merancang Solusi Perancangan Berjenjang (Produce Design Solutions)</text>
+
+      <g transform="translate(20, 48)">
+        <circle cx="6" cy="10" r="3.5" class="bullet-dot" />
+        <text x="18" y="14" class="bullet-text"><tspan font-weight="bold">Arsitektur Informasi (IA) Dua-Jalur:</tspan> Pemisahan jalur darurat (Emergency Fast-Track) dan jalur informasi publik (E-Government Track).</text>
+
+        <circle cx="6" cy="32" r="3.5" class="bullet-dot" />
+        <text x="18" y="36" class="bullet-text"><tspan font-weight="bold">Alur Pengguna (User Flow):</tspan> Skenario pemanggilan darurat 1-ketukan (&lt; 3 detik) dan alur pelaporan insiden online anti-prank.</text>
+
+        <circle cx="6" cy="54" r="3.5" class="bullet-dot" />
+        <text x="18" y="58" class="bullet-text"><tspan font-weight="bold">Kerangka Rendah Fidelitas (Low-Fidelity Wireframe):</tspan> Sketsa Balsamiq 6 modul (Beranda, Berita, Dokumen, Galeri, Kontak, Mobile).</text>
+
+        <circle cx="6" cy="76" r="3.5" class="bullet-dot" />
+        <text x="18" y="80" class="bullet-text"><tspan font-weight="bold">Sistem Desain &amp; Aksesibilitas WCAG 2.1 AA:</tspan> Primary Navy (#172554, rasio 12,6:1), Emergency Red (#DC2626), Tipografi Inter.</text>
+
+        <circle cx="6" cy="98" r="3.5" class="bullet-dot" />
+        <text x="18" y="102" class="bullet-text"><tspan font-weight="bold">Purwarupa Tinggi Fidelitas (High-Fidelity Prototype):</tspan> Interaktif Figma &amp; Full-Stack Web Next.js, TypeScript, Tailwind CSS.</text>
+
+        <circle cx="6" cy="120" r="3.5" class="bullet-dot" />
+        <text x="18" y="124" class="bullet-text"><tspan font-weight="bold">Luaran Fase 3:</tspan> Web fungsional live (damkar-bandarlampung-redesign-5wxa.vercel.app) &amp; Cetak biru wireframe.</text>
+      </g>
+    </g>
+
+    <!-- Panah Fase 3 -> Fase 4 -->
+    <line x1="480" y1="628" x2="480" y2="658" class="arrow-line" marker-end="url(#arrow)" />
+
+    <!-- FASE 4: EVALUATE DESIGN AGAINST REQUIREMENTS -->
+    <g transform="translate(30, 658)">
+      <rect x="0" y="0" width="900" height="180" class="card-fase4" />
+      <rect x="20" y="12" width="220" height="24" fill="#6d28d9" rx="4" />
+      <text x="130" y="28" class="badge-ucd-text">FASE 4 (ISO 9241-210)</text>
+      <text x="255" y="29" class="card-title" fill="#5b21b6">Mengevaluasi Desain terhadap Kebutuhan (Evaluate Against Requirements)</text>
+
+      <g transform="translate(20, 48)">
+        <circle cx="6" cy="10" r="3.5" class="bullet-dot" />
+        <text x="18" y="14" class="bullet-text"><tspan font-weight="bold">Instrumen WebQual 4.0 Komparatif (Before vs After):</tspan> 22 indikator Likert 1–5 pada dimensi Usability, Information, &amp; Service.</text>
+
+        <circle cx="6" cy="32" r="3.5" class="bullet-dot" />
+        <text x="18" y="36" class="bullet-text"><tspan font-weight="bold">Uji Signifikansi Statistik Inferensial:</tspan> Uji beda berpasangan Wilcoxon Signed-Rank Test (p &lt; 0,001; Z = -4,107).</text>
+
+        <circle cx="6" cy="54" r="3.5" class="bullet-dot" />
+        <text x="18" y="58" class="bullet-text"><tspan font-weight="bold">Pengujian Aksesibilitas WCAG 2.1 Level AA:</tspan> Audit otomatis WAVE (0 Errors, 0 Contrast Errors) dan pengujian keterbacaan teks.</text>
+
+        <circle cx="6" cy="76" r="3.5" class="bullet-dot" />
+        <text x="18" y="80" class="bullet-text"><tspan font-weight="bold">Pengujian Waktu Akses Kontak Kritis:</tspan> Pengukuran waktu penemuan nomor darurat (Task Completion Time &lt; 3 detik vs &gt; 180 detik).</text>
+
+        <circle cx="6" cy="98" r="3.5" class="bullet-dot" />
+        <text x="18" y="102" class="bullet-text"><tspan font-weight="bold">Luaran Fase 4:</tspan> Dataset perbandingan Before-After WebQual 4.0, output uji hipotesis, dan laporan pemenuhan SPM 15 menit.</text>
+      </g>
+    </g>
+
+    <!-- Panah Fase 4 -> Decision Diamond -->
+    <line x1="480" y1="838" x2="480" y2="875" class="arrow-line" marker-end="url(#arrow)" />
+
+    <!-- DECISION DIAMOND: EVALUASI KRITERIA KEBERHASILAN -->
+    <g transform="translate(480, 915)">
+      <!-- Diamond Polygon (Center at 0, 0) -->
+      <polygon points="0,-40 160,0 0,40 -160,0" class="diamond-bg" />
+      <text x="0" y="-8" class="diamond-title">Apakah Desain Memenuhi</text>
+      <text x="0" y="8" class="diamond-title">Kriteria Usabilitas &amp; SPM?</text>
+      <text x="0" y="24" class="diamond-sub">Skor WebQual &gt; 4,00 | p &lt; 0,05 | Waktu &lt; 3 dtk</text>
+
+      <!-- Label Cabang YA -->
+      <text x="20" y="60" class="card-title" fill="#16a34a" font-size="12">[ YA ]</text>
+
+      <!-- Label Cabang TIDAK -->
+      <text x="-195" y="-8" class="card-title" fill="#dc2626" font-size="12">[ TIDAK ]</text>
+    </g>
+
+    <!-- ITERATIVE FEEDBACK LOOP PATH (TIDAK) -->
+    <!-- From Diamond Left (-160, 915) -> Left margin (15) -> Up to Fase 3 (450) -> Into Fase 3 -->
+    <path d="M 320 915 L 15 915 L 15 520 L 30 520" class="arrow-line-loop" marker-end="url(#arrow-red)" />
+    
+    <!-- Iteration Label Badge -->
+    <g transform="translate(18, 710)">
+      <rect x="0" y="0" width="130" height="34" class="loop-label-bg" />
+      <text x="65" y="15" class="loop-label-text">Iterasi UCD:</text>
+      <text x="65" y="27" class="loop-label-text">Revisi Desain &amp; Fitur</text>
+    </g>
+
+  </g> <!-- END CONTAINER UCD -->
+
+  <!-- Panah dari Diamond ke Tahap Final -->
+  <line x1="530" y1="1270" x2="530" y2="1335" stroke="#16a34a" stroke-width="2.5" fill="none" marker-end="url(#arrow-green)" />
+
+  <!-- TAHAP FINAL: HASIL AKHIR & REKOMENDASI -->
+  <g transform="translate(80, 1335)">
+    <rect x="0" y="0" width="900" height="150" class="card-final" />
+    <rect x="20" y="12" width="220" height="24" fill="#15803d" rx="4" />
+    <text x="130" y="28" class="badge-ucd-text">TAHAP AKHIR: LUARAN RISET</text>
+    <text x="255" y="29" class="card-title" fill="#14532d">Hasil Akhir, Rekomendasi Kebijakan, &amp; Publikasi Ilmiah</text>
+
+    <g transform="translate(20, 48)">
+      <circle cx="6" cy="10" r="3.5" fill="#16a34a" />
+      <text x="18" y="14" class="bullet-text"><tspan font-weight="bold">Portal Web Redesain Siap Pakai (Production Ready):</tspan> Live deployment interaktif responsif pada desktop dan perangkat seluler.</text>
+
+      <circle cx="6" cy="32" r="3.5" fill="#16a34a" />
+      <text x="18" y="36" class="bullet-text"><tspan font-weight="bold">Peningkatan Mutu Terbukti Secara Signifikan:</tspan> Skor WebQual naik dari 2,63 menjadi 4,57 (+1,94; p &lt; 0,001) memenuhi standar SPM.</text>
+
+      <circle cx="6" cy="54" r="3.5" fill="#16a34a" />
+      <text x="18" y="58" class="bullet-text"><tspan font-weight="bold">Matriks Analisis 32 Aspek IMK:</tspan> Dokumentasi evaluasi komparatif Before &amp; After Sub-CPMK 8 dan 9 terisi lengkap 100%.</text>
+
+      <circle cx="6" cy="76" r="3.5" fill="#16a34a" />
+      <text x="18" y="80" class="bullet-text"><tspan font-weight="bold">Naskah Makalah Ilmiah Berstandar Publikasi:</tspan> Artikel ilmiah UAS IMK Polstat STIS bebas halusinasi dengan 31 rujukan peer-reviewed.</text>
+    </g>
+  </g>
+
+  <!-- FOOTER CAPTION -->
+  <g transform="translate(80, 1515)">
+    <rect x="0" y="0" width="900" height="35" fill="#f1f5f9" stroke="#cbd5e1" rx="6" />
+    <text x="450" y="22" font-family="sans-serif" font-size="11" font-weight="bold" fill="#475569" text-anchor="middle">Gambar 1. Diagram Alir Penelitian Redesain Website Damkar Bandar Lampung dengan Pendekatan User-Centered Design (ISO 9241-210:2019)</text>
+  </g>
+</svg>"""
+    return svg
+
+def main():
+    svg_content = generate_flowchart_svg()
+    svg_path = os.path.join(OUT_DIR, "gambar_01_diagram_alir_penelitian.svg")
+    png_path = os.path.join(OUT_DIR, "gambar_01_diagram_alir_penelitian.png")
+
+    with open(svg_path, "w", encoding="utf-8") as f:
+        f.write(svg_content)
+    print(f"[*] Berhasil membuat SVG: {svg_path} ({os.path.getsize(svg_path):,} bytes)")
+
+    res = subprocess.run(["convert", svg_path, png_path], capture_output=True, text=True)
+    if res.returncode == 0 and os.path.exists(png_path):
+        print(f"[OK] Berhasil mengonversi ke PNG: {png_path} ({os.path.getsize(png_path):,} bytes)")
+    else:
+        print(f"[!] Gagal konversi ke PNG: {res.stderr}")
+
+if __name__ == "__main__":
+    main()
